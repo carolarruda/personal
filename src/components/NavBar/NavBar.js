@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 
 const NavBar = () => {
   return (
-    <motion.nav
+    <section className="section-wrapper">
+   <motion.nav
       initial={{ y: -70 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -27,6 +28,8 @@ const NavBar = () => {
         </li>
       </ul>
     </motion.nav>
+    </section>
+ 
   );
 };
 

@@ -2,8 +2,9 @@ import classes from './Hero.module.scss'
 
 const Hero = () => {
   return (
-    <section className={classes.heroContainer}>
-      <h1>Hey, I'm Carolina.</h1>
+    <section className='section-wrapper'>
+      <div className={classes.heroContainer}>   <h1 className={classes.presentation}>Hey, I'm Carolina.</h1></div>
+   
     </section>
   );
 };
