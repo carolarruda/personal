@@ -1,0 +1,14 @@
+.NavContainer {
+  display: grid;
+  grid-auto-flow: column;
+  height: 8rem;
+}
+
+.NavOptions {
+  display: grid;
+  grid-auto-flow: column;
+  text-align: center;
+  align-self: center;
+  font-family: Inter,sans-serif;
+  list-style: none;
+}
