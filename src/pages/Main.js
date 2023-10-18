@@ -6,6 +6,7 @@ const Main = () => {
     <div className="main-grid">
       <NavBar />
       <Hero />
+
     </div>
   );
 };

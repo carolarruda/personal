@@ -32,7 +32,8 @@ header {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background: linear-gradient(to top, rgba(230, 210, 211, 0.1), rgba(230, 210, 211, 0.9));
+  background: linear-gradient(to bottom, rgba(250, 229, 230, 0.5), transparent);
+
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -43,9 +44,9 @@ header {
 
 @keyframes fade-in {
   0% {
-    background: linear-gradient(to top, rgba(230, 210, 211, 0), rgba(230, 210, 211, 0));
+    background: linear-gradient(to bottom, rgba(230, 210, 211, 0), transparent);
   }
   100% {
-    background: linear-gradient(to top, rgba(230, 210, 211, 0.1), rgba(230, 210, 211, 0.9));
+    background: linear-gradient(to bottom, rgba(230, 210, 211, 0.5), transparent);
   }
 }

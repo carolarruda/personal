@@ -1,12 +1,15 @@
+import Bloby from "../blobs/Bloby";
 import classes from "./Hero.module.scss";
 
 const Hero = () => {
   return (
     <section className={`section-wrapper ${classes.hero}`}>
       <div className={classes.heroContainer}>
+        <div className={classes.heroBackground}>
+          <Bloby width={"500px"} />
+        </div>
 
         <h1 className={classes.presentation}>
-
           Hey, I&apos;m Carolina<span>.</span>
         </h1>
         <h2 className={classes.subTitle}>
