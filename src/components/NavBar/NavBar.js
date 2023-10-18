@@ -4,32 +4,31 @@ import { motion } from "framer-motion";
 
 const NavBar = () => {
   return (
-    <section className="section-wrapper">
-   <motion.nav
-      initial={{ y: -70 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className={classes.NavContainer}
-    >
-      <HomeLogo />
+    <header>
+      <motion.nav
+        className={`section-wrapper ${classes.NavContainer} ${classes.mxAuto}`}
+        initial={{ y: -70 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <HomeLogo />
 
-      <ul className={classes.NavOptions}>
-        <li>
-          <a>home</a>
-        </li>
-        <li>
-          <a>projects</a>
-        </li>
-        <li>
-          <a>about</a>
-        </li>
-        <li>
-          <a>contact</a>
-        </li>
-      </ul>
-    </motion.nav>
-    </section>
- 
+        <ul className={classes.NavOptions}>
+          <li>
+            <a>home</a>
+          </li>
+          <li>
+            <a>projects</a>
+          </li>
+          <li>
+            <a>about</a>
+          </li>
+          <li>
+            <a>contact</a>
+          </li>
+        </ul>
+      </motion.nav>
+    </header>
   );
 };
 

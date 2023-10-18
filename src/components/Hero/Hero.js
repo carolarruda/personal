@@ -1,10 +1,21 @@
-import classes from './Hero.module.scss'
+import classes from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <section className='section-wrapper'>
-      <div className={classes.heroContainer}>   <h1 className={classes.presentation}>Hey, I'm Carolina.</h1></div>
-   
+    <section className={`section-wrapper ${classes.hero}`}>
+      <div className={classes.heroContainer}>
+
+        <h1 className={classes.presentation}>
+
+          Hey, I&apos;m Carolina<span>.</span>
+        </h1>
+        <h2 className={classes.subTitle}>
+          I&apos;m a <span>Full Stack Developer</span>
+        </h2>
+        <p className={classes.aboutCopy}>
+          I build responsive web apps with a focus on clean and organised code.
+        </p>
+      </div>
     </section>
   );
 };

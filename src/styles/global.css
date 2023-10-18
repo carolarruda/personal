@@ -9,7 +9,8 @@
   --text: rgb(17, 17, 17);
 
   --brand: rgb(208, 136, 145);
-  --brand2: rgb(218, 128, 141);
+  --brand2: rgb(149, 50, 72);
+  
 
   --text-xs: 1.6rem;
   --text-sm: 1.8rem;
@@ -36,6 +37,7 @@ body {
   scroll-behavior: smooth;
   font-size: var(--text-sm);
   height: 100%;
+
 }
 
 body {
@@ -44,6 +46,10 @@ body {
   background-image: url("../images/eveling-salazar-b5LTjyJM9Yw-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+
+
 
 }
 
@@ -66,13 +72,17 @@ a {
 .section-wrapper {
   position: relative;
   z-index: 10;
-  max-width: 1150px;
+  max-width: 1600px;
   margin: auto;
   padding: 9.6rem;
   overflow: hidden;
+
+
+
 }
 
 @media (max-width: 768px) {
   .section-wrapper {
     padding: 7.2rem 2.4rem;
   }}
+
