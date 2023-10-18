@@ -6,7 +6,7 @@ const Hero = () => {
     <section className={`section-wrapper ${classes.hero}`}>
       <div className={classes.heroContainer}>
         <div className={classes.heroBackground}>
-          <Bloby width={"500px"} />
+          <Bloby width={"550px"} />
         </div>
 
         <h1 className={classes.presentation}>
