@@ -1,0 +1,53 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2.4rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.aboutText {
+  margin-bottom: 2.4rem;
+  font-weight: 600;
+  font-size: var(--text-m);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.linksText {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--brand2);
+}
+
+.highlightFirstLetter:first-letter {
+  background: var(--brand2);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: var(--background);
+  font-size: var(--text-md);
+  font-weight: bold;
+
+  margin-right: 0.6rem;
+
+  float: left;
+}
+
+.heroBackground {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}

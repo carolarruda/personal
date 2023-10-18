@@ -1,12 +1,42 @@
-import SectionTitle from "../SectionTitles/SectionTitle"
+import SectionTitle from "../SectionTitles/SectionTitle";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import classes from "./About.module.scss";
+import Bloby from "../blobs/Bloby";
+import Goggles from "../blobs/Goggles";
 
-const About = ()=> {
-    return (
-        <section  className={`section-wrapper`}>
-        <SectionTitle title={"About"} dir={'l'}/>
-        </section>
+const About = () => {
+  return (
+    <section className={`section-wrapper`} id="about">
+      <SectionTitle title={"About"} dir={"l"} />
+      <div className={classes.about}>
+        <div>
+        {/* <div className={classes.heroBackground}>
+          <Goggles width={"1300px"} fill={'#ebb2b6'} />
+        </div> */}
 
-    )
-}
+          <p className={`${classes.aboutText} `}>
+            Hey! I&apos;m Carolina, a full-stack developer and recent Software
+            Development Academy graduate based in Gothenburg, Sweden. Motivated
+            to learn new skills to pursue my passion in the tech industry and
+            deliver high quality software to users.
+          </p>
 
-export default About
+          <p className={classes.aboutText}>
+            Outside of work, you&apos;ll often find me in the kitchen, either
+            exploring new recipes or going back to my Portuguese roots. I also
+            love Yoga.
+          </p>
+
+          <div className={classes.links}>
+            <div className={classes.linksText}>
+              <span>My links</span>
+              <AiOutlineArrowRight />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

@@ -1,10 +1,10 @@
-const Bloby = ({width}) => {
+const Bloby = ({width, fill}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 2000 1800"
       index="-10"
-      fill="var(--brand)"
+      fill={fill}
       width={width}
       position= "absolute"
       top= "0px"

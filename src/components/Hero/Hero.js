@@ -5,9 +5,9 @@ const Hero = () => {
   return (
     <section className={`section-wrapper ${classes.hero}`}>
       <div className={classes.heroContainer}>
-        <div className={classes.heroBackground}>
-          <Bloby width={"550px"} />
-        </div>
+        {/* <div className={classes.heroBackground}>
+          <Bloby width={"550px"}  fill={'var(--brand'}/>
+        </div> */}
 
         <h1 className={classes.presentation}>
           Hey, I&apos;m Carolina<span>.</span>
