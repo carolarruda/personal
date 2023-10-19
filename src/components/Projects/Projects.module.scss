@@ -1,15 +1,17 @@
 .sec {
-    background-color: #d7d4db;
+  background-color: #d7d4db;
+  overflow: hidden;
 }
 
 .CS {
-background-color: #dab7a5;
+  background-color: #dab7a5;
 }
 
 .CS svg {
-    position: relative;
-    display: block;
-    width: calc(190% + 1.3px);
-    height: 158px;
-}
+  position: relative;
+  display: block;
+  width: calc(190% + 1.3px);
 
+
+  height: 158px;
+}

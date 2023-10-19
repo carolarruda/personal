@@ -2,7 +2,7 @@ import SectionTitle from "../SectionTitles/SectionTitle";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import classes from "./About.module.scss";
 import Bloby from "../blobs/Bloby";
-
+import Stats from '../Stats/Stats'
 const About = () => {
   return (
     <div className={classes.sec}>
@@ -32,6 +32,7 @@ const About = () => {
                 <AiOutlineArrowRight />
               </div>
             </div>
+   
           </div>
         </div>
         
