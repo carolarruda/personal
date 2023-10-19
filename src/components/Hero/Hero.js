@@ -3,7 +3,7 @@ import classes from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <section className={`section-wrapper ${classes.hero}`}>
+    <section className={`section-wrapper ${classes.hero} curve`}>
       <div className={classes.heroContainer}>
         {/* <div className={classes.heroBackground}>
           <Bloby width={"550px"}  fill={'var(--brand'}/>

@@ -8,10 +8,15 @@
   }
 }
 
+.sec {
+  background-color: #e0cdc4;
+  margin: 0;
+}
+
 .aboutText {
   margin-bottom: 2.4rem;
-  font-weight: 600;
-  font-size: var(--text-m);
+  font-weight: 400;
+  font-size: var(--text-s);
 }
 
 .links {
@@ -51,3 +56,4 @@
   width: 100%;
   height: 100%;
 }
+
