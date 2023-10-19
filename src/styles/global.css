@@ -10,7 +10,7 @@
 
   --text: rgb(17, 17, 17);
 
-  --brand: rgb(208, 114, 132);
+  --brand: rgb(210, 177, 176);
   --brand2: rgb(149, 50, 72);
   
 
@@ -31,7 +31,7 @@
 }
 
 *::selection {
-  background: var(--brand);
+  background: var(--brand2);
   color: var(--background);
 }
 

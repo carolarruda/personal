@@ -26,6 +26,9 @@ const NavBar = () => {
           <li>
             <a>contact</a>
           </li>
+          <li>
+            <a>My Resume</a>
+          </li>
         </ul>
       </motion.nav>
     </header>
