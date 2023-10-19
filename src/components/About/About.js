@@ -2,7 +2,7 @@ import SectionTitle from "../SectionTitles/SectionTitle";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import classes from "./About.module.scss";
 import Bloby from "../blobs/Bloby";
-import Stats from '../Stats/Stats'
+import Stats from "../Stats/Stats";
 const About = () => {
   return (
     <div className={classes.sec}>
@@ -11,7 +11,7 @@ const About = () => {
       </div>
       <section className={`section-wrapper`} id="about">
         <SectionTitle title={"About"} dir={"l"} />
-        <div className={`classes.about`}>
+        <div className={classes.about}>
           <div>
             <p className={`${classes.aboutText} `}>
               Hey! I&apos;m Carolina, a full-stack developer and recent Software
@@ -32,12 +32,10 @@ const About = () => {
                 <AiOutlineArrowRight />
               </div>
             </div>
-   
           </div>
+          <Stats />
         </div>
-        
       </section>
-
     </div>
   );
 };
