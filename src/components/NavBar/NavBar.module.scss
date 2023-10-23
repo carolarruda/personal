@@ -42,7 +42,6 @@ header {
     rgba(227, 213, 213, 1),
     rgba(227, 213, 213, 0.95) 60%,
     rgba(227, 213, 213, 0.8) 70%,
-
     transparent
   );
 }
@@ -58,3 +57,26 @@ header a:hover {
   color: var(--brand2);
 }
 
+
+.navDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #e3d5d5
+}
+
+.navDiv svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 105px;
+  transform: rotateY(180deg);
+
+}
+
+svg path .shape-fill {
+  fill: #E3D5D5;
+}

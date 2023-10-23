@@ -28,10 +28,32 @@ const Projects = () => {
           <div className={classes.projectContainer}>
             <p className={`${classes.aboutText} `}>My project</p>
             <div className={classes.containerProject}>
-          
               <img src={project1} alt="pc-visuals" className={classes.photo} />
             </div>
           </div>
+          <div
+            id={classes.worksGrid}
+            className={`
+          ${classes.wLayout} ${classes.worksGrid} `}
+          >
+          
+          </div>
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="400px"
+              height="150px"
+              version="1.1"
+            >
+              <rect
+                x="10"
+                y="10"
+                width="180"
+                height="130"
+                rx="15"
+                ry="15"
+                fill="#bb8774"
+              />
+            </svg>
         </div>
       </section>
     </div>
