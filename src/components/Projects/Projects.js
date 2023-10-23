@@ -1,7 +1,10 @@
 import SectionTitle from "../SectionTitles/SectionTitle";
 // import carls from '../../images/Carls/browseRecipesView.png'
 // import pc from '../../images/PC.png'
-import project1 from "../../images/Visual.png";
+import carls from "../../images/Carls/CarlsVisuals.png";
+import movieDB from "../../images/MovieDB/VisualsDataBase.png";
+import spotify from '../../images/Spotify/SpotifyVisuals.png'
+import ecommerce from '../../images/ECommerce/EcommerceVisuals.png'
 
 import classes from "./Projects.module.scss";
 
@@ -25,35 +28,23 @@ const Projects = () => {
       <section className={`section-wrapper`} id="about">
         <SectionTitle title={"Projects"} dir={"r"} />
         <div className={`classes.about`}>
-          <div className={classes.projectContainer}>
+          <div className={classes.projects}>
             <p className={`${classes.aboutText} `}>My project</p>
-            <div className={classes.containerProject}>
-              <img src={project1} alt="pc-visuals" className={classes.photo} />
+            <div className={classes.projectGrid}>
+              <img src={carls} alt="pc-visuals" className={classes.photo} />
+              <img src={movieDB} alt="pc-visuals" className={classes.photo} />
+            </div>
+            <br/>
+            <div className={classes.projectGrid}>
+              <img src={spotify} alt="pc-visuals" className={classes.photo} />
+              <img src={ecommerce} alt="pc-visuals" className={classes.photo} />
             </div>
           </div>
           <div
             id={classes.worksGrid}
             className={`
           ${classes.wLayout} ${classes.worksGrid} `}
-          >
-          
-          </div>
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="400px"
-              height="150px"
-              version="1.1"
-            >
-              <rect
-                x="10"
-                y="10"
-                width="180"
-                height="130"
-                rx="15"
-                ry="15"
-                fill="#bb8774"
-              />
-            </svg>
+          ></div>
         </div>
       </section>
     </div>

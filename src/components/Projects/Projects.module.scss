@@ -19,23 +19,24 @@
   width: 1000px;
 }
 
-.projectContainer {
-  display: grid;
-  
-}
 
-.containerProject {
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-self: right;
-  max-width: 550px;
+  column-gap: 50px;
   overflow: hidden;
   border-radius: 10px;
+
 }
 
 .photo {
+width: 500px;
   max-width: 700px;
-
+  max-height: 500px;
   border-radius: 20px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 

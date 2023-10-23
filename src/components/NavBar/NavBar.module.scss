@@ -37,26 +37,25 @@ header {
   top: 0;
   z-index: 20;
   width: 100vw;
-  background: linear-gradient(
-    to bottom,
-    rgba(227, 213, 213, 1),
-    rgba(227, 213, 213, 0.95) 60%,
-    rgba(227, 213, 213, 0.8) 70%,
-    transparent
-  );
+  // background: linear-gradient(
+  //   to bottom,
+  //   rgba(218, 183, 165, 1),
+  //   rgba(218, 183, 165, 0.95) 60%,
+  //   rgba(218, 183, 165, 0.8) 70%,
+  //   transparent
+  // );
 }
 
 header a {
   color: var(--background-dark);
   font-weight: 600;
-  text-decoration: none; 
-  padding: 10px 20px; 
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
 header a:hover {
   color: var(--brand2);
 }
-
 
 .navDiv {
   position: absolute;
@@ -65,18 +64,16 @@ header a:hover {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  background-color: #e3d5d5
 }
 
 .navDiv svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
-  height: 105px;
-  transform: rotateY(180deg);
-
+  width: calc(100% + 1.5px);
+  height: 111px;
+  fill: rgb(221, 182, 163);
 }
 
-svg path .shape-fill {
-  fill: #E3D5D5;
+svg path .shapeFill {
+  fill: rgb(221, 182, 163);
 }
