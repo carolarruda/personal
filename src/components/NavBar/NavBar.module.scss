@@ -32,21 +32,29 @@ header {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background: linear-gradient(to bottom, rgba(250, 229, 230, 0.5), transparent);
-
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 20;
   width: 100vw;
+  background: linear-gradient(
+    to bottom,
+    rgba(227, 213, 213, 1),
+    rgba(227, 213, 213, 0.95) 60%,
+    rgba(227, 213, 213, 0.8) 70%,
+
+    transparent
+  );
 }
 
-
-@keyframes fade-in {
-  0% {
-    background: linear-gradient(to bottom, rgba(230, 210, 211, 0), transparent);
-  }
-  100% {
-    background: linear-gradient(to bottom, rgba(230, 210, 211, 0.5), transparent);
-  }
+header a {
+  color: var(--background-dark);
+  font-weight: 600;
+  text-decoration: none; 
+  padding: 10px 20px; 
 }
+
+header a:hover {
+  color: var(--brand2);
+}
+
