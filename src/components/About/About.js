@@ -7,7 +7,7 @@ import MyLinks from '../Links/MyLinks'
 const About = () => {
   return (
     <div className={classes.sec}>
-      <div className="custom-shape-divider-top-1697701393">
+      <div>
         <Bloby />
       </div>
       <section className={`section-wrapper`} id="about" >

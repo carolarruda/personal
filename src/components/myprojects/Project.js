@@ -1,5 +1,4 @@
 import { useAnimation, useInView, motion } from "framer-motion";
-
 import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
@@ -51,9 +50,8 @@ export const Project = ({
         >
           <img
             onMouseEnter={() => setHovered(true)}
-
             src={imgSrc}
-            alt={`An image of the ${title} project.`}
+            alt={title}
             style={{
               width: hovered ? "110%" : "100%",
               rotate: hovered ? "2deg" : "0deg",
@@ -65,11 +63,11 @@ export const Project = ({
             <h4>{title}</h4>
             <div className={styles.projectTitleLine} />
 
-            <a href={code} target="_blank" rel="nofollow">
+            <a href={code} target="_blank" rel="nofollow noreferrer">
               <AiFillGithub size="2.8rem" />
             </a>
 
-            <a href={projectLink} target="_blank" rel="nofollow">
+            <a href={projectLink} target="_blank" rel="nofollow noreferrer">
               <AiOutlineExport size="2.8rem" />
             </a>
           </div>
