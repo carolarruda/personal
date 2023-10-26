@@ -31,12 +31,20 @@
 }
 
 
-.NavOptions a:hover {
+.NavOptions:hover a:not(:hover) {
+  color: var(--text-light);
+}
+.NavOptions:hover a  {
   color: var(--brand2);
 }
 
-.NavOptions:hover a:not(:hover) {
-  color: var(--text-light);
+#selected {
+  color: var(--brand3);
+
+}
+
+.NavOptions:hover .selected {
+    color: var(--text-light);
 }
 
 .mxAuto {
@@ -64,12 +72,14 @@ header {
 
 header a {
   color: var(--background-dark);
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   position: relative; 
-  padding: 5px 20px;
+  padding: 5px 10px;
   transition: color 0.6s;
+
 }
+
 
 header a::after {
   content: "";
@@ -87,7 +97,6 @@ header a::after {
 header a:hover::after {
   transform: scaleX(1); 
 }
-
 
 
 .navDiv {
@@ -112,7 +121,6 @@ svg path .shapeFill {
 }
 
 .btn {
-
   cursor: pointer;
 border: none;
   padding: 0.9rem 2rem;
@@ -169,3 +177,5 @@ border: none;
 .btn:hover::before {
   transform: translate3d(100%, 0, 0);
 }
+
+

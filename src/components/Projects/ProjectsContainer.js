@@ -1,5 +1,5 @@
 import classes from "./Projects.module.scss";
-import Projects from "../Test/Projects";
+import Projects from "../myprojects/Projects";
 import SectionTitle from "../SectionTitles/SectionTitle";
 import ProjectBlob from "../blobs/ProjectBlob";
 

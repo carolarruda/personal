@@ -10,9 +10,9 @@ const About = () => {
       <div className="custom-shape-divider-top-1697701393">
         <Bloby />
       </div>
-      <section className={`section-wrapper`} id="about">
-        <SectionTitle title={"About"} dir={"l"} />
-        <div className={classes.about}>
+      <section className={`section-wrapper`} id="about" >
+        <SectionTitle title={"About"} dir={"l"}  />
+        <div className={classes.about} >
           <div>
             <p className={`${classes.aboutText} `}>
               Hey! I&apos;m Carolina, a full-stack developer and recent Software
