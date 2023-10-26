@@ -3,7 +3,7 @@ import SectionTitle from "../SectionTitles/SectionTitle";
 // import pc from '../../images/PC.png'
 import carls from "../../images/Carls/CarlsVisuals.png";
 import movieDB from "../../images/MovieDB/VisualsDataBase.png";
-import spotify from '../../images/Spotify/SpotifyVisuals.png'
+import spotify from '../../images/Spotify/SpotifyVisuals2.png'
 import ecommerce from '../../images/ECommerce/EcommerceVisuals.png'
 
 import classes from "./Projects.module.scss";

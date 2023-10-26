@@ -4,6 +4,7 @@
 
 .presentation {
   font-size: var(--text-2xl);
+  font-weight: 800;
   span {
     font-size: var(--text-2xl);
     font-weight: 900;
@@ -22,7 +23,6 @@
 .copyWrapper {
   position: relative;
   z-index: 10;
-
   width: fit-content;
   margin: 4.8rem 0;
 }
