@@ -1,6 +1,4 @@
 import SectionTitle from "../SectionTitles/SectionTitle";
-// import carls from '../../images/Carls/browseRecipesView.png'
-// import pc from '../../images/PC.png'
 import carls from "../../images/Carls/CarlsVisuals.png";
 import movieDB from "../../images/MovieDB/VisualsDataBase.png";
 import spotify from '../../images/Spotify/SpotifyVisuals2.png'

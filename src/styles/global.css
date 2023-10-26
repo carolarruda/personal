@@ -15,8 +15,10 @@
 
   --brand: rgb(210, 177, 176);
   --brand2: rgb(149, 50, 72);
-  
+  --brand3: rgb(149, 50, 72);
+  --brand4: rgb(136, 48, 66);
 
+  --text-xxs: 1.4rem;
   --text-xs: 1.6rem;
   --text-s: 1.8rem;
   --text-sm: 2rem;

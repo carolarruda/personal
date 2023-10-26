@@ -3,6 +3,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import classes from "./About.module.scss";
 import Bloby from "../blobs/Bloby";
 import Stats from "../Stats/Stats";
+import MyLinks from '../Links/MyLinks'
 const About = () => {
   return (
     <div className={classes.sec}>
@@ -30,6 +31,7 @@ const About = () => {
               <div className={classes.linksText}>
                 <span>My links</span>
                 <AiOutlineArrowRight />
+                <MyLinks/>
               </div>
             </div>
           </div>

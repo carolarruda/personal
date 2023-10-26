@@ -39,20 +39,29 @@ const NavBar = () => {
 
         <ul className={classes.NavOptions}>
           <li className={classes.grey}>
-            <a >home</a>
+            <a>home</a>
           </li>
           <li className={classes.grey}>
-            <a >projects</a>
+            <a>projects</a>
           </li>
           <li className={classes.grey}>
-            <a >about</a>
+            <a>about</a>
           </li>
           <li className={classes.grey}>
-            <a >contact</a>
+            <a>contact</a>
           </li>
           <li>
             <button className={classes.btn}>
-              <span className={classes.span}>My Resume</span>
+              <span
+                onClick={() =>
+                  window.open(
+                    "https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+                  )
+                }
+                className={classes.span}
+              >
+                My Resume
+              </span>
             </button>
           </li>
         </ul>
