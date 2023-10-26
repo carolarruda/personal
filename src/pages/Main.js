@@ -1,7 +1,9 @@
 import NavBar from "../components/NavBar/NavBar";
 import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
-import Projects from "../components/Projects/Projects";
+import ProjectsContainer from "../components/Projects/ProjectsContainer";
+
+// import Projects from "../components/Projects/Projects";
 
 const Main = () => {
   return (
@@ -9,7 +11,7 @@ const Main = () => {
       <NavBar />
       <Hero />
       <About />
-      <Projects />
+      <ProjectsContainer />
     </div>
   );
 };
