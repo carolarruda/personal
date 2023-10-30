@@ -3,22 +3,22 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import classes from "./About.module.scss";
 import Bloby from "../blobs/Bloby";
 import Stats from "../Stats/Stats";
-import MyLinks from '../Links/MyLinks'
+import MyLinks from "../Links/MyLinks";
 const About = () => {
   return (
     <div className={classes.sec}>
       <div>
         <Bloby />
       </div>
-      <section className={`section-wrapper`} id="about" >
-        <SectionTitle title={"About"} dir={"l"}  />
-        <div className={classes.about} >
+      <section className={`section-wrapper`} id="about">
+        <SectionTitle title={"About"} dir={"l"} />
+        <div className={classes.about}>
           <div>
-            <p className={`${classes.aboutText} `}>
-              Hey! I&apos;m Carolina, a full-stack developer and recent Software
-              Development Academy graduate based in Gothenburg, Sweden.
-              Motivated to learn new skills to pursue my passion in the tech
-              industry and deliver high quality software to users.
+            <p className={classes.aboutText}>
+              Hey! I&apos;m Carolina, a full-stack developer with a fresh
+              perspective and recent Software Development Academy graduate based
+              in Gothenburg, Sweden. Eager to continuously expand my skill set
+              and deliver high quality software to users.
             </p>
 
             <p className={classes.aboutText}>
@@ -31,7 +31,7 @@ const About = () => {
               <div className={classes.linksText}>
                 <span>My links</span>
                 <AiOutlineArrowRight />
-                <MyLinks/>
+                <MyLinks />
               </div>
             </div>
           </div>

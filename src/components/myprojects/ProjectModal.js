@@ -41,7 +41,7 @@ export const ProjectModal = ({
         <img
           className={styles.modalImage}
           src={imgSrc}
-          alt={`An image of the ${title} project.`}
+          alt={title}
         />
         <div className={styles.modalContent}>
           <h4>{title}</h4>
@@ -60,6 +60,10 @@ export const ProjectModal = ({
               <a target="_blank" rel="nofollow" href={projectLink}>
                 <AiOutlineExport /> live project
               </a>
+              <a target="_blank" rel="nofollow" href={projectLink}>
+                <AiOutlineExport /> in-depth overview
+              </a>
+            
             </div>
           </div>
         </div>
