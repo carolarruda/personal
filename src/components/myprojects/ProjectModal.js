@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 
-import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
+import { AiFillGithub, AiOutlineExport, AiOutlineInfoCircle } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 
 export const ProjectModal = ({
@@ -61,7 +61,7 @@ export const ProjectModal = ({
                 <AiOutlineExport /> live project
               </a>
               <a target="_blank" rel="nofollow" href={projectLink}>
-                <AiOutlineExport /> in-depth overview
+                <AiOutlineInfoCircle /> detailed overview
               </a>
             
             </div>
