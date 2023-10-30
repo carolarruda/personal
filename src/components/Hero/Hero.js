@@ -1,7 +1,7 @@
 import classes from "./Hero.module.scss";
+import Button from "../buttons/Button";
 
 const Hero = () => {
-
   return (
     <section className={`section-wrapper ${classes.hero} curve`}>
       <div className={classes.heroContainer}>
@@ -15,7 +15,9 @@ const Hero = () => {
         <p className={classes.aboutCopy}>
           I build responsive web apps with a focus on clean and organised code.
         </p>
-        <button onClick={() => document.getElementById("projects")?.scrollIntoView()}className={classes.btnViewProejcts}>View Projects</button>
+        <Button
+          type={`projects`}
+          text={`View Projects`}        />
       </div>
     </section>
   );

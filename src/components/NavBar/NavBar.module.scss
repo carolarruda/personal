@@ -116,6 +116,8 @@ header a:hover::after {
   height: 70px;
   transform: rotateY(180deg);
   fill: rgb(221, 182, 163);
+  width: calc(100% + 1.3px);
+  height: 31px;
 }
 
 svg path .shapeFill {

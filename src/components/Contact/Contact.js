@@ -1,7 +1,7 @@
 import classes from "./Contact.module.scss";
-import SectionTitle from "../SectionTitles/SectionTitle";
 import * as React from "react";
-import { AiFillMail } from "react-icons/ai";
+import { AiFillMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import MyLinks from "../Links/MyLinks";
 
 const Contact = () => {
   return (
@@ -21,27 +21,50 @@ const Contact = () => {
         </svg>
       </div>
       <section className={`section-wrapper`} id="contact">
-      <h4 className={classes.contactTitle}>
-            Contact<span>.</span>
-          </h4>
-        <p className={classes.contactCopy}>
-            Shoot me an email if you want to connect! You can also find me on{" "}
-            <a
-              href="https://www.linkedin.com/in/carolinacalouroarruda"
-              target="_blank"
-              rel="nofollow"
-            >
-              Linkedin
-            </a>{" "}
+        <h4 className={classes.contactTitle}>
+          Contact<span>.</span>
+        </h4>
         
-          </p>
+        <p className={classes.contactCopy}>
+          Shoot me an email if you want to connect! You can also find me on{" "}
+          <a
+            href="https://www.linkedin.com/in/carolinacalouroarruda"
+            target="_blank"
+            rel="nofollow noreferrer"
+          >
+            Linkedin
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://github.com/carolarruda"
+            target="_blank"
+            rel="nofollow noreferrer"
+          >
+            GitHub
+          </a>{" "}
+        </p>
+        <a href="mailto:carolinacalarruda@gmail.com">
+          <div className={classes.contactEmail}>
+            <AiFillMail size="2.2rem" />
+            <span>carolinacalarruda@gmail.com</span>
+          </div>
+        </a>
+     
+          <div className={classes.contactEmail}>
+            <AiFillLinkedin size="2.2rem" />
+            <a href="https://www.linkedin.com/in/carolinacalouroarruda">
+            <span>@carolinacalouroarruda</span>
+            </a>
+          </div>
+  
+        <a href="https://github.com/carolarruda">
+          <div className={classes.contactEmail}>
+            <AiFillGithub size="2.2rem" />
+            <span>@carolarruda</span>
+          </div>
+        </a>
 
-          <a href="mailto:carolinacalarruda@gmail.com">
-            <div className={classes.contactEmail}>
-              <AiFillMail size="2.4rem" />
-              <span>carolinacalarruda@gmail.com</span>
-            </div>
-          </a>
+
       </section>
     </div>
   );
