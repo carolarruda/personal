@@ -5,10 +5,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const NavBar = () => {
-  const [selectedHome, setSelectedHome] = useState(true); // Initially, set home as selected
-  const [selectedAbout, setSelectedAbout] = useState(false);
-  const [selectedProjects, setSelectedProjects] = useState(false);
-  const [selectedContact, setSelectedContact] = useState(false);
+  const [selected, setSelected] = useState("");
 
   useEffect(() => {
     const sections = document.querySelectorAll(".section-wrapper");
@@ -17,30 +14,10 @@ const NavBar = () => {
       threshold: 0.3,
     };
 
-    const callback = (entries) => {
-      entries.forEach((entry) => {
+    const callback = (entries: any) => {
+      entries.forEach((entry: any) => {
         if (entry.isIntersecting) {
-          if (entry.target.id === "home") {
-            setSelectedHome(true);
-            setSelectedAbout(false);
-            setSelectedProjects(false);
-            setSelectedContact(false);
-          } else if (entry.target.id === "about") {
-            setSelectedAbout(true);
-            setSelectedHome(false);
-            setSelectedProjects(false);
-            setSelectedContact(false);
-          } else if (entry.target.id === "projects") {
-            setSelectedProjects(true);
-            setSelectedHome(false);
-            setSelectedAbout(false);
-            setSelectedContact(false);
-          } else if (entry.target.id === "contact") {
-            setSelectedContact(true);
-            setSelectedHome(false);
-            setSelectedAbout(false);
-            setSelectedProjects(false);
-          }
+          setSelected(entry.target.id);
         }
       });
     };
@@ -50,31 +27,9 @@ const NavBar = () => {
     sections.forEach((section) => observer.observe(section));
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setSelectedHome(true);
-        setSelectedAbout(false);
-        setSelectedProjects(false);
-        setSelectedContact(false);
-      } else {
-        setSelectedHome(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <header>
-      <div className={classes.navDiv}>
-        <NavBlob />
-      </div>
-
+    <>
+     <header className={classes}>
       <motion.nav
         className={`section-wrapper ${classes.NavContainer} ${classes.mxAuto}`}
         initial={{ y: -70 }}
@@ -86,15 +41,12 @@ const NavBar = () => {
         <ul className={classes.NavOptions}>
           <li className={classes.grey}>
             <a
-              href="#top" // Assuming #top is the top of your page
+              href="#top"
               onClick={() => {
-                setSelectedHome(true);
-                setSelectedAbout(false);
-                setSelectedProjects(false);
-                setSelectedContact(false);
+                setSelected("top");
                 window.scrollTo(0, 0);
               }}
-              id={selectedHome ? classes.selected : ""}
+              id={selected === "top" ? classes.selected : ""}
             >
               home
             </a>
@@ -103,12 +55,9 @@ const NavBar = () => {
             <a
               href="#about"
               onClick={() => {
-                setSelectedAbout(true);
-                setSelectedHome(false);
-                setSelectedProjects(false);
-                setSelectedContact(false);
+                setSelected("about");
               }}
-              id={selectedAbout ? classes.selected : ""}
+              id={selected === "about" ? classes.selected : ""}
             >
               about
             </a>
@@ -117,12 +66,9 @@ const NavBar = () => {
             <a
               href="#projects"
               onClick={() => {
-                setSelectedProjects(true);
-                setSelectedHome(false);
-                setSelectedAbout(false);
-                setSelectedContact(false);
+                setSelected("projects");
               }}
-              id={selectedProjects ? classes.selected : ""}
+              id={selected === "projects" ? classes.selected : ""}
             >
               projects
             </a>
@@ -131,12 +77,9 @@ const NavBar = () => {
             <a
               href="#contact"
               onClick={() => {
-                setSelectedContact(true);
-                setSelectedHome(false);
-                setSelectedAbout(false);
-                setSelectedProjects(false);
+                setSelected("contact");
               }}
-              id={selectedContact ? classes.selected : ""}
+              id={selected === "contact" ? classes.selected : ""}
             >
               contact
             </a>
@@ -157,7 +100,18 @@ const NavBar = () => {
           </li>
         </ul>
       </motion.nav>
+
     </header>
+    <motion.div
+        className={classes.navDiv}
+        initial={{ y: -70 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <NavBlob />
+      </motion.div>
+    </>
+   
   );
 };
 
