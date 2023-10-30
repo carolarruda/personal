@@ -14,9 +14,7 @@ export const Project = ({
   tech,
 }) => {
   const [hovered, setHovered] = useState(false);
-
   const [isOpen, setIsOpen] = useState(false);
-
   const controls = useAnimation();
 
   const ref = useRef(null);

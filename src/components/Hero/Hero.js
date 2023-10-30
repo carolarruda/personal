@@ -9,11 +9,12 @@ const Hero = () => {
           Hey there, I&apos;m Carolina<span>.</span>
         </h1>
         <h2 className={classes.subTitle}>
-          I&apos;m a <span>Full Stack Developer </span>based in Gothenburg,
+          I&apos;m a <span>Full Stack Developer </span>based in beautiful Gothenburg, 
           Sweden
         </h2>
         <p className={classes.aboutCopy}>
-          I build responsive web apps with a focus on clean and organised code.
+          I build responsive web applications, with a big focus on clean, organized code that brings ideas to life. Let&apos;s build something incredible together!
+
         </p>
         <Button
           type={`projects`}
