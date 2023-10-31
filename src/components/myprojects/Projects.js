@@ -86,7 +86,7 @@ const projects = [
     modalContent: (
       <>
         <p>
-          Uomo is a collaborative frontend project with some of colleagues from
+          Uomo is a collaborative frontend project with a few colleagues from
           Boolean UK. Our main focus was to create a user-friendly e-commerce
           website and sharpen our frontend skills.
         </p>
