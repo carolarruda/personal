@@ -1,5 +1,5 @@
-import styles from "./projectmodal.module.scss";
-import { useEffect } from "react";
+import classes from "./projectmodal.module.scss";
+import { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 
@@ -16,10 +16,22 @@ export const ProjectModal = ({
   code,
   tech,
 }) => {
+
+  const [disabledProject, setDisabledProject]= useState('')
+  const [disabledCode, setDisabledCode]= useState('')
+
   useEffect(() => {
     const body = document.querySelector("body");
 
-    if (isOpen) {
+    if(!projectLink){
+      setDisabledProject(true)
+    }
+
+    else if(!code){
+      setDisabledCode(true)
+    }
+
+   else if (isOpen) {
       body.style.overflowY = "hidden";
     } else {
       body.style.overflowY = "scroll";
@@ -27,8 +39,8 @@ export const ProjectModal = ({
   }, [isOpen]);
 
   const content = (
-    <div className={styles.modal} onClick={() => setIsOpen(false)}>
-      <button className={styles.closeModalBtn}>
+    <div className={classes.modal} onClick={() => setIsOpen(false)}>
+      <button className={classes.closeModalBtn}>
         <MdClose />
       </button>
 
@@ -36,28 +48,28 @@ export const ProjectModal = ({
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         onClick={(e) => e.stopPropagation()}
-        className={styles.modalCard}
+        className={classes.modalCard}
       >
         <img
-          className={styles.modalImage}
+          className={classes.modalImage}
           src={imgSrc}
           alt={title}
         />
-        <div className={styles.modalContent}>
+        <div className={classes.modalContent}>
           <h4>{title}</h4>
-          <div className={styles.modalTech}>{tech.join(" - ")}</div>
+          <div className={classes.modalTech}>{tech.join(" - ")}</div>
 
-          <div className={styles.suppliedContent}>{modalContent}</div>
+          <div className={classes.suppliedContent}>{modalContent}</div>
 
-          <div className={styles.modalFooter}>
-            <p className={styles.linksText}>
+          <div className={classes.modalFooter}>
+            <p className={classes.linksText}>
               Project Links<span>.</span>
             </p>
-            <div className={styles.links}>
-              <a target="_blank" rel="nofollow" href={code}>
+            <div className={classes.links}>
+              <a target="_blank" rel="nofollow" href={code} className={disabledCode ? classes.disabled : ""}>
                 <AiFillGithub /> source code
               </a>
-              <a target="_blank" rel="nofollow" href={projectLink}>
+              <a target="_blank" rel="nofollow" href={projectLink} className={disabledProject ? classes.disabled : ""}>
                 <AiOutlineExport /> live project
               </a>
               <a target="_blank" rel="nofollow" href={projectLink}>

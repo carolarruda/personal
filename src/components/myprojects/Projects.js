@@ -78,7 +78,7 @@ const projects = [
   {
     title: "Uomo E-commerce Website",
     imgSrc: ecommerce,
-    code: "https://github.com/carolarruda/movieDb",
+    code: "https://github.com/desokan/ShopFront_Frontend",
     projectLink: "",
     tech: ["React", "JS", "Framer Motion", "i18next"],
     description:

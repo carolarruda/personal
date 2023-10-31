@@ -78,6 +78,10 @@
   }
 }
 
+.disabled {
+  pointer-events: none;
+}
+
 .links {
   display: flex;
   align-items: center;
