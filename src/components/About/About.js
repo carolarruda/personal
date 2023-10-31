@@ -15,18 +15,15 @@ const About = () => {
         <div className={classes.about}>
           <div>
             <p className={classes.aboutText}>
-              Hey! I&apos;m Carolina, a full-stack developer with a fresh
-              perspective and recent Software Development Academy graduate based
+              Hey! I&apos;m Carolina, a full-stack developer and recent Software Development Academy graduate based
               in Gothenburg, Sweden. Eager to continuously expand my skill set
               and deliver high quality software to users.
             </p>
 
             <p className={classes.aboutText}>
               Outside of work, you&apos;ll often find me in the kitchen, either
-              exploring new recipes or going back to my Portuguese roots. I also
-              love Yoga.
+              exploring new recipes or going back to my Portuguese roots. Yoga enthusiast on my spare time.
             </p>
-
             <div className={classes.links}>
               <div className={classes.linksText}>
                 <span>My links</span>
