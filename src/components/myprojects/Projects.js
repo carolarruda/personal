@@ -26,7 +26,7 @@ const projects = [
     projectLink: "",
     tech: ["React", "MUI", "JS", "Express", "Node"],
     description:
-      "Carls is a frontend interface serving as the gateway to a comprehensive recipe-sharing application",
+      "Carls is a frontend interface serving as the gateway to a recipe-sharing application",
     modalContent: (
       <>
         <p>
@@ -42,7 +42,7 @@ const projects = [
         <p>
           In essence, Carls provides a user-friendly, aesthetically pleasing,
           and functional interface, allowing foodies to
-          curate their recipes but also share their culinary expertise within a
+          curate their recipes and also share their culinary expertise within a
           community.
         </p>
       </>
@@ -59,7 +59,7 @@ const projects = [
     modalContent: (
       <>
         <p>
-          The Movie Database is my
+          The Movie Database is my personal
           platform for cataloging the movies I&apos;m eager to watch or have
           enjoyed. It&apos;s more than just a movie catalog; it&apos;s a place
           to organize, and cherish films close to my heart.
@@ -68,9 +68,9 @@ const projects = [
           Presently, I&apos;m focused on expanding the application&apos;s
           functionality. Upcoming updates will introduce enhanced features
           enabling users to filter movies by genre. Additionally,
-          the project is undergoing development to integrate with the TMDb API,
+          the project will undergo development to integrate with the TMDb API,
           leveraging a vast database of movies to enrich the platform&apos;s
-          offerings.
+          features and possibilities.
         </p>
       </>
     ),
@@ -95,7 +95,7 @@ const projects = [
           The website includes a chatbot for personalized guidance, multilingual
           translations for a improved reach, an intuitively designed cart for
           easy-to-use transactions, and caroussel of products to browse and an
-          intuitive nav bar to search categories of products.
+          intuitive nav bar to search products by categories.
         </p>
         <p>
           In this project I have worked on the translations, the chatbot and add

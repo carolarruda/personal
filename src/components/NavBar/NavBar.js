@@ -132,7 +132,6 @@ const NavBar = () => {
           transition={{ duration: 0.5 }}
         >
           <HomeLogo />
-
           <ul className={classes.NavOptions}>
             <li className={classes.grey}>
               <a
@@ -188,9 +187,9 @@ const NavBar = () => {
       </header>
       <motion.div
         className={classes.navDiv}
-        initial={{ y: -70 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
+        // initial={{ y: -70 }}
+        // animate={{ y: 0 }}
+        // transition={{ duration: 0.5 }}
       >
         <NavBlob />
       </motion.div>
