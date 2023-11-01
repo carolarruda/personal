@@ -187,9 +187,6 @@ const NavBar = () => {
       </header>
       <motion.div
         className={classes.navDiv}
-        // initial={{ y: -70 }}
-        // animate={{ y: 0 }}
-        // transition={{ duration: 0.5 }}
       >
         <NavBlob />
       </motion.div>

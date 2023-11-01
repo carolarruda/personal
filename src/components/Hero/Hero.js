@@ -1,10 +1,15 @@
 import classes from "./Hero.module.scss";
 import Button from "../buttons/Button";
+import {motion } from 'framer-motion'
 
 const Hero = () => {
   return (
     <section className={`section-wrapper ${classes.hero} curve`}>
-      <div className={classes.heroContainer}>
+      <motion.div
+                initial={{ y: -70 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.5 }}
+      className={classes.heroContainer}>
         <h1 className={classes.presentation}>
           Hey there, I&apos;m Carolina<span>.</span>
         </h1>
@@ -18,7 +23,7 @@ const Hero = () => {
           incredible together!
         </p>
         <Button type={`projects`} text={`View Projects`} />
-      </div>
+      </motion.div>
     </section>
   );
 };
