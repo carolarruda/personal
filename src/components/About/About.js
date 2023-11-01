@@ -34,6 +34,7 @@ const About = () => {
             <Reveal>
               <div className={classes.links}>
                 <div className={classes.linksText}>
+    
                   <span>My links</span>
                   <AiOutlineArrowRight />
                   <MyLinks />
@@ -41,6 +42,7 @@ const About = () => {
               </div>
             </Reveal>
           </div>
+ 
           <Stats />
         </div>
       </section>
