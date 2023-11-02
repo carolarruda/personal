@@ -5,15 +5,25 @@ import Bloby from "../blobs/Bloby";
 import Stats from "../Stats/Stats";
 import MyLinks from "../Links/MyLinks";
 import { Reveal } from "../utils/Reveal/Reveal";
+import { useMediaQuery } from "react-responsive";
+
 const About = () => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
+  const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
+
   return (
     <div className={classes.sec}>
       <div>
         <Bloby />
       </div>
-      <section className={`section-wrapper`} id="about">
+      <section className={isDesktopOrLaptop ? `section-wrapper` : `section-wrapper-phone`} id="about">
         <SectionTitle title={"About"} dir={"l"} />
-        <div className={classes.about}>
+        <div className={isDesktopOrLaptop? `${classes.about}` : `${classes.about} ${classes.media}`}>
           <div>
             <Reveal>
               {" "}
@@ -34,7 +44,6 @@ const About = () => {
             <Reveal>
               <div className={classes.links}>
                 <div className={classes.linksText}>
-    
                   <span>Links</span>
                   <AiOutlineArrowRight />
                   <MyLinks />
@@ -42,7 +51,7 @@ const About = () => {
               </div>
             </Reveal>
           </div>
- 
+
           <Stats />
         </div>
       </section>
