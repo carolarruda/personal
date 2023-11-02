@@ -6,8 +6,6 @@ import classes from "./NavBar.module.scss";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-
-
 const NavBar = () => {
   const [selected, setSelected] = useState("");
 
@@ -31,12 +29,17 @@ const NavBar = () => {
     sections.forEach((section) => observer.observe(section));
   }, []);
 
-
   return (
     <>
       <header className={classes}>
+        <div className={classes.navWrapper}>
+          <motion.div className={`${classes.navDiv} ${classes.blobWrapper}`}>
+            <NavBlob />
+          </motion.div>
+        </div>
+
         <motion.nav
-          className={`section-wrapper ${classes.NavContainer} ${classes.mxAuto}`}
+          className={`section-wrapper ${classes.NavContainer} ${classes.mxAuto}  ${classes.navOnTop}`}
           initial={{ y: -70 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5 }}
@@ -90,16 +93,11 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <Button text={`My Resume`} />
+              <Button text={`Resume`} />
             </li>
           </ul>
         </motion.nav>
       </header>
-      <motion.div
-        className={classes.navDiv}
-      >
-        <NavBlob />
-      </motion.div>
     </>
   );
 };

@@ -35,7 +35,7 @@ const About = () => {
               <div className={classes.links}>
                 <div className={classes.linksText}>
     
-                  <span>My links</span>
+                  <span>Links</span>
                   <AiOutlineArrowRight />
                   <MyLinks />
                 </div>
