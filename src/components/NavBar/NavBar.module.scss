@@ -54,6 +54,7 @@
   padding: 1rem 9.6rem;
   border-bottom-left-radius: 30%;
   border-bottom-right-radius: 30%;
+  max-height: 100px;
 }
 
 header {
@@ -66,8 +67,6 @@ header {
   z-index: 20;
   width: 100vw;
 
-
-  
 }
 
 header a {

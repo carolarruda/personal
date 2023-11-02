@@ -77,6 +77,12 @@ a {
   overflow: hidden;
 }
 
+@media (max-width: 800px) {
+  .section-wrapper {
+    padding: 7.2rem 3.4rem;
+  }
+}
+
 .section-wrapper-phone {
-  padding: 7.2rem 2.4rem;
+  padding: 7.2rem 3.4rem;
 }

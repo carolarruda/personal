@@ -1,5 +1,5 @@
 import Button from "../buttons/Button";
-import classes from "./NavBar.module.scss";
+import classes from "./NavBarPhone.module.scss";
 import { AiOutlineMenu } from "react-icons/ai";
 
 import { useEffect, useState } from "react";
@@ -29,7 +29,9 @@ const NavBarPhone = () => {
 
   return (
     <>
-      <AiOutlineMenu />
+      <div className={classes.iconContainer}>
+        <AiOutlineMenu className={classes.menuIcon} />
+      </div>
     </>
   );
 };
