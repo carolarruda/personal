@@ -1,5 +1,5 @@
-import DropDownHover from "../DropDown/DropDownHover";
 import HomeLogo from "../HomeLogo/HomeLogo";
+import Bloby from "../blobs/Bloby";
 import NavBlob from "../blobs/NavBlob";
 import Button from "../buttons/Button";
 import classes from "./NavBar.module.scss";
@@ -32,11 +32,6 @@ const NavBar = () => {
   return (
     <>
       <header className={classes}>
-        <div className={classes.navWrapper}>
-          <motion.div className={`${classes.navDiv} ${classes.blobWrapper}`}>
-            <NavBlob />
-          </motion.div>
-        </div>
 
         <motion.nav
           className={`section-wrapper ${classes.NavContainer} ${classes.mxAuto}  ${classes.navOnTop}`}
