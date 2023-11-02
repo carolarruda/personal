@@ -37,7 +37,7 @@ const NavBarBigResol = () => {
           }}
           id={selected === "top" ? classes.selected : ""}
         >
-          home
+          Home
         </a>
       </li>
       <li className={classes.grey}>
@@ -48,7 +48,7 @@ const NavBarBigResol = () => {
           }}
           id={selected === "about" ? classes.selected : ""}
         >
-          about
+          About
         </a>
       </li>
 
@@ -60,7 +60,7 @@ const NavBarBigResol = () => {
           }}
           id={selected === "projects" ? classes.selected : ""}
         >
-          projects
+          Projects
         </a>
       </li>
       <li className={classes.grey}>
@@ -71,7 +71,7 @@ const NavBarBigResol = () => {
           }}
           id={selected === "contact" ? classes.selected : ""}
         >
-          contact
+          Contact
         </a>
       </li>
       <li>

@@ -1,36 +1,53 @@
-import Button from "../buttons/Button";
-import classes from "./NavBarPhone.module.scss";
-import { AiOutlineMenu } from "react-icons/ai";
-
-import { useEffect, useState } from "react";
+import { useState } from 'react';
+import classes from './NavBarPhone.module.scss';
+import { AiOutlineMenu } from 'react-icons/ai';
 
 const NavBarPhone = () => {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const sections = document.querySelectorAll(".section-wrapper");
+  const handleMenu = () => {
+    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+  };
 
-    const options = {
-      threshold: 0.3,
-    };
-
-    const callback = (entries: any) => {
-      entries.forEach((entry: any) => {
-        if (entry.isIntersecting) {
-          setSelected(entry.target.id);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(callback, options);
-
-    sections.forEach((section) => observer.observe(section));
-  }, []);
+  const handleItemClick = (item) => {
+    setSelected(item);
+    setMenuOpen(false); // Close the menu when an item is selected
+  };
 
   return (
     <>
-      <div className={classes.iconContainer}>
+      <div onClick={handleMenu} className={classes.iconContainer}>
         <AiOutlineMenu className={classes.menuIcon} />
+      </div>
+      <div className={menuOpen ? classes.menuContainer : classes.closed}>
+        <ul className={classes.NavOptions}>
+          <li className={classes.grey}>
+            <a href="#top" onClick={() => handleItemClick('top')}>
+              Home
+            </a>
+          </li>
+          <li className={classes.grey}>
+            <a href="#about" onClick={() => handleItemClick('about')}>
+              About
+            </a>
+          </li>
+          <li className={classes.grey}>
+            <a href="#projects" onClick={() => handleItemClick('projects')}>
+              Projects
+            </a>
+          </li>
+          <li className={classes.grey}>
+            <a href="#contact" onClick={() => handleItemClick('contact')}>
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" onClick={() => handleItemClick('projects')}>
+              Resume
+            </a>
+          </li>
+        </ul>
       </div>
     </>
   );
