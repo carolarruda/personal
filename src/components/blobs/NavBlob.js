@@ -12,7 +12,7 @@ const NavBlob = () => {
         style={{ borderTop: "5px solid #ddb6a3" }}
       >
         <path
-          d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+          d="M0,0V30C0,90,300,60,600,70S1200,90,1200,30V0Z"
           className="shape-fill"
         ></path>
       </svg>
