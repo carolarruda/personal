@@ -1,54 +1,61 @@
-import { useState } from 'react';
-import classes from './NavBarPhone.module.scss';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { useState } from "react";
+import classes from "./NavBarPhone.module.scss";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const NavBarPhone = () => {
-  const [selected, setSelected] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenu = () => {
-    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+    setMenuOpen((prevState) => !prevState);
   };
 
-  const handleItemClick = (item) => {
-    setSelected(item);
-    setMenuOpen(false); // Close the menu when an item is selected
+  const handleItemClick = () => {
+    setMenuOpen(false);
   };
 
   return (
     <>
-      <div onClick={handleMenu} className={classes.iconContainer}>
-        <AiOutlineMenu className={classes.menuIcon} />
-      </div>
-      <div className={menuOpen ? classes.menuContainer : classes.closed}>
-        <ul className={classes.NavOptions}>
-          <li className={classes.grey}>
-            <a href="#top" onClick={() => handleItemClick('top')}>
-              Home
-            </a>
-          </li>
-          <li className={classes.grey}>
-            <a href="#about" onClick={() => handleItemClick('about')}>
-              About
-            </a>
-          </li>
-          <li className={classes.grey}>
-            <a href="#projects" onClick={() => handleItemClick('projects')}>
-              Projects
-            </a>
-          </li>
-          <li className={classes.grey}>
-            <a href="#contact" onClick={() => handleItemClick('contact')}>
-              Contact
-            </a>
-          </li>
-          <li>
-            <a href="https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" onClick={() => handleItemClick('projects')}>
-              Resume
-            </a>
-          </li>
-        </ul>
-      </div>
+      <button onClick={handleMenu} className={classes.iconContainer}>
+        {menuOpen ? (
+          <AiOutlineClose className={classes.menuIcon} />
+        ) : (
+          <AiOutlineMenu className={classes.menuIcon} />
+        )}
+      </button>
+     
+        <div style={{display: menuOpen ? 'initial' : 'none'}}  className={classes.menuContainer}>
+          <ul className={classes.NavOptions}>
+            <li className={classes.grey}>
+              <a href="#top" onClick={handleItemClick}>
+                Home
+              </a>
+            </li>
+            <li className={classes.grey}>
+              <a href="#about" onClick={handleItemClick}>
+                About
+              </a>
+            </li>
+            <li className={classes.grey}>
+              <a href="#projects" onClick={handleItemClick}>
+                Projects
+              </a>
+            </li>
+            <li className={classes.grey}>
+              <a href="#contact" onClick={handleItemClick}>
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+                onClick={handleItemClick}
+              >
+                Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+ 
     </>
   );
 };

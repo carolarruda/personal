@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import HomeLogo from "../HomeLogo/HomeLogo";
 import classes from "./NavBar.module.scss";
 import { motion } from "framer-motion";
@@ -16,7 +17,7 @@ const NavBar = () => {
   const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
+
 
   const handleResize = () => {
     if (window.innerWidth < 720) {
@@ -49,7 +50,7 @@ const NavBar = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [handleResize]); // Added handleResize as a dependency
+  }, [handleResize]); 
 
   return (
     <header className={classes.NavBar}>
@@ -60,8 +61,8 @@ const NavBar = () => {
         transition={{ duration: 0.5 }}
       >
         <HomeLogo />
-        {isDesktopOrLaptop  && <NavBarBigResol />}
-        {isTabletOrMobile  && <NavBarPhone />}
+        {(isDesktopOrLaptop || isBigScreen)  && <NavBarBigResol />}
+        {(isTabletOrMobile)  && <NavBarPhone />}
       </motion.nav>
     </header>
   );
