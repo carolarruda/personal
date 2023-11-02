@@ -91,6 +91,10 @@ a {
   .section-wrapper {
     padding: 7.2rem 2.4rem;
   }}
+@media (max-width: 468px) {
+  .section-wrapper {
+    padding: 0rem 0rem;
+  }}
 
 
   
