@@ -9,7 +9,7 @@ import { useMediaQuery } from 'react-responsive'
 
 const NavBar = () => {
   const [selected, setSelected] = useState("");
-  const [isMobile, setIsMobile] = useState(false);
+
 
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
@@ -17,15 +17,9 @@ const NavBar = () => {
   const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
 
-  const handleResize = () => {
-    if (window.innerWidth < 720) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
 
   useEffect(() => {
     const sections = document.querySelectorAll(".section-wrapper");
@@ -43,14 +37,9 @@ const NavBar = () => {
     };
 
     const observer = new IntersectionObserver(callback, options);
-    window.addEventListener("resize", handleResize);
-
     sections.forEach((section) => observer.observe(section));
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [handleResize]); 
+  }, []); 
 
   return (
     <header className={classes.NavBar}>
@@ -61,7 +50,7 @@ const NavBar = () => {
         transition={{ duration: 0.5 }}
       >
         <HomeLogo />
-        {(isDesktopOrLaptop || isBigScreen)  && <NavBarBigResol />}
+        {(isDesktopOrLaptop)  && <NavBarBigResol />}
         {(isTabletOrMobile)  && <NavBarPhone />}
       </motion.nav>
     </header>

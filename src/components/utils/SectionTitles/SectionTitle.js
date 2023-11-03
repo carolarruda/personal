@@ -3,13 +3,13 @@
     title: string;
     dir?: "l" | "r";
   }
-const SectionTitle = ( { title, dir}: Props ) => {
+const SectionTitle = ( { title, dir, noLine}: Props ) => {
   return (
     <div
     className={classes.sectionHeader}
     style={{ flexDirection: dir === "r" ? "row" : "row-reverse" }}
   >
-    <div className={classes.line} />
+    <div className={!noLine ? `${classes.line}` : ''} />
     <h3>
      
         <span className={classes.title}>

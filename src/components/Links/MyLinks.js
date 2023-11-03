@@ -1,6 +1,5 @@
 import classes from "./MyLinks.module.scss";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-// import { Link } from 'react-router-dom'
 import { motion } from "framer-motion";
 
 const MyLinks = () => {

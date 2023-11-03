@@ -1,6 +1,8 @@
 import { useState } from "react";
 import classes from "./NavBarPhone.module.scss";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import BackDrop from "../utils/Backdrop/Backdrop";
+import SectionTitle from "../utils/SectionTitles/SectionTitle";
 
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
@@ -16,7 +18,6 @@ const NavBarPhone = () => {
   return (
     <>
       <button
-        
         type="button"
         onClick={handleMenu}
         className={classes.iconContainer}
@@ -28,7 +29,19 @@ const NavBarPhone = () => {
         )}
       </button>
 
-      <div
+      {isOpen && (
+        <>
+          <BackDrop />
+          <div className={classes.menu}>
+            <SectionTitle title={"Home"} dir={"l"} noLine={true} />
+            <SectionTitle title={"About"} dir={"l"} noLine={true} />
+            <SectionTitle title={"Projects"} dir={"l"} noLine={true} />
+            <SectionTitle title={"Contact"} dir={"l"} noLine={true} />
+          </div>
+        </>
+      )}
+
+      {/* <div
         style={{ display: isOpen ? "initial" : "none" }}
         className={classes.menuContainer}
       >
@@ -62,7 +75,7 @@ const NavBarPhone = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </>
   );
 };
