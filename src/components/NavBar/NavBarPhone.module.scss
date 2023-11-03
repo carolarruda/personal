@@ -80,7 +80,7 @@ button span {
 
 .bar{
   top: 3px;
-  background: #000000;
+  background: #373737;
   width: 100%;
   height: 4px;
   transition: all .3s ease-in;
@@ -110,4 +110,20 @@ button span {
 .hamburger.open #bar3{
   background-color: var(--brand2);
   transform: rotate(-45deg) translate(6px, -5px);
+}
+
+.backDrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  height: 100vh;
+  padding: 4.8rem 1.2rem;
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(38px);
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }

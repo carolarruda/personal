@@ -1,6 +1,5 @@
 import { useState } from "react";
 import classes from "./NavBarPhone.module.scss";
-import BackDrop from "../utils/Backdrop/BackDrop";
 import SectionTitle from "../utils/SectionTitles/SectionTitle";
 import { motion } from "framer-motion";
 
@@ -28,14 +27,19 @@ const NavBarPhone = () => {
       >
         <>
           <div id={classes.bar1} className={classes.bar}></div>
-          <div id={classes.bar3} className={classes.bar}></div>
+          <div id={classes.bar2} className={classes.bar}></div>
           <div id={classes.bar3} className={classes.bar}></div>
         </>
       </button>
 
       {isOpen && (
         <>
-          <BackDrop isOpen={isOpen} />
+          <motion.div
+            className={classes.backDrop}
+            initial={{ y: -1000 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8 }}
+          ></motion.div>
 
           <motion.div
             className={classes.menu}
