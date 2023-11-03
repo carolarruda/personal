@@ -12,8 +12,9 @@
   justify-content: center;
   color: var(--background);
   background: var(--background-light);
-  border-radius: 5px;
+
   margin: 1.8rem 0;
+  border-radius: 50%;
 
   span {
     font-size: var(--text-md);
@@ -25,4 +26,29 @@
 
 .pointer {
   cursor: pointer;
+}
+
+.phone {
+  flex-shrink: 0;
+  border-radius: 50%;
+  font-size: var(--text-xl);
+  font-weight: 900;
+  line-height: 1;
+
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+  background: var(--background-light);
+
+  margin: 1.8rem 0;
+
+  span {
+    font-size: var(--text-xl);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--brand2);
+  }
 }

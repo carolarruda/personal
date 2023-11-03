@@ -17,7 +17,7 @@ const Hero = () => {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
       className={classes.heroContainer}>
-        <h1 className={classes.presentation}>
+        <h1 className={isDesktopOrLaptop ? `${classes.presentation}` : `${classes.mediaPresentation}`}>
           Hey there, I&apos;m Carolina<span>.</span>
         </h1>
         <h2 className={classes.subTitle}>
