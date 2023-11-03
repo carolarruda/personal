@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import HomeLogo from "../HomeLogo/HomeLogo";
 import classes from "./NavBar.module.scss";
 import { motion } from "framer-motion";
