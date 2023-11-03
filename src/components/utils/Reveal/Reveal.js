@@ -13,19 +13,19 @@ export const Reveal = ({ children, width = "fit-content" }) => {
       slideControls.start("visible");
       mainControls.start("visible");
     } else {
-      slideControls.start("hidden");
-      mainControls.start("hidden");
+      slideControls.start("visible");
+      mainControls.start("visible");
     }
   }, [isInView, mainControls, slideControls]);
 
   return (
-    <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+    <div ref={ref} style={{ position: "relative", width, overflow: "visible" }}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
           visible: { opacity: 1, y: 0 },
         }}
-        initial="hidden"
+        initial="visible"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
       >
@@ -36,7 +36,7 @@ export const Reveal = ({ children, width = "fit-content" }) => {
           hidden: { left: 0 },
           visible: { left: "100%" },
         }}
-        initial="hidden"
+        initial="visible"
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeIn" }}
         style={{
@@ -45,7 +45,7 @@ export const Reveal = ({ children, width = "fit-content" }) => {
           bottom: 4,
           left: 0,
           right: 0,
-          zIndex: 20,
+
         }}
       />
     </div>

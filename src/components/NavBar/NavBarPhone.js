@@ -1,8 +1,8 @@
 import { useState } from "react";
 import classes from "./NavBarPhone.module.scss";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import BackDrop from "../utils/Backdrop/Backdrop";
+import BackDrop from "../utils/Backdrop/BackDrop";
 import SectionTitle from "../utils/SectionTitles/SectionTitle";
+import { motion } from "framer-motion";
 
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
@@ -20,19 +20,29 @@ const NavBarPhone = () => {
       <button
         type="button"
         onClick={handleMenu}
-        className={classes.iconContainer}
+        className={
+          isOpen
+            ? `${classes.hamburger} ${classes.open}`
+            : `${classes.hamburger}`
+        }
       >
-        {isOpen ? (
-          <AiOutlineClose className={classes.menuIcon} />
-        ) : (
-          <AiOutlineMenu className={classes.menuIcon} />
-        )}
+        <>
+          <div id={classes.bar1} className={classes.bar}></div>
+          <div id={classes.bar3} className={classes.bar}></div>
+          <div id={classes.bar3} className={classes.bar}></div>
+        </>
       </button>
 
       {isOpen && (
         <>
-          <BackDrop />
-          <div className={classes.menu}>
+          <BackDrop isOpen={isOpen} />
+
+          <motion.div
+            className={classes.menu}
+            initial={{ y: -1000 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <a href="#top" onClick={handleItemClick}>
               <SectionTitle title={"Home"} dir={"l"} noLine={true} />
             </a>
@@ -52,7 +62,7 @@ const NavBarPhone = () => {
             >
               <SectionTitle title={"Resume"} dir={"l"} noLine={true} />{" "}
             </a>
-          </div>
+          </motion.div>
         </>
       )}
     </>

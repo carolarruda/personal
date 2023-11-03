@@ -1,7 +1,6 @@
 import classes from "./Contact.module.scss";
 import * as React from "react";
 import { AiFillMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import MyLinks from "../Links/MyLinks";
 
 const Contact = () => {
   return (
