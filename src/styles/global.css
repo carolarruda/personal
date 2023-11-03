@@ -27,6 +27,7 @@
   --text-xl: 5.6rem;
   --text-xxl: 7.6rem;
   --text-2xl: 9.6rem;
+  --text-8xl: 11.6rem;
 }
 
 * {
@@ -78,7 +79,7 @@ a {
   overflow: hidden;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .section-wrapper {
     padding: 7.2rem 3.4rem;
   }

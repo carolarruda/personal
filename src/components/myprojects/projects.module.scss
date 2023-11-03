@@ -8,6 +8,10 @@
   }
 }
 
+.media {
+  grid-template-columns: 1fr;
+}
+
 .projectImage {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -18,7 +22,6 @@
   overflow: hidden;
   object-fit: cover;
 
-
   img {
     width: 100%;
     position: absolute;
@@ -27,7 +30,7 @@
     translate: -50% 20%;
 
     transition: 0.25s all;
-    object-fit:contain;
+    object-fit: contain;
     border-radius: 0.4rem;
   }
 }
@@ -89,10 +92,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.2rem;
-font-weight: 500;
+  font-weight: 500;
   font-size: var(--text-xs);
   color: var(--brand2);
   margin: 0.8rem 0;
 }
-
-

@@ -1,15 +1,21 @@
 import { Project } from "./Project";
-import styles from "./projects.module.scss";
+import classes from "./projects.module.scss";
 
 import carls from "../../images/Carls/Carls.png";
 import movieDB from "../../images/MovieDB/VisualsDataBase.png";
 import spot2 from "../../images/Spotify/Spot2.png";
 import ecommerce from "../../images/ECommerce/EcommerceVisuals.png";
+import { useMediaQuery } from "react-responsive";
 
 const Projects = () => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
   return (
-    <section className="section-wrapper" id="projects">
-      <div className={styles.projects}>
+    <section className={isDesktopOrLaptop ? `section-wrapper` : `section-wrapper-phone `} id="projects">
+      <div 
+       className={isDesktopOrLaptop ?  `${classes.projects}` : ` ${classes.projects} ${classes.media}`}
+>
         {projects.map((project) => {
           return <Project key={project.title} {...project} />;
         })}
