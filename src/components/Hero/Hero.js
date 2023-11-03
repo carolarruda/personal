@@ -1,16 +1,23 @@
 import classes from "./Hero.module.scss";
 import Button from "../buttons/Button";
 import {motion } from 'framer-motion'
+import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+
   return (
-    <section className={`section-wrapper ${classes.hero} curve`}>
+    <section 
+    className={isDesktopOrLaptop ? `section-wrapper ${classes.hero} curve` : `section-wrapper-phone  ${classes.heroMedia} `} 
+    >
       <motion.div
                 initial={{ y: -70 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
       className={classes.heroContainer}>
-        <h1 className={classes.presentation}>
+        <h1 className={isDesktopOrLaptop ? `${classes.presentation}` : `${classes.mediaPresentation}`}>
           Hey there, I&apos;m Carolina<span>.</span>
         </h1>
         <h2 className={classes.subTitle}>

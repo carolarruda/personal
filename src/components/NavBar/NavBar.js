@@ -43,7 +43,7 @@ const NavBar = () => {
   return (
     <header className={classes.NavBar}>
       <motion.nav
-        className={isDesktopOrLaptop ? `${classes.NavContainer} ${classes.mxAuto} ${classes.navOnTop}` : `${classes.NavContainer} ${classes.navOnTop}` }
+        className={isDesktopOrLaptop ? `${classes.NavContainer} ${classes.mxAuto} ${classes.navOnTop}` : `${classes.NavContainer} ${classes.navOnTop} ${classes.padding}` }
         initial={{ y: -70 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}

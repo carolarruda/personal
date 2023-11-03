@@ -13,11 +13,17 @@
   }
 }
 
+.mediaPresentation {
+  font-size: var(--text-xxl);
+}
+
 .hero {
     padding: 9.6rem;
-  @media (max-width: 768px) {
-    margin-bottom: 4.8rem;
-  }
+
+}
+
+.heroMedia {
+  margin-bottom: 4.8rem;
 }
 
 .copyWrapper {
@@ -68,10 +74,3 @@
   height: 100%;
 }
 
-
-
-@media (prefers-reduced-motion: reduce) {
-  .btnDonate {
-    transition: linear;
-  }
-}
