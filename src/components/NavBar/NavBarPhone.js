@@ -16,7 +16,8 @@ const NavBarPhone = () => {
 
   return (
     <>
-      <button
+    <div className={classes.container}>
+    <button
         type="button"
         onClick={handleMenu}
         className={
@@ -25,12 +26,14 @@ const NavBarPhone = () => {
             : `${classes.hamburger}`
         }
       >
-        <>
+     
           <div id={classes.bar1} className={classes.bar}></div>
           <div id={classes.bar2} className={classes.bar}></div>
           <div id={classes.bar3} className={classes.bar}></div>
-        </>
+   
       </button>
+    </div>
+    
 
       {isOpen && (
         <>

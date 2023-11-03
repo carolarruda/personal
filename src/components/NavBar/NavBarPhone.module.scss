@@ -1,10 +1,3 @@
-.menuIcon {
-  width: 35px;
-  height: 35px;
-  color: var(--background-opaque);
-
-  z-index: 10000;
-}
 
 .menu {
   display: grid;
@@ -18,48 +11,6 @@
   cursor: auto;
 }
 
-.iconContainer {
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  position: absolute;
-  right: 7.2rem;
-  margin: 1.8rem 0;
-  background-color: transparent;
-}
-
-button,
-button:focus,
-button:active {
-  border: none;
-  outline: none;
-  padding: 0;
-  color: black;
-}
-button span {
-  position: relative;
-}
-.NavOptions {
-  display: grid;
-  list-style: none;
-  position: relative;
-  top: 1200px;
-  right: 150px;
-  height: 100vh;
-  width: 100vw;
-  z-index: 1000;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 1rem;
-  backdrop-filter: blur(15px);
-  background-color: rgba(218, 183, 165, 0.6);
-}
-
-.NavOptions li {
-  font-size: 2.2rem;
-}
 
 
 .hamburger, .bar{
@@ -68,7 +19,7 @@ button span {
 
 .hamburger{
   display: block;
-  top: 5%;
+  top: 3.4rem;
   left: 95%;
   width: 30px;
   height: 30px;
@@ -79,7 +30,7 @@ button span {
 }
 
 .bar{
-  top: 3px;
+  top: 017px;
   background: #373737;
   width: 100%;
   height: 4px;
@@ -87,11 +38,11 @@ button span {
 }
 
 #bar2{
-  top: 11px;
+  top: 25px;
 }
 
 #bar3{
-  top: 19px;
+  top: 33px;
 }
 
 .navigation.active{

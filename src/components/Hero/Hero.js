@@ -14,7 +14,7 @@ const Hero = () => {
           Hey there, I&apos;m Carolina<span>.</span>
         </h1>
         <h2 className={classes.subTitle}>
-          I&apos;m a <span>Full Stack Developer </span>based in beautiful
+          I&apos;m a <span>Full Stack Developer </span>based in
           Gothenburg, Sweden
         </h2>
         <p className={classes.aboutCopy}>
