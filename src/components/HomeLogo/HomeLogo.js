@@ -1,6 +1,7 @@
 import classes from "./HomeLogo.module.scss";
 import { useMediaQuery } from "react-responsive";
 
+
 const HomeLogo = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
@@ -15,6 +16,8 @@ const HomeLogo = () => {
     >
       C<span>.</span>
     </span>
+
+
   );
 };
 

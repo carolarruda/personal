@@ -1,7 +1,7 @@
 .logo {
   flex-shrink: 0;
 
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   font-weight: 900;
   line-height: 1;
 
@@ -10,14 +10,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--background);
-  background: var(--background-light);
+  color: var(--background-light);
+  background: #dab7a5;
 
   margin: 1.8rem 0;
-  border-radius: 50%;
+  border-radius: 10px;
 
   span {
-    font-size: var(--text-md);
+    font-size: var(--text-xl);
     font-weight: 900;
     line-height: 1;
     color: var(--brand2);
@@ -30,20 +30,18 @@
 
 .phone {
   flex-shrink: 0;
-  border-radius: 50%;
+  border-radius: 10px;
   font-size: var(--text-xl);
   font-weight: 900;
   line-height: 1;
 
-  width: 100px;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--background);
-  background: var(--background-light);
-
+  color: var(--background-light);
+  background: #dab7a5;
   margin: 1.8rem 0;
+
 
   span {
     font-size: var(--text-xl);
@@ -52,3 +50,4 @@
     color: var(--brand2);
   }
 }
+
