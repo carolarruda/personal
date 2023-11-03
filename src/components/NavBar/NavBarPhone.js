@@ -33,49 +33,28 @@ const NavBarPhone = () => {
         <>
           <BackDrop />
           <div className={classes.menu}>
-            <SectionTitle title={"Home"} dir={"l"} noLine={true} />
-            <SectionTitle title={"About"} dir={"l"} noLine={true} />
-            <SectionTitle title={"Projects"} dir={"l"} noLine={true} />
-            <SectionTitle title={"Contact"} dir={"l"} noLine={true} />
-          </div>
-        </>
-      )}
-
-      {/* <div
-        style={{ display: isOpen ? "initial" : "none" }}
-        className={classes.menuContainer}
-      >
-        <ul className={classes.NavOptions}>
-          <li className={classes.grey}>
             <a href="#top" onClick={handleItemClick}>
-              Home
+              <SectionTitle title={"Home"} dir={"l"} noLine={true} />
             </a>
-          </li>
-          <li className={classes.grey}>
             <a href="#about" onClick={handleItemClick}>
-              About
+              <SectionTitle title={"About"} dir={"l"} noLine={true} />
             </a>
-          </li>
-          <li className={classes.grey}>
             <a href="#projects" onClick={handleItemClick}>
-              Projects
+              <SectionTitle title={"Projects"} dir={"l"} noLine={true} />
             </a>
-          </li>
-          <li className={classes.grey}>
             <a href="#contact" onClick={handleItemClick}>
-              Contact
+              <SectionTitle title={"Contact"} dir={"l"} noLine={true} />
             </a>
-          </li>
-          <li>
+
             <a
               href="https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
               onClick={handleItemClick}
             >
-              Resume
+              <SectionTitle title={"Resume"} dir={"l"} noLine={true} />{" "}
             </a>
-          </li>
-        </ul>
-      </div> */}
+          </div>
+        </>
+      )}
     </>
   );
 };
