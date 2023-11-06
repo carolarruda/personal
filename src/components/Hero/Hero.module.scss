@@ -75,12 +75,12 @@
   width: 100%;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 320px) {
   .heroContainer {
     min-height: 70vh;
   }
   .presentation {
-    font-size: 16rem;
+    font-size: var(--text-bigger);
   
     font-weight: 800;
     align-self: end;
@@ -89,7 +89,7 @@
   }
 
   .subTitle {
-    font-size: var(--text-xxl);
+    font-size: var(--text-xl);
     margin-top: 5rem;
   }
   .aboutCopy {
@@ -98,7 +98,11 @@
   }
 
   .btnContainer {
+    margin-top: 200px;
     display: grid;
+    justify-content: center;
   }
 
 }
+
+

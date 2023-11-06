@@ -43,14 +43,19 @@
   outline: none;
 }
 
-@media (min-width: 375px) {
+/* For phone view */
+@media (max-width: 1224px) {
   .btnViewProjects {
-    align-self: center;
-    justify-self: center;
-    min-width: 200px;
-    height: auto;
-    font-size: var(--text-lg);
-    margin-top: 100px;
+    padding: 1em 1.6em;
+    min-width: 140px;
+    height: auto; 
+    font-size: var(--text-md);
 
+    
   }
 }
+
+
+
+
+
