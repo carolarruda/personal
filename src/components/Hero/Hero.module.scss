@@ -15,11 +15,11 @@
 
 .mediaPresentation {
   font-size: var(--text-8xl);
+
 }
 
 .hero {
-    padding: 9.6rem;
-
+  padding: 9.6rem;
 }
 
 .heroMedia {
@@ -42,8 +42,11 @@
     color: var(--brand);
   }
 
+  @media (max-width: 480px) {
+    font-size: var(--text-2xl);
+  }
   @media (max-width: 768px) {
-    font-size: var(--text-xl);
+    font-size: var(--text-2xl);
   }
 }
 
@@ -61,7 +64,6 @@
 
 .aboutCopy {
   margin: 2.4rem 0;
-  max-width: 700px;
   font-weight: 400;
 }
 
@@ -71,12 +73,32 @@
   left: 800px;
   z-index: -1;
   width: 100%;
-  height: 100%;
 }
 
-@media (max-width: 500px) {
-  .section-wrapper {
-  font-size: var(--text-2xl);
+@media (min-width: 450px) {
+  .heroContainer {
+    min-height: 70vh;
   }
-}
+  .presentation {
+    font-size: 16rem;
+  
+    font-weight: 800;
+    align-self: end;
+    height: fit-content;
+    margin-top: 20rem;
+  }
 
+  .subTitle {
+    font-size: var(--text-xxl);
+    margin-top: 5rem;
+  }
+  .aboutCopy {
+    font-size: var(--text-lg);
+    margin-top: 5rem;
+  }
+
+  .btnContainer {
+    display: grid;
+  }
+
+}
