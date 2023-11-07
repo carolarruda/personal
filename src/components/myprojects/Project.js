@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
 import styles from "./projects.module.scss";
+import { useMediaQuery } from "react-responsive";
 
 export const Project = ({
   modalContent,
@@ -16,9 +17,17 @@ export const Project = ({
   const [hovered, setHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const controls = useAnimation();
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
+ 
+
 
   useEffect(() => {
     if (isInView) {
@@ -51,7 +60,7 @@ export const Project = ({
             src={imgSrc}
             alt={title}
             style={{
-              transform: hovered ? "scale(1.15)" : "",
+              transform: hovered && isDesktopOrLaptop ? "scale(1.15)" : "",
        
             }}
           />
