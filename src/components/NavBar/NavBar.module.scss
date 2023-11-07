@@ -10,6 +10,7 @@
   margin-right: auto;
   background-color: var(--container-pastel1);
   padding: 0rem 9.6rem;
+
 }
 
  .NavOptions {
@@ -77,7 +78,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 2000000;
 }
 
 header a {
