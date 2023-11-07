@@ -1,34 +1,15 @@
-.heroContainer {
-  min-height: 600px;
-}
-
-.presentation {
-  font-size: var(--text-2xl);
-  font-weight: 800;
-  span {
-    font-size: var(--text-2xl);
-    font-weight: 900;
-    line-height: 1;
-    color: var(--brand2);
-  }
-}
-
-.mediaPresentation {
-  font-size: var(--text-8xl);
-
-}
-
 .hero {
-  padding: 9.6rem;
-}
+  margin-bottom: 9.6rem;
 
-.heroMedia {
-  margin-bottom: 4.8rem;
+  @media (max-width: 768px) {
+    margin-bottom: 4.8rem;
+  }
 }
 
 .copyWrapper {
   position: relative;
   z-index: 10;
+
   width: fit-content;
   margin: 4.8rem 0;
 }
@@ -42,11 +23,8 @@
     color: var(--brand);
   }
 
-  @media (max-width: 480px) {
-    font-size: var(--text-2xl);
-  }
   @media (max-width: 768px) {
-    font-size: var(--text-2xl);
+    font-size: var(--text-xl);
   }
 }
 
@@ -58,51 +36,12 @@
 
   span {
     font-weight: bold;
-    color: var(--brand2);
+    color: var(--brand);
   }
 }
 
 .aboutCopy {
   margin: 2.4rem 0;
+  max-width: 700px;
   font-weight: 400;
 }
-
-.heroBackground {
-  position: absolute;
-  top: 0;
-  left: 800px;
-  z-index: -1;
-  width: 100%;
-}
-
-@media (min-width: 320px) {
-  .heroContainer {
-    min-height: 70vh;
-  }
-  .presentation {
-    font-size: var(--text-bigger);
-  
-    font-weight: 800;
-    align-self: end;
-    height: fit-content;
-    margin-top: 20rem;
-  }
-
-  .subTitle {
-    font-size: var(--text-xl);
-    margin-top: 5rem;
-  }
-  .aboutCopy {
-    font-size: var(--text-lg);
-    margin-top: 5rem;
-  }
-
-  .btnContainer {
-    margin-top: 200px;
-    display: grid;
-    justify-content: center;
-  }
-
-}
-
-

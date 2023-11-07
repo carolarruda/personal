@@ -3,7 +3,7 @@ import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
 import ProjectsContainer from "../components/Projects/ProjectsContainer";
 import Contact from "../components/Contact/Contact";
-import Test from "../components/Test/Test";
+
 
 
 

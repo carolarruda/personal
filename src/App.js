@@ -1,9 +1,9 @@
-import "./styles/global.css";
-import Main from './pages/Main'
+import "./index.css";
+import Main from "./pages/Main";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Main />
     </div>
   );
