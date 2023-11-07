@@ -48,23 +48,23 @@ const NavBarPhone = () => {
             transition={{ duration: 0.8 }}
           >
             <a href="#top" onClick={handleItemClick}>
-              <SectionTitle title={"Home"} dir={"l"} noLine={true} />
+              <SectionTitle title={"Home"} dir={"l"} noLine={true} menu={true}/>
             </a>
             <a href="#about" onClick={handleItemClick}>
-              <SectionTitle title={"About"} dir={"l"} noLine={true} />
+              <SectionTitle title={"About"} dir={"l"} noLine={true} menu={true}/>
             </a>
             <a href="#projects" onClick={handleItemClick}>
-              <SectionTitle title={"Projects"} dir={"l"} noLine={true} />
+              <SectionTitle title={"Projects"} dir={"l"} noLine={true} menu={true}/>
             </a>
             <a href="#contact" onClick={handleItemClick}>
-              <SectionTitle title={"Contact"} dir={"l"} noLine={true} />
+              <SectionTitle title={"Contact"} dir={"l"} noLine={true} menu={true}/>
             </a>
 
             <a
               href="https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
               onClick={handleItemClick}
             >
-              <SectionTitle title={"Resume"} dir={"l"} noLine={true} menu={'menu'}/>{" "}
+              <SectionTitle title={"Resume"} dir={"l"} noLine={true} menu={true}/>{" "}
             </a>
           </motion.div>
         </>

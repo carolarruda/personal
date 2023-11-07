@@ -10,7 +10,7 @@ const SectionTitle = ( { title, dir, noLine, menu}) => {
     <div className={!noLine ? `${classes.line}` : ''}  />
     <h3 >
      
-        <span  className={classes.title} id={`${classes.menu}`}>
+        <span  className={classes.title} id={menu ?`${classes.menuOpts}` : `${classes.title}`}>
           {title}
           <span>.</span>
         </span>

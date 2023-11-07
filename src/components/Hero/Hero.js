@@ -1,12 +1,8 @@
 import classes from "./Hero.module.scss";
 import Button from "../buttons/Button";
-import { motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
-  });
+
 
   return (
     <section className={`section-wrapper ${classes.hero}`}>
@@ -32,6 +28,7 @@ const Hero = () => {
           />
         </div>
       </div>
+
     </section>
   );
 };

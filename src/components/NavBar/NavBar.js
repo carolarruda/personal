@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import HomeLogo from "../HomeLogo/HomeLogo";
 import classes from "./NavBar.module.scss";
 import { motion } from "framer-motion";
@@ -5,7 +6,6 @@ import { useEffect, useState } from "react";
 import NavBarBigResol from "./NavBarBigResol copy";
 import NavBarPhone from "./NavBarPhone";
 import { useMediaQuery } from "react-responsive";
-import Bloby from "../blobs/Bloby";
 import NavBlob from "../blobs/NavBlob";
 
 const NavBar = () => {
