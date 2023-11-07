@@ -12,8 +12,8 @@ const MyLinks = () => {
       >
         <a
           href="https://www.linkedin.com/in/carolinacalouroarruda"
-          target="_blank"
-          rel="noreferrer"
+          target="_blank noreferrer"
+
         >
           <AiFillLinkedin size="3rem" />
         </a>
@@ -26,8 +26,7 @@ const MyLinks = () => {
       >
         <a
           href="https://github.com/carolarruda"
-          target="_blank"
-          rel="noreferrer"
+          target="_blank noreferrer"
         >
           <AiFillGithub size="3rem" />
         </a>

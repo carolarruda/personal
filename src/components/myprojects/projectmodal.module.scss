@@ -47,7 +47,7 @@
   gap: 1.2rem;
 
   font-size: var(--text-xs);
-  color: var(--brand2);
+  color: var(--brand);
   font-weight: 600;
 
   margin: 0.2rem 0 2.4rem;
@@ -58,6 +58,18 @@
   flex-direction: column;
   gap: 1.2rem;
   font-size: var(--text-xs);
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+    font-size: var(--text-xxs);
+    color: var(--brand);
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .modalFooter {
@@ -70,7 +82,7 @@
   margin-bottom: 0.8rem;
 
   span {
-    color: var(--brand2);
+    color: var(--brand);
     font-weight: 600;
   }
 }
@@ -90,7 +102,7 @@
     gap: 0.4rem;
     font-weight: 600;
     font-size: var(--text-xs);
-    color: var(--brand2);
+    color: var(--brand);
   }
 
   a:hover {

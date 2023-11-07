@@ -16,24 +16,21 @@ const NavBarPhone = () => {
 
   return (
     <>
-    <div className={classes.container}>
-    <button
-        type="button"
-        onClick={handleMenu}
-        className={
-          isOpen
-            ? `${classes.hamburger} ${classes.open}`
-            : `${classes.hamburger}`
-        }
-      >
-     
+      <div className={classes.container}>
+        <button
+          type="button"
+          onClick={handleMenu}
+          className={
+            isOpen
+              ? `${classes.hamburger} ${classes.open}`
+              : `${classes.hamburger}`
+          }
+        >
           <div id={classes.bar1} className={classes.bar}></div>
           <div id={classes.bar2} className={classes.bar}></div>
           <div id={classes.bar3} className={classes.bar}></div>
-   
-      </button>
-    </div>
-    
+        </button>
+      </div>
 
       {isOpen && (
         <>

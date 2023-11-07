@@ -1,14 +1,14 @@
 .about {
   display: grid;
-  grid-template-columns: 1fr 450px;
+  grid-template-columns: 1fr 300px;
   gap: 2.4rem;
 
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
 }
 
-.media {
-  grid-template-columns: 1fr;
 
-}
 
 .sec {
   background-color: #dab7a5;
@@ -33,11 +33,11 @@
   gap: 0.8rem;
   font-size: var(--text-sm);
   font-weight: 600;
-  color: var(--brand2);
+  color: var(--brand);
 }
 
 .highlightFirstLetter:first-letter {
-  background: var(--brand2);
+  background: var(--brand);
   padding: 1rem;
   border-radius: 0.4rem;
   color: var(--background);

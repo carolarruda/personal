@@ -2,12 +2,12 @@
   cursor: pointer;
   padding: 0.9em 1.4em;
   min-width: 120px;
-  height: 50px;
+  height: auto;
   font-size: var(--text-xxs);
   font-weight: 500;
   transition: 0.5s;
   background-size: 280% auto;
-  background-color: var(--brand2);
+  background-color: var(--brand);
   border: none;
   border-radius: 40px;
   color: hsla(360 100% 100% / 1);
@@ -20,41 +20,6 @@
 .btnViewProjects:is(:focus, :focus-visible, :active) {
   outline: none;
 }
-.btnResume {
-  cursor: pointer;
-  padding: 0.9em 1.4em;
-  min-width: 120px;
-  height: 50px;
-  font-size: var(--text-xxs);
-  font-weight: 500;
-  transition: 0.5s;
-  background-size: 280% auto;
-  background-color: var(--brand2);
-  border: none;
-  border-radius: 40px;
-  color: hsla(360 100% 100% / 1);
-}
-
-.btnResume:hover {
-  background-color: rgb(98, 32, 47);
-}
-
-.btnResume:is(:focus, :focus-visible, :active) {
-  outline: none;
-}
-
-/* For phone view */
-@media (max-width: 1224px) {
-  .btnViewProjects {
-    padding: 1em 1.6em;
-    min-width: 140px;
-    height: auto; 
-    font-size: var(--text-lg);
-
-    
-  }
-}
-
 
 
 

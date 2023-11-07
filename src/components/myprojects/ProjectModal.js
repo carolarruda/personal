@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 
-import { AiFillGithub, AiOutlineExport, AiOutlineInfoCircle } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiOutlineExport,
+  AiOutlineInfoCircle,
+} from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 
 export const ProjectModal = ({
@@ -16,27 +20,22 @@ export const ProjectModal = ({
   code,
   tech,
 }) => {
-
-  const [disabledProject, setDisabledProject]= useState('')
-  const [disabledCode, setDisabledCode]= useState('')
+  const [disabledProject, setDisabledProject] = useState("");
+  const [disabledCode, setDisabledCode] = useState("");
 
   useEffect(() => {
     const body = document.querySelector("body");
 
-    if(!projectLink){
-      setDisabledProject(true)
-    }
-
-    else if(!code){
-      setDisabledCode(true)
-    }
-
-   else if (isOpen) {
+    if (!projectLink) {
+      setDisabledProject(true);
+    } else if (!code) {
+      setDisabledCode(true);
+    } else if (isOpen) {
       body.style.overflowY = "hidden";
     } else {
       body.style.overflowY = "scroll";
     }
-  }, [isOpen]);
+  }, [isOpen, code, projectLink]);
 
   const content = (
     <div className={classes.modal} onClick={() => setIsOpen(false)}>
@@ -50,32 +49,39 @@ export const ProjectModal = ({
         onClick={(e) => e.stopPropagation()}
         className={classes.modalCard}
       >
-        <img
-          className={classes.modalImage}
-          src={imgSrc}
-          alt={title}
-        />
+        <img className={classes.modalImage} src={imgSrc} alt={title} />
         <div className={classes.modalContent}>
           <h4>{title}</h4>
           <div className={classes.modalTech}>{tech.join(" - ")}</div>
 
-          <div className={classes.suppliedContent}>{modalContent}</div>
+          <div className={classes.suppliedContent}>
+            {modalContent}{" "}
+            <a target="_blank" rel="nofollow noreferrer" href={projectLink}>
+              <AiOutlineInfoCircle /> detailed overview
+            </a>
+          </div>
 
           <div className={classes.modalFooter}>
             <p className={classes.linksText}>
               Project Links<span>.</span>
             </p>
             <div className={classes.links}>
-              <a target="_blank" rel="nofollow" href={code} className={disabledCode ? classes.disabled : ""}>
+              <a
+                target="_blank"
+                rel="nofollow noreferrer"
+                href={code}
+                className={disabledCode ? classes.disabled : ""}
+              >
                 <AiFillGithub /> source code
               </a>
-              <a target="_blank" rel="nofollow" href={projectLink} className={disabledProject ? classes.disabled : ""}>
+              <a
+                target="_blank"
+                rel="nofollow noreferrer"
+                href={projectLink}
+                className={disabledProject ? classes.disabled : ""}
+              >
                 <AiOutlineExport /> live project
               </a>
-              <a target="_blank" rel="nofollow" href={projectLink}>
-                <AiOutlineInfoCircle /> detailed overview
-              </a>
-            
             </div>
           </div>
         </div>

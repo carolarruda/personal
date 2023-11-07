@@ -52,7 +52,7 @@ right: 3.4rem;
 }
 
 .hamburger.open #bar1{
-  background-color: var(--brand2);
+  background-color: var(--brand);
   transform: rotate(45deg) translate(6px, 5px);
 }
 
@@ -61,7 +61,7 @@ right: 3.4rem;
 }
 
 .hamburger.open #bar3{
-  background-color: var(--brand2);
+  background-color: var(--brand);
   transform: rotate(-45deg) translate(6px, -5px);
 }
 

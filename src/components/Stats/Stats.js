@@ -7,7 +7,7 @@ const Stats = () => {
     <div className={classes.stats}>
       <div className={classes.statColumn}>
         <h4>
-          <AiFillCode size="2.4rem" color="var(--brand2)" />
+          <AiFillCode size="2.4rem" color="var(--brand)" />
           <span>Skills</span>
         </h4>
         <Reveal>

@@ -18,7 +18,7 @@ const About = () => {
       <div>
         <Bloby />
       </div>
-      <section className={isDesktopOrLaptop ? `section-wrapper` : `section-wrapper-phone`} id="about">
+      <section className='section-wrapper' id="about">
         <SectionTitle title={"About"} dir={"l"} />
         <div className={isDesktopOrLaptop? `${classes.about}` : `${classes.about} ${classes.media}`}>
           <div>

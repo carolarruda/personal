@@ -1,7 +1,7 @@
 import classes from "./Button.module.scss";
 
-const Button = ({ text, type, media }) => {
-  console.log(media);
+const Button = ({ text, type }) => {
+
   return (
     <button
       onClick={() => {
@@ -12,11 +12,11 @@ const Button = ({ text, type, media }) => {
             );
       }}
       className={
-        type === "projects"
-          ? `${classes.btnViewProjects}`
-          : `${classes.btnResume}`
-      }
-      id={media}
+     
+   classes.btnViewProjects}
+      
+      
+
     >
       {text}
     </button>

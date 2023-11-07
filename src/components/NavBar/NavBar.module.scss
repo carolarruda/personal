@@ -45,11 +45,11 @@
   color: var(--text-light);
 }
 .NavOptions:hover a {
-  color: var(--brand2);
+  color: var(--brand);
 }
 
 #selected {
-  color: var(--brand3);
+  color: var(--brand);
 }
 
 .NavOptions:hover .selected {
@@ -89,7 +89,7 @@ header a {
   position: absolute;
   width: 50%;
   height: 2px;
-  background: var(--brand2);
+  background: var(--brand);
   bottom: 0;
   left: 25%;
   transform: scaleX(0);
@@ -143,7 +143,7 @@ svg path .shapeFill {
   border-radius: 10px;
   overflow: hidden;
   background: transparent;
-  color: var(--brand2);
+  color: var(--brand);
   transition: background 0.8s, color 0.6s;
 }
 
@@ -154,7 +154,7 @@ svg path .shapeFill {
 }
 
 .btn:hover {
-  background: var(--brand2);
+  background: var(--brand);
   color: black;
 }
 
