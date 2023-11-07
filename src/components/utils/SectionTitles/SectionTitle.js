@@ -1,18 +1,16 @@
  import classes from './SectionTitle.module.scss'
- interface Props {
-    title: string;
-    dir?: "l" | "r";
-  }
-const SectionTitle = ( { title, dir, noLine}: Props ) => {
+
+const SectionTitle = ( { title, dir, noLine, menu}) => {
   return (
     <div
     className={classes.sectionHeader}
     style={{ flexDirection: dir === "r" ? "row" : "row-reverse" }}
+    
   >
-    <div className={!noLine ? `${classes.line}` : ''} />
-    <h3>
+    <div className={!noLine ? `${classes.line}` : ''}  />
+    <h3 >
      
-        <span className={classes.title}>
+        <span  className={classes.title} id={`${classes.menu}`}>
           {title}
           <span>.</span>
         </span>

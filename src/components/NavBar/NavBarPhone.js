@@ -64,7 +64,7 @@ const NavBarPhone = () => {
               href="https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
               onClick={handleItemClick}
             >
-              <SectionTitle title={"Resume"} dir={"l"} noLine={true} />{" "}
+              <SectionTitle title={"Resume"} dir={"l"} noLine={true} menu={'menu'}/>{" "}
             </a>
           </motion.div>
         </>

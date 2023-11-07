@@ -8,7 +8,7 @@
   max-height: 90px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #dab7a5;
+  background-color: #c7b8a9;
   padding: 0rem 9.6rem;
 }
 
@@ -27,6 +27,9 @@
   align-items: center;
   margin-top: 0;
   padding-top: 0;
+
+
+  
 }
 
 .padding {
@@ -59,11 +62,13 @@
 .mxAuto {
   margin-left: auto;
   margin-right: auto;
-  background-color: #dab7a5;
+
   padding: 1rem 9.6rem;
 
   max-height: 100px;
 }
+
+
 
 header {
   box-sizing: border-box;
@@ -197,3 +202,13 @@ svg path .shapeFill {
 .blobWrapper svg path {
   max-height: 80px;
 }
+
+
+.blob svg {
+  position: relative;
+  display: block;
+  width: calc(114% + 1.3px);
+  height: 30px;
+  transform: rotateY(180deg);
+}
+

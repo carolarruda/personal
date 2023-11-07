@@ -13,8 +13,8 @@ const NavBarBigResol = () => {
       threshold: 0.3,
     };
 
-    const callback = (entries: any) => {
-      entries.forEach((entry: any) => {
+    const callback = (entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setSelected(entry.target.id);
         }

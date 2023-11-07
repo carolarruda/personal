@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: center;
   color: var(--background-light);
-  background: #dab7a5;
 
   margin: 1.8rem 0;
   border-radius: 10px;
@@ -39,9 +38,8 @@
   align-items: center;
   justify-content: center;
   color: var(--background-light);
-  background: #dab7a5;
-  margin: 1.8rem 0;
 
+  margin: 1.8rem 0;
 
   span {
     font-size: var(--text-xl);
@@ -50,4 +48,3 @@
     color: var(--brand);
   }
 }
-
