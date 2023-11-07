@@ -199,16 +199,16 @@ svg path .shapeFill {
   z-index: 1;
 }
 
-.blobWrapper svg path {
-  max-height: 80px;
+.blob {
+  max-width: 100vw;
 }
 
 
 .blob svg {
   position: relative;
   display: block;
-  width: calc(114% + 1.3px);
-  height: 30px;
+  width: 100%;
+  height: 35px;
   transform: rotateY(180deg);
 }
 
