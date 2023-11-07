@@ -1,3 +1,19 @@
+.sec {
+  background-color: #d7d4db;
+  overflow: hidden;
+}
+
+.CS {
+  background-color: #dab7a5;
+}
+
+.CS svg {
+  position: relative;
+  display: block;
+  width: calc(190% + 1.3px);
+  height: 158px;
+}
+
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -7,7 +23,6 @@
     grid-template-columns: 1fr;
   }
 }
-
 
 .projectImage {
   width: 100%;
@@ -25,7 +40,6 @@
     bottom: 0;
     left: 50%;
     translate: -50% 20%;
-
     transition: 0.25s all;
     object-fit: contain;
     border-radius: 0.4rem;
@@ -45,7 +59,6 @@
     font-weight: bold;
     font-size: var(--text-md);
     flex-shrink: 0;
-
     max-width: calc(100% - 150px);
   }
 

@@ -16,8 +16,14 @@
 
 
   --brand: rgb(149, 50, 72);
-  --brand3: rgb(149, 50, 72);
-  --brand4: rgb(136, 48, 66);
+  --brand2: rgb(225, 75, 108);
+
+  /* container pallete */
+  --container-pastel1: rgb(176, 165, 165);
+  --container-pastel2: rgb(227, 213, 213);
+  --container-pastel3: rgb(218, 183, 165);
+  --container-pastel4: rgb(215, 212, 219);
+  --container-pastel5: rgb(184, 208, 223);
 
   --text-xxs: 1.2rem;
   --text-xs: 1.6rem;

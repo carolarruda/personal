@@ -1,21 +1,27 @@
 import { Project } from "./Project";
 import classes from "./projects.module.scss";
-
 import carls from "../../images/Carls/Carls.png";
 import movieDB from "../../images/MovieDB/VisualsDataBase.png";
 import spot2 from "../../images/Spotify/Spot2.png";
 import ecommerce from "../../images/ECommerce/EcommerceVisuals.png";
+import ProjectBlob from "../blobs/ProjectBlob";
+import SectionTitle from "../utils/SectionTitles/SectionTitle";
 
 const Projects = () => {
-
   return (
-    <section className='section-wrapper'>
-      <div className={classes.projects}>
-        {projects.map((project) => {
-          return <Project key={project.title} {...project} />;
-        })}
+    <div className={classes.sec}>
+      <div className={classes.CS}>
+        <ProjectBlob />
       </div>
-    </section>
+      <section className="section-wrapper" id="projects">
+        <SectionTitle title="Projects" dir="r" />
+        <div className={classes.projects}>
+          {projects.map((project) => {
+            return <Project key={project.title} {...project} />;
+          })}
+        </div>
+      </section>
+    </div>
   );
 };
 
@@ -32,19 +38,20 @@ const projects = [
       <>
         <p>
           Connected to a robust backend, this platform offers a culinary journey
-          for its users, with a range of features to explore, create, modify, and
-          delete personal recipes. Users are not only able to manage their
+          for its users, with a range of features to explore, create, modify,
+          and delete personal recipes. Users are not only able to manage their
           recipes efficiently, but also share them within the platform&apos;s
           community.
         </p>
         <p>
-        The application uses React for the frontend, providing an intuitive and responsive interface. The backend is powered by Node.js and Express, and it connects the frontend to a PostgreSQL database.
+          The application uses React for the frontend, providing an intuitive
+          and responsive interface. The backend is powered by Node.js and
+          Express, and it connects the frontend to a PostgreSQL database.
         </p>
         <p>
           In essence, Carls provides a user-friendly, aesthetically pleasing,
-          and functional interface, allowing foodies to
-          curate their recipes and also share their culinary expertise within a
-          community.
+          and functional interface, allowing foodies to curate their recipes and
+          also share their culinary expertise within a community.
         </p>
       </>
     ),
@@ -60,18 +67,18 @@ const projects = [
     modalContent: (
       <>
         <p>
-          The Movie Database is my personal
-          platform for cataloging the movies I&apos;m eager to watch or have
-          enjoyed. It&apos;s more than just a movie catalog; it&apos;s a place
-          to organize, and cherish films close to my heart.
+          The Movie Database is my personal platform for cataloging the movies
+          I&apos;m eager to watch or have enjoyed. It&apos;s more than just a
+          movie catalog; it&apos;s a place to organize, and cherish films close
+          to my heart.
         </p>
         <p>
           Presently, I&apos;m focused on expanding the application&apos;s
           functionality. Upcoming updates will introduce enhanced features
-          enabling users to filter movies by genre. Additionally,
-          the project will undergo development to integrate with the TMDb API,
-          leveraging a vast database of movies to enrich the platform&apos;s
-          features and possibilities.
+          enabling users to filter movies by genre. Additionally, the project
+          will undergo development to integrate with the TMDb API, leveraging a
+          vast database of movies to enrich the platform&apos;s features and
+          possibilities.
         </p>
       </>
     ),

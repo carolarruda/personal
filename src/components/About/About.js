@@ -4,7 +4,7 @@ import classes from "./About.module.scss";
 import Bloby from "../blobs/Bloby";
 import Stats from "../Stats/Stats";
 import MyLinks from "../Links/MyLinks";
-import { Reveal } from "../utils/Reveal/Reveal";
+import { Reveal } from "@components/utils/Reveal/Reveal";
 import { useMediaQuery } from "react-responsive";
 
 const About = () => {
