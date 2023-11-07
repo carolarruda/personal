@@ -8,13 +8,14 @@
   transition: 0.5s;
   background-size: 280% auto;
   background-color: var(--brand);
+  opacity: 0.8;
   border: none;
   border-radius: 40px;
   color: hsla(360 100% 100% / 1);
 }
 
 .btnViewProjects:hover {
-  background-color: rgb(98, 32, 47);
+  opacity: 1;
 }
 
 .btnViewProjects:is(:focus, :focus-visible, :active) {

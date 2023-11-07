@@ -45,7 +45,7 @@ export const Reveal = ({ children, width = "fit-content" }) => {
           bottom: 4,
           left: 0,
           right: 0,
-          background: "rgba(149, 50, 72, 0.6)",
+          background: "var(--brand2)",
           zIndex: 20,
         }}
       />

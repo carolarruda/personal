@@ -16,7 +16,7 @@
 
 
   --brand: rgb(149, 50, 72);
-  --brand2: rgb(225, 75, 108);
+  --brand2: rgba(149, 50, 72, 0.3);
 
   /* container pallete */
   --container-pastel1: rgb(176, 165, 165);
