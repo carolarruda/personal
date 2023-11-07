@@ -3,21 +3,17 @@ import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Projects from "../components/myprojects/Projects";
-
-
-
+import ParticleRing from "../components/Background/ParticleRing";
 
 const Main = () => {
-
-
   return (
     <div className="main-grid">
       <NavBar />
+      <ParticleRing />
       <Hero />
       <About />
-      <Projects/>
+      <Projects />
       <Contact />
-
     </div>
   );
 };

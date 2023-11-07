@@ -5,6 +5,7 @@ const NavBlob = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1200 120"
       preserveAspectRatio="none"
+
     >
       <path
         fill='var(--container-pastel1)'

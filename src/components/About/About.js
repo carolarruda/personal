@@ -15,7 +15,7 @@ const About = () => {
 
   return (
     <div className={classes.sec}>
-      <div>
+      <div className={classes.blobAbout}>
         <Bloby />
       </div>
       <section className='section-wrapper' id="about">
