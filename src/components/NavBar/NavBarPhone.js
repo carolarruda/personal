@@ -6,11 +6,15 @@ import { motion } from "framer-motion";
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
 
-  const handleMenu = () => {
+  const toggleMenu = () => {
     setisOpen((prevState) => !prevState);
   };
 
   const handleItemClick = () => {
+    setisOpen(false);
+  };
+
+  const closeMenu = () => {
     setisOpen(false);
   };
 
@@ -19,7 +23,7 @@ const NavBarPhone = () => {
       <div className={classes.container}>
         <button
           type="button"
-          onClick={handleMenu}
+          onClick={toggleMenu}
           className={
             isOpen
               ? `${classes.hamburger} ${classes.open}`
@@ -32,43 +36,47 @@ const NavBarPhone = () => {
         </button>
       </div>
 
-      {isOpen && (
-        <>
-          <motion.div
-            className={classes.backDrop}
-            initial={{ y: -1000 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.8 }}
-          ></motion.div>
+      <motion.div
+        className={`${classes.backDrop} ${isOpen ? "active" : ""}`}
+        initial={{ y: -1400 }}
+        animate={isOpen ? { y: 0 } : { y: -1400 }}
+        exit={{ y: -1400 }}
+        transition={{ duration: 0.8 }}
+        onClick={closeMenu}
+      ></motion.div>
 
-          <motion.div
-            className={classes.menu}
-            initial={{ y: -1000 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <a href="#top" onClick={handleItemClick}>
-              <SectionTitle title={"Home"} dir={"l"} noLine={true} menu={true}/>
-            </a>
-            <a href="#about" onClick={handleItemClick}>
-              <SectionTitle title={"About"} dir={"l"} noLine={true} menu={true}/>
-            </a>
-            <a href="#projects" onClick={handleItemClick}>
-              <SectionTitle title={"Projects"} dir={"l"} noLine={true} menu={true}/>
-            </a>
-            <a href="#contact" onClick={handleItemClick}>
-              <SectionTitle title={"Contact"} dir={"l"} noLine={true} menu={true}/>
-            </a>
+      <motion.div
+        className={classes.menu}
+        initial={{ y: -1400 }}
+        animate={isOpen ? { y: 0 } : { y: -1400 }}
+        exit={{ y: -1400 }}
+        transition={{ duration: 0.8 }}
+      >
+        <a href="#top" onClick={handleItemClick}>
+          <SectionTitle title={"Home"} dir={"l"} noLine={true} menu={true} />
+        </a>
+        <a href="#about" onClick={handleItemClick}>
+          <SectionTitle title={"About"} dir={"l"} noLine={true} menu={true} />
+        </a>
+        <a href="#projects" onClick={handleItemClick}>
+          <SectionTitle
+            title={"Projects"}
+            dir={"l"}
+            noLine={true}
+            menu={true}
+          />
+        </a>
+        <a href="#contact" onClick={handleItemClick}>
+          <SectionTitle title={"Contact"} dir={"l"} noLine={true} menu={true} />
+        </a>
 
-            <a
-              href="https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-              onClick={handleItemClick}
-            >
-              <SectionTitle title={"Resume"} dir={"l"} noLine={true} menu={true}/>{" "}
-            </a>
-          </motion.div>
-        </>
-      )}
+        <a
+          href="https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+          onClick={handleItemClick}
+        >
+          <SectionTitle title={"Resume"} dir={"l"} noLine={true} menu={true} />{" "}
+        </a>
+      </motion.div>
     </>
   );
 };

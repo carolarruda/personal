@@ -1,12 +1,16 @@
 import classes from "./Hero.module.scss";
 import Button from "../buttons/Button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
-
-
   return (
     <section className={`section-wrapper ${classes.hero}`}>
-      <div className={classes.copyWrapper}>
+      <motion.div
+        initial={{ x: -200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}    
+        transition={{ duration: 0.5 }}
+        className={classes.copyWrapper}
+      >
         <h1 className={classes.title}>
           Hey, I&apos;m Carolina<span>.</span>
         </h1>
@@ -27,8 +31,7 @@ const Hero = () => {
             media={"classes.media"}
           />
         </div>
-      </div>
-
+      </motion.div>
     </section>
   );
 };

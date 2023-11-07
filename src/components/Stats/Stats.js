@@ -1,16 +1,21 @@
 import { Reveal } from "../utils/Reveal/Reveal";
 import classes from "./Stats.module.scss";
 import { AiFillCode } from "react-icons/ai";
+import {motion} from 'framer-motion'
 
 const Stats = () => {
   return (
     <div className={classes.stats}>
-      <div className={classes.statColumn}>
+      <motion.div 
+            initial={{ x: 100 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+      className={classes.statColumn}>
         <h4>
           <AiFillCode size="2.4rem" color="var(--brand)" />
           <span>Skills</span>
         </h4>
-        <Reveal>
+
           <div className={classes.statGrid}>
             <span className="chip">React</span>
             <span className="chip">HTML</span>
@@ -33,8 +38,8 @@ const Stats = () => {
             <span className="chip">TDD</span>
             <span className="chip">TypeScript</span>
           </div>
-        </Reveal>
-      </div>
+
+      </motion.div>
     </div>
   );
 };

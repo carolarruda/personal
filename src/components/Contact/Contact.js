@@ -1,8 +1,26 @@
 import classes from "./Contact.module.scss";
+import { useEffect, useRef } from "react";
 import * as React from "react";
 import { AiFillMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { useAnimation, useInView, motion } from "framer-motion";
+
+
 
 const Contact = () => {
+
+  const controls = useAnimation();
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [isInView, controls]);
+
   return (
     <div className={classes.contactSec}>
       <div className={classes.blobContainer}>
@@ -20,50 +38,60 @@ const Contact = () => {
         </svg>
       </div>
       <section className={`section-wrapper`} id="contact">
-        <h4 className={classes.contactTitle}>
-          Contact<span>.</span>
-        </h4>
-        
-        <p className={classes.contactCopy}>
-          Shoot me an email if you want to connect! You can also find me on{" "}
-          <a
-            href="https://www.linkedin.com/in/carolinacalouroarruda"
-            target="_blank"
-            rel="nofollow noreferrer"
-          >
-            Linkedin
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://github.com/carolarruda"
-            target="_blank"
-            rel="nofollow noreferrer"
-          >
-            GitHub
-          </a>{" "}
-        </p>
-        <a href="mailto:carolinacalarruda@gmail.com">
-          <div className={classes.contactEmail}>
-            <AiFillMail size="2.2rem" />
-            <span>carolinacalarruda@gmail.com</span>
-          </div>
-        </a>
-     
+        <motion.div
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, x: 200 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        initial="hidden"
+        animate={controls}
+        transition={{ duration: 0.5 }}
+        >
+          <h4 className={classes.contactTitle}>
+            Contact<span>.</span>
+          </h4>
+
+          <p className={classes.contactCopy}>
+            Shoot me an email if you want to connect! You can also find me on{" "}
+            <a
+              href="https://www.linkedin.com/in/carolinacalouroarruda"
+              target="_blank"
+              rel="nofollow noreferrer"
+            >
+              Linkedin
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://github.com/carolarruda"
+              target="_blank"
+              rel="nofollow noreferrer"
+            >
+              GitHub
+            </a>{" "}
+          </p>
+
+          <a href="mailto:carolinacalarruda@gmail.com">
+            <div className={classes.contactEmail}>
+              <AiFillMail size="2.2rem" />
+              <span>carolinacalarruda@gmail.com</span>
+            </div>
+          </a>
+
           <div className={classes.contactEmail}>
             <AiFillLinkedin size="2.2rem" />
             <a href="https://www.linkedin.com/in/carolinacalouroarruda">
-            <span>@carolinacalouroarruda</span>
+              <span>@carolinacalouroarruda</span>
             </a>
           </div>
-  
-        <a href="https://github.com/carolarruda">
-          <div className={classes.contactEmail}>
-            <AiFillGithub size="2.2rem" />
-            <span>@carolarruda</span>
-          </div>
-        </a>
 
-
+          <a href="https://github.com/carolarruda">
+            <div className={classes.contactEmail}>
+              <AiFillGithub size="2.2rem" />
+              <span>@carolarruda</span>
+            </div>
+          </a>
+        </motion.div>
       </section>
     </div>
   );
