@@ -24,6 +24,13 @@
   }
 }
 
+.scale {
+  transform: scale(1.15);
+  @media (max-width: 768px) {
+    transform: scale(0);
+  }
+}
+
 .projectImage {
   width: 100%;
   aspect-ratio: 4 / 3;

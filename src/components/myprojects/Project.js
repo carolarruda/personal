@@ -2,8 +2,8 @@ import { useAnimation, useInView, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
-import styles from "./projects.module.scss";
-import { useMediaQuery } from "react-responsive";
+import classes from "./projects.module.scss";
+
 
 export const Project = ({
   modalContent,
@@ -17,9 +17,6 @@ export const Project = ({
   const [hovered, setHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const controls = useAnimation();
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
-  });
 
 
   const ref = useRef(null);
@@ -52,22 +49,20 @@ export const Project = ({
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           onClick={() => setIsOpen(true)}
-          className={styles.projectImage}
+          className={classes.projectImage}
         >
           <img
             onMouseEnter={() => setHovered(true)}
             src={imgSrc}
             alt={title}
-            style={{
-              transform: hovered && isDesktopOrLaptop ? "scale(1.15)" : "",
-       
-            }}
+  
+            className={hovered ? `${classes.scale}` : ""}
           />
         </div>
-        <div className={styles.projectCopy}>
-          <div className={styles.projectTitle}>
+        <div className={classes.projectCopy}>
+          <div className={classes.projectTitle}>
             <h4>{title}</h4>
-            <div className={styles.projectTitleLine} />
+            <div className={classes.projectTitleLine} />
 
             <a href={code} target="_blank" rel="nofollow noreferrer">
               <AiFillGithub size="2.8rem" />
@@ -78,9 +73,9 @@ export const Project = ({
             </a>
           </div>
 
-          <div className={styles.projectTech}>{tech.join(" - ")}</div>
+          <div className={classes.projectTech}>{tech.join(" - ")}</div>
 
-          <p className={styles.projectDescription}>
+          <p className={classes.projectDescription}>
             {description}{" "}
             <span onClick={() => setIsOpen(true)}>Learn more {">"}</span>
           </p>
