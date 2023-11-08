@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "@utils/BackgroundUtils.js";
-import Hero from "../Hero/Hero";
+
 
 const ParticleRing = () => {
   return (

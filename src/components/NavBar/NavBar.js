@@ -37,7 +37,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className={classes.NavBar}>
+    <header className={`${classes.NavBar} navBar`}>
 
 
         <motion.nav

@@ -1,4 +1,3 @@
-import { Reveal } from "../utils/Reveal/Reveal";
 import classes from "./Stats.module.scss";
 import { AiFillCode } from "react-icons/ai";
 import {motion} from 'framer-motion'

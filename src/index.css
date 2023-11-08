@@ -9,6 +9,7 @@
   --bg-opaque: rgb(17, 17, 17, 0.25);
   --background-light: rgb(35, 35, 35);
   --background-dark: rgb(8, 8, 8);
+  --backdrop-color:rgba(0, 0, 0, 0.15);
 
   --text: rgb(17, 17, 17);
   --text-light: rgba(17, 17, 17, 0.52);
@@ -76,7 +77,7 @@ a {
 
 .section-wrapper {
   position: relative;
-  z-index: 1000;
+  z-index: 60;
   max-width: 1150px;
   margin: auto;
   padding: 9.6rem;
@@ -101,5 +102,9 @@ a {
   top: 0;
   right: 0;
   z-index: -1;
+}
+
+.navBar {
+  z-index: 100;
 }
 
