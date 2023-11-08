@@ -2,6 +2,11 @@ import { useState } from "react";
 import classes from "./NavBarPhone.module.scss";
 import SectionTitle from "@utils/SectionTitles/SectionTitle";
 import { motion } from "framer-motion";
+import {
+
+  AiOutlineExport,
+
+} from "react-icons/ai";
 
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
@@ -74,7 +79,8 @@ const NavBarPhone = () => {
           href="https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
           onClick={handleItemClick}
         >
-          <SectionTitle title={"Resume"} dir={"l"} noLine={true} menu={true} />{" "}
+      
+          <SectionTitle title={"Resume"} dir={"l"} noLine={true} menu={true} icon={true}/>     
         </a>
       </motion.div>
     </>
