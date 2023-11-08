@@ -1,6 +1,6 @@
 import { useState } from "react";
 import classes from "./NavBarPhone.module.scss";
-import SectionTitle from "../utils/SectionTitles/SectionTitle";
+import SectionTitle from "@utils/SectionTitles/SectionTitle";
 import { motion } from "framer-motion";
 
 const NavBarPhone = () => {

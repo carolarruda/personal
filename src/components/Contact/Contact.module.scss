@@ -69,6 +69,9 @@
     font-size: var(--text-md);
     margin: auto;
     transition: 0.25s color;
+    @media (max-width: 768px) {
+      font-size: var(--text-xs);
+    }
   }
   
   .contactEmail:hover {

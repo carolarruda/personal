@@ -3,7 +3,8 @@
 const SectionTitle = ( { title, dir, noLine, menu}) => {
   return (
     <div
-    className={classes.sectionHeader}
+    className={menu ? `${classes.sectionHeader}` : `${classes.sectionTitle}`}
+  
     style={{ flexDirection: dir === "r" ? "row" : "row-reverse" }}
     
   >

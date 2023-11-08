@@ -4,11 +4,21 @@
     gap: 2.4rem;
     margin-bottom: 2.4rem;
   }
+
+  .sectionTitle {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    margin-bottom: 2.4rem;
+    margin-top: 4.2rem;
+  }
   
+
   .title {
     font-size: var(--text-xl);
     font-weight: 900;
     text-align: end;
+
   
     span {
       color: var(--brand);
@@ -24,6 +34,7 @@
   }
   #title {
     font-size: var(--text-xl);
+
     @media (max-width: 900px) {
       font-size: var(--text-lg);
     }
