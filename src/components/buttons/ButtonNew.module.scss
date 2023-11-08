@@ -41,46 +41,47 @@ font-size: var(--text-xs);
   .btnPastel .blob:nth-child(2) {
     left: 0em;
     top: 0;
-    background: var(--brand2); 
+    background:    rgba(187, 64, 91, 0.4);; 
   }
 
   .btnPastel .blob:nth-child(3) {
     left: 1.8em;
     top: 0;
     z-index: -1;
-    background: #a8c4cf; 
+    background: #dab7a5; 
   }
 
   .btnPastel .blob:nth-child(4) {
     left: 4em;
     top: -1em;
     background: #b0a5a5;
+    
   }
 
   .btnPastel .blob:nth-child(5) {
     left: 4.3em;
     top: 1.6em;
-    background: #cca5b9; 
+  background: #cca5b9; 
   }
 
   .btnPastel:hover .blob:nth-child(2) {
 
-    background: #cca5b9; 
+    background: rgba(187, 64, 91, 1); 
   }
 
   .btnPastel:hover .blob:nth-child(3) {
 
-    background: #b0a5a5; 
+    background: #f4ccb9; 
   }
 
   .btnPastel:hover .blob:nth-child(4) {
    
-    background: #a8c4cf;
+    background: #d8cccc;
   }
 
   .btnPastel:hover .blob:nth-child(5) {
   
-    background: var(--brand2); 
+    background: #ecbfd6;
   }
 
   .btnPastel:hover .blob {
