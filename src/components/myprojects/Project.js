@@ -38,7 +38,7 @@ export const Project = ({
       <motion.div
         ref={ref}
         variants={{
-          hidden: { opacity: 1, y: 100 },
+          hidden: { opacity: 0, y: 100 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
