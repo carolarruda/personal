@@ -2,11 +2,7 @@ import { useState } from "react";
 import classes from "./NavBarPhone.module.scss";
 import SectionTitle from "@utils/SectionTitles/SectionTitle";
 import { motion } from "framer-motion";
-import {
 
-  AiOutlineExport,
-
-} from "react-icons/ai";
 
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
