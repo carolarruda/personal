@@ -47,9 +47,18 @@
   }
 }
 
+
+
 .line {
   width: 100%;
   height: 1px;
   background: var(--text);
   opacity: 0.3;
+}
+
+.align {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  column-gap: 5px;
 }

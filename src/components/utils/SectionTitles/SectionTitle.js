@@ -11,7 +11,7 @@ const SectionTitle = ({ title, dir, noLine, menu, icon }) => {
     >
       {!noLine && <div className={classes.line} />}
 
-      <h3>
+      <h3 className={classes.align}>
         {icon && (
           <>
             <AiOutlineExport /> {"   "}
