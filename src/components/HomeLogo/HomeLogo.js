@@ -6,12 +6,12 @@ const HomeLogo = () => {
     query: "(min-width: 1224px)",
   });
 
-  const isMobile = window.innerWidth <= 768;
+
 
   return (
-    <>
-      {isMobile && (
-        <span
+
+
+        <button
         id={classes.border}
           className={
             isDesktopOrLaptop
@@ -23,9 +23,9 @@ const HomeLogo = () => {
           }}
         >
           C<span>.</span>
-        </span>
-      )}
-    </>
+        </button>
+      
+
   );
 };
 
