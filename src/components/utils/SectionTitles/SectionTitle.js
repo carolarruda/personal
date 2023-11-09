@@ -1,14 +1,16 @@
 import classes from "./SectionTitle.module.scss";
-
 import { AiOutlineExport } from "react-icons/ai";
 
 const SectionTitle = ({ title, dir, noLine, menu, icon }) => {
+
+
   return (
     <div
       className={menu ? `${classes.sectionHeader}` : `${classes.sectionTitle}`}
       style={{ flexDirection: dir === "r" ? "row" : "row-reverse" }}
     >
-      <div className={!noLine ? `${classes.line}` : ""} />
+      {!noLine && <div className={classes.line} />}
+
       <h3>
         {icon && (
           <>
