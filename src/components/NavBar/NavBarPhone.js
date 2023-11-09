@@ -1,51 +1,19 @@
 import classes from "./NavBarPhone.module.scss";
 import SectionTitle from "@utils/SectionTitles/SectionTitle";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setisOpen((prevState) => !prevState);
-  };
-
-  const handleItemClick = () => {
-    setisOpen(false);
-  };
-
-  const closeMenu = () => {
-    setisOpen(false);
-  };
-
-  const [selected, setSelected] = useState("");
-
-  useEffect(() => {
-    const sections = document.querySelectorAll(".section-wrapper");
-
-    const options = {
-      threshold: 0.3,
-    };
-
-    const callback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setSelected(entry.target.id);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(callback, options);
-
-    sections.forEach((section) => observer.observe(section));
-  }, []);
 
   return (
     <>
       <div className={classes.container}>
         <button
           type="button"
-          onClick={toggleMenu}
+          onClick={() => {
+            setisOpen((prevState) => !prevState);
+          }}
           className={
             isOpen
               ? `${classes.hamburger} ${classes.open}`
@@ -64,7 +32,9 @@ const NavBarPhone = () => {
         animate={isOpen ? { y: 0 } : { y: -1400 }}
         exit={{ y: -1400 }}
         transition={{ duration: 0.8 }}
-        onClick={closeMenu}
+        onClick={() => {
+          setisOpen(false);
+        }}
       ></motion.div>
 
       <motion.div
@@ -112,7 +82,7 @@ const NavBarPhone = () => {
         <button
           onClick={() => {
             document
-              .querySelector(`#projects`)
+              .querySelector(`#contact`)
               .scrollIntoView({ behavior: "smooth" });
             setisOpen(false);
           }}
