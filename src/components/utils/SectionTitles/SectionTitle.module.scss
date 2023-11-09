@@ -14,7 +14,12 @@
   align-items: center;
   gap: 2.4rem;
   margin-bottom: 4.8rem;
+  margin-top: 10.8rem;
+
+  @media (max-width: 908px) {
+  margin-bottom: 4.8rem;
   margin-top: 4.8rem;
+  }
 }
 
 .title {
