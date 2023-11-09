@@ -49,9 +49,8 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .transparentBorderDiv {
-    border: 1px solid rgba(0, 0, 0, 0); /* Adjust the transparency as needed */
+    border: 0;
   }
 }
