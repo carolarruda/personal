@@ -20,6 +20,7 @@ export const Project = ({
   const controls = useAnimation();
 
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const isPhone = useMediaQuery({ query: '(max-width: 720px)' })
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -58,7 +59,7 @@ export const Project = ({
             src={imgSrc}
             alt={title}
   
-            style={{ transform: hovered && !isPortrait ? "scale(1.15)" : "" }}
+            style={{ transform: hovered && !isPhone ? "scale(1.15)" : "" }}
           />
         </div>
         <div className={classes.projectCopy}>
