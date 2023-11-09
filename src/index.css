@@ -102,5 +102,5 @@ a {
 }
 
 button {
-  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
