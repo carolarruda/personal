@@ -9,7 +9,7 @@
   --bg-opaque: rgb(17, 17, 17, 0.25);
   --background-light: rgb(35, 35, 35);
   --background-dark: rgb(8, 8, 8);
-  --backdrop-color:rgba(0, 0, 0, 0.15);
+  --backdrop-color: rgba(0, 0, 0, 0.15);
 
   --text: rgb(17, 17, 17);
   --text-light: rgba(17, 17, 17, 0.52);
@@ -33,8 +33,6 @@
   --text-xl: 5.6rem;
   --text-2xl: 9.6rem;
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -82,18 +80,13 @@ a {
   margin: auto;
   padding: 9.6rem;
   overflow: hidden;
-  
 }
-
-
-
 
 @media (max-width: 768px) {
   .section-wrapper {
     padding: 7.2rem 2.4rem;
   }
 }
-
 
 .relative {
   display: grid;
@@ -108,3 +101,6 @@ a {
   z-index: 100;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+}
