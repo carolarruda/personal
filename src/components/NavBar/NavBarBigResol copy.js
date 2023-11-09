@@ -30,7 +30,7 @@ const NavBarBigResol = () => {
     <ul className={classes.NavOptions}>
       <li className={classes.grey}>
         <a
-className={classes.aTag}
+          className={classes.aTag}
           href="#top"
           onClick={() => {
             setSelected("top");
@@ -43,7 +43,7 @@ className={classes.aTag}
       </li>
       <li className={classes.grey}>
         <a
-        className={classes.aTag}
+          className={classes.aTag}
           href="#about"
           onClick={() => {
             setSelected("about");
@@ -56,7 +56,7 @@ className={classes.aTag}
 
       <li className={classes.grey}>
         <a
-        className={classes.aTag}
+          className={classes.aTag}
           href="#projects"
           onClick={() => {
             setSelected("projects");
@@ -68,7 +68,7 @@ className={classes.aTag}
       </li>
       <li className={classes.grey}>
         <a
-        className={classes.aTag}
+          className={classes.aTag}
           href="#contact"
           onClick={() => {
             setSelected("contact");

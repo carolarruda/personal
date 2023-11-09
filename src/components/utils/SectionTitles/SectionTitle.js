@@ -26,7 +26,10 @@ const SectionTitle = ({ title, dir, noLine, menu, icon }) => {
           <span>.</span>
         </span>
       </h3>
+      
     </div>
+
+    
   );
 };
 

@@ -1,8 +1,7 @@
-import { useState } from "react";
 import classes from "./NavBarPhone.module.scss";
 import SectionTitle from "@utils/SectionTitles/SectionTitle";
 import { motion } from "framer-motion";
-
+import { useEffect, useState } from "react";
 
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
@@ -18,6 +17,28 @@ const NavBarPhone = () => {
   const closeMenu = () => {
     setisOpen(false);
   };
+
+  const [selected, setSelected] = useState("");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll(".section-wrapper");
+
+    const options = {
+      threshold: 0.3,
+    };
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSelected(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+
+    sections.forEach((section) => observer.observe(section));
+  }, []);
 
   return (
     <>
@@ -53,31 +74,68 @@ const NavBarPhone = () => {
         exit={{ y: -1400 }}
         transition={{ duration: 0.8 }}
       >
-        <a href="#top" onClick={handleItemClick}>
+        <button
+          onClick={() => {
+            document
+              .querySelector(`#top`)
+              .scrollIntoView({ behavior: "smooth" });
+            setisOpen(false);
+          }}
+        >
           <SectionTitle title={"Home"} dir={"l"} noLine={true} menu={true} />
-        </a>
-        <a href="#about" onClick={handleItemClick}>
+        </button>
+        <button
+          onClick={() => {
+            document
+              .querySelector(`#about`)
+              .scrollIntoView({ behavior: "smooth" });
+            setisOpen(false);
+          }}
+        >
           <SectionTitle title={"About"} dir={"l"} noLine={true} menu={true} />
-        </a>
-        <a href="#projects" onClick={handleItemClick}>
+        </button>
+        <button
+          onClick={() => {
+            document
+              .querySelector(`#projects`)
+              .scrollIntoView({ behavior: "smooth" });
+            setisOpen(false);
+          }}
+        >
           <SectionTitle
             title={"Projects"}
             dir={"l"}
             noLine={true}
             menu={true}
           />
-        </a>
-        <a href="#contact" onClick={handleItemClick}>
-          <SectionTitle title={"Contact"} dir={"l"} noLine={true} menu={true} />
-        </a>
-
-        <a
-          href="https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-          onClick={handleItemClick}
+        </button>
+        <button
+          onClick={() => {
+            document
+              .querySelector(`#projects`)
+              .scrollIntoView({ behavior: "smooth" });
+            setisOpen(false);
+          }}
         >
-      
-          <SectionTitle title={"Resume"} dir={"l"} noLine={true} menu={true} icon={true}/>     
-        </a>
+          <SectionTitle title={"Contact"} dir={"l"} noLine={true} menu={true} />
+        </button>
+
+        <button
+          onClick={() => {
+            window.open(
+              "https://app.enhancv.com/share/ca9fed4a/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+            );
+            setisOpen(false);
+          }}
+        >
+          <SectionTitle
+            title={"Resume"}
+            dir={"l"}
+            noLine={true}
+            menu={true}
+            icon={true}
+          />
+        </button>
       </motion.div>
     </>
   );
