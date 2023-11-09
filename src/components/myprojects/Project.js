@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
 import classes from "./projects.module.scss";
+import { useMediaQuery } from "react-responsive";
 
 
 export const Project = ({
@@ -18,6 +19,7 @@ export const Project = ({
   const [isOpen, setIsOpen] = useState(false);
   const controls = useAnimation();
 
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -56,7 +58,7 @@ export const Project = ({
             src={imgSrc}
             alt={title}
   
-            className={hovered ? `${classes.scale}` : ""}
+            style={{ transform: hovered && !isPortrait ? "scale(1.15)" : "" }}
           />
         </div>
         <div className={classes.projectCopy}>
