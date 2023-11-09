@@ -19,7 +19,6 @@ export const Project = ({
   const [isOpen, setIsOpen] = useState(false);
   const controls = useAnimation();
 
-  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
   const isPhone = useMediaQuery({ query: '(max-width: 720px)' })
 
   const ref = useRef(null);
