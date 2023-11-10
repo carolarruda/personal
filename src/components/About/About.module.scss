@@ -54,25 +54,27 @@
   right: 30px;
   width: 100%;
   height: 100%;
+
+
+
 }
 
 
-.bloby {
-  width: 100vw;
-  background-color: transparent;
-
+.blobCont {
   min-height: 120px;
-
 }
 
-.bloby svg {
+.blobCont svg {
   position: relative;
   display: block;
   width: 100%;
-  height: 125px;
+  min-height: 125px;
   transform: rotateY(180deg);
   fill: var(--container-pastel3);
   @media (max-width: 768px) {
     height: 60px;
   }
 }
+
+
+

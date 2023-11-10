@@ -46,22 +46,11 @@
   font-size: var(--text-md);
 }
 
-.blobWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-height: 100px;
-  z-index: 1;
-}
 
-.bloby {
-  width: 100vw;
-  max-height: 120px;
 
-}
 
-.bloby svg {
+
+.blobCont svg {
   position: relative;
   display: block;
   width: 100%;
@@ -72,3 +61,27 @@
     height: 60px;
   }
 }
+
+
+.BC {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: var(--container-pastel3);
+  min-height: 96px;
+
+}
+
+.BC svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 96px;
+  @media (max-width: 768px) {
+    height: 60px;
+  }
+}
+
