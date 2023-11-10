@@ -9,14 +9,15 @@ const ParticleRing = () => {
     <div className="relative">
       <Canvas
         camera={{
-          position: [10, -7.5, -5],
+          // position: [5, -7.5, -5],
+          position: [-3, 7.5, -7.5],
         }}
-        style={{ height: "80vh", width: "100vw" }}
+        style={{ height: "100vh", width: "100vw" }}
         className="bg-slate-900"
       >
-        <OrbitControls maxDistance={15} minDistance={10} />
+        <OrbitControls maxDistance={15} minDistance={5} />
         <directionalLight />
-        <pointLight position={[-30, 0, -30]} power={10.0} />
+        <pointLight position={[-25, 0, -25]} power={8.0} />
         <PointCircle />
       </Canvas>
 
