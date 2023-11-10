@@ -1,6 +1,5 @@
 import classes from "./Hero.module.scss";
 import ButtonNew from "../buttons/ButtonNew";
-import Blobtest from "../blobs/Blobtest";
 
 const Hero = () => {
   return (
