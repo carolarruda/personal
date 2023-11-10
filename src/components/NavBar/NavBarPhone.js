@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
 
 
 function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
 }
 useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange);
@@ -20,14 +20,6 @@ useEffect(() => {
 
    
 }, []);
-
-const isMobile = width <= 768;
-
-const backdropInitialY = isMobile ? -900 : -1400; 
-  const menuInitialY = isMobile ? -900 : -1400; 
-
-
-console.log('ismobile', isMobile);
 
   return (
     <>
@@ -51,8 +43,8 @@ console.log('ismobile', isMobile);
 
       <motion.div
         className={`${classes.backDrop} ${isOpen ? "active" : ""}`}
-        initial={{ y: backdropInitialY }}
-        animate={isOpen ? { y: 0 } : { y: backdropInitialY }}
+        initial={{ y: -height }}
+        animate={isOpen ? { y: 0 } : { y: -height }}
         transition={{ duration: 0.6 }}
         onClick={() => {
           setisOpen(false);
@@ -61,8 +53,8 @@ console.log('ismobile', isMobile);
 
       <motion.div
         className={classes.menu}
-        initial={{ y: menuInitialY }}
-        animate={isOpen ? { y: 0 } : { y: menuInitialY }}
+        initial={{ y: -height }}
+        animate={isOpen ? { y: 0 } : { y: -height }}
         transition={{ duration: 0.6 }}
       >
         <button
