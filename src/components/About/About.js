@@ -6,7 +6,6 @@ import MyLinks from "@components/Links/MyLinks";
 import { Reveal } from "@utils/Reveal/Reveal";
 import { useMediaQuery } from "react-responsive";
 
-
 const About = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
@@ -14,7 +13,6 @@ const About = () => {
 
   return (
     <>
-
       <div className={classes.sec}>
         <section className={`section-wrapper`} id="about">
           <SectionTitle title={"About"} dir={"l"} />
@@ -31,8 +29,9 @@ const About = () => {
                 <p className={classes.aboutText}>
                   Hey! I&apos;m Carolina, a full-stack developer and recent
                   Software Development Academy graduate based in Gothenburg,
-                  Sweden. Eager to continuously expand my skill set and deliver
-                  high quality software to users.
+                  Sweden. As a full-stack developer, I am enthusiastic about
+                  continuously improving my skills, embracing new technologies,
+                  and continue learning.
                 </p>
               </Reveal>
               <Reveal>

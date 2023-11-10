@@ -33,25 +33,24 @@ const projects = [
     projectLink: "",
     tech: ["React", "MUI", "JS", "Express", "Node"],
     description:
-      "Carls is a frontend interface serving as the gateway to a recipe-sharing application",
+      "Carls is a a recipe social network that allows users to register, authenticate and share their recipes.",
     modalContent: (
       <>
         <p>
-          Connected to a robust backend, this platform offers a culinary journey
+          Connected to a robust back-end, this platform offers a culinary journey
           for its users, with a range of features to explore, create, modify,
-          and delete personal recipes. Users are not only able to manage their
-          recipes efficiently, but also share them within the platform&apos;s
-          community.
+          and delete personal recipes. Users are able to both manage their
+          recipes and share them within the platform&apos;s community.
         </p>
         <p>
-          The application uses React for the frontend, providing an intuitive
-          and responsive interface. The backend is powered by Node.js and
-          Express, and it connects the frontend to a PostgreSQL database.
+          The application&apos;s front-end is built with React, providing an
+          intuitive and responsive interface. The back-end is powered by Node.js
+          and Express, and it connects the front-end to a PostgreSQL database.
         </p>
         <p>
           In essence, Carls provides a user-friendly, aesthetically pleasing,
-          and functional interface, allowing foodies to curate their recipes and
-          also share their culinary expertise within a community.
+          and functional design, allowing foodies to curate their recipes and
+          also share their culinary expertise.
         </p>
       </>
     ),
@@ -87,16 +86,16 @@ const projects = [
     title: "Uomo E-commerce Website",
     imgSrc: ecommerce,
     code: "https://github.com/desokan/ShopFront_Frontend",
-    projectLink: "",
+    projectLink: "https://uomo-shopfront.vercel.app/",
     tech: ["React", "JS", "Framer Motion", "i18next"],
     description:
-      "Frontend e-commerce website with a personalized chatbot, multilingual support, and an easy-to-use cart for seamless shopping.",
+      "Front-end e-commerce website with a personalized chatbot, multilingual support, and an easy-to-use cart for seamless shopping.",
     modalContent: (
       <>
         <p>
-          Uomo is a collaborative frontend project with a few colleagues from
+          Uomo is a collaborative front-end project with a few colleagues from
           Boolean UK. Our main focus was to create a user-friendly e-commerce
-          website and sharpen our frontend skills.
+          website and sharpen our front-end skills.
         </p>
 
         <p>
@@ -125,7 +124,7 @@ const projects = [
     modalContent: (
       <>
         <p>
-          The Spotify Clone project is an HTML and CSS-based frontend project,
+          The Spotify Clone project is an HTML and CSS-based front-end project,
           aiming to replicate the music streaming service.
         </p>
         <p>
