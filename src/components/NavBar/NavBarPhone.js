@@ -1,10 +1,33 @@
 import classes from "./NavBarPhone.module.scss";
 import SectionTitle from "@utils/SectionTitles/SectionTitle";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+
+
+function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+}
+useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+ 
+        window.removeEventListener('resize', handleWindowSizeChange);
+    }
+
+   
+}, []);
+
+const isMobile = width <= 768;
+
+const backdropInitialY = isMobile ? -900 : -1400; 
+  const menuInitialY = isMobile ? -900 : -1400; 
+
+
+console.log('ismobile', isMobile);
 
   return (
     <>
@@ -28,9 +51,8 @@ const NavBarPhone = () => {
 
       <motion.div
         className={`${classes.backDrop} ${isOpen ? "active" : ""}`}
-        initial={{ y: -1400 }}
-        animate={isOpen ? { y: 0 } : { y: -1400 }}
-        exit={{ y: -1400 }}
+        initial={{ y: backdropInitialY }}
+        animate={isOpen ? { y: 0 } : { y: backdropInitialY }}
         transition={{ duration: 0.6 }}
         onClick={() => {
           setisOpen(false);
@@ -39,9 +61,8 @@ const NavBarPhone = () => {
 
       <motion.div
         className={classes.menu}
-        initial={{ y: -1400 }}
-        animate={isOpen ? { y: 0 } : { y: -1400 }}
-        exit={{ y: -1400 }}
+        initial={{ y: menuInitialY }}
+        animate={isOpen ? { y: 0 } : { y: menuInitialY }}
         transition={{ duration: 0.6 }}
       >
         <button
