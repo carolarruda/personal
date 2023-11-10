@@ -31,7 +31,7 @@ const NavBarPhone = () => {
         initial={{ y: -1400 }}
         animate={isOpen ? { y: 0 } : { y: -1400 }}
         exit={{ y: -1400 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.6 }}
         onClick={() => {
           setisOpen(false);
         }}
