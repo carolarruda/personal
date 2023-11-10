@@ -14,7 +14,8 @@ const About = () => {
   return (
     <div className={classes.sec}>
 
-      <section className="section-wrapper" id="about">
+
+      <section className={`section-wrapper`} id="about">
         <SectionTitle title={"About"} dir={"l"} />
         <div
           className={
@@ -54,6 +55,7 @@ const About = () => {
           <Stats />
         </div>
       </section>
+      
     </div>
   );
 };

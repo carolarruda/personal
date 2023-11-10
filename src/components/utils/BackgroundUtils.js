@@ -1,4 +1,4 @@
-const MIN_RADIUS = 10.5;
+const MIN_RADIUS = 8.5;
 
 const MAX_RADIUS = 5;
 const DEPTH = 2;

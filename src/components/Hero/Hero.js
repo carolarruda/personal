@@ -22,7 +22,6 @@ const Hero = () => {
           <ButtonNew type={`projects`} text={`View Projects`} />
         </div>
       </section>
-      
       <div className={classes.bloby}>
         <svg
           data-name="Layer 1"
@@ -36,6 +35,7 @@ const Hero = () => {
           ></path>
         </svg>
       </div>
+
     </>
   );
 };

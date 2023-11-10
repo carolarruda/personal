@@ -59,8 +59,9 @@
 
 .bloby {
   width: 100vw;
-  background-color: aqua;
-  height: 120px;
+  background-color: transparent;
+
+  min-height: 120px;
 
 }
 

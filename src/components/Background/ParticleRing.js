@@ -11,10 +11,10 @@ const ParticleRing = () => {
         camera={{
           position: [10, -7.5, -5],
         }}
-        style={{ height: "90vh", width: "100vw" }}
+        style={{ height: "80vh", width: "100vw" }}
         className="bg-slate-900"
       >
-        <OrbitControls maxDistance={20} minDistance={10} />
+        <OrbitControls maxDistance={15} minDistance={10} />
         <directionalLight />
         <pointLight position={[-30, 0, -30]} power={10.0} />
         <PointCircle />
