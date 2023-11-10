@@ -56,3 +56,22 @@
   height: 100%;
 }
 
+
+.bloby {
+  width: 100vw;
+  background-color: aqua;
+  height: 120px;
+
+}
+
+.bloby svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 125px;
+  transform: rotateY(180deg);
+  fill: var(--container-pastel3);
+  @media (max-width: 768px) {
+    height: 60px;
+  }
+}

@@ -14,7 +14,6 @@ const About = () => {
   return (
     <div className={classes.sec}>
 
-
       <section className="section-wrapper" id="about">
         <SectionTitle title={"About"} dir={"l"} />
         <div
