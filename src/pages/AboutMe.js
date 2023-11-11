@@ -1,7 +1,7 @@
-import AboutExpanded from "@components/About/AboutExpanded";
+import AboutExpanded from "@components/AboutPage/AboutExpanded";
 import NavBar from "@components/NavBar/NavBar";
 import Contact from '@components/Contact/Contact'
-import Hobbies from '@components/About/Hobbies'
+import Hobbies from '@components/AboutPage/Hobbies'
 
 const AboutMe = () => {
   return (
