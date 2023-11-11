@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   AiFillGithub,
   AiOutlineExport,
-  AiOutlineInfoCircle,
+  // AiOutlineInfoCircle,
 } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 
@@ -56,9 +56,9 @@ export const ProjectModal = ({
 
           <div className={classes.suppliedContent}>
             {modalContent}{" "}
-            <a target="_blank" rel="nofollow noreferrer" href={projectLink}>
+            {/* <a target="_blank" rel="nofollow noreferrer" href={projectLink}>
               <AiOutlineInfoCircle /> detailed overview
-            </a>
+            </a> */}
           </div>
 
           <div className={classes.modalFooter}>
@@ -74,14 +74,16 @@ export const ProjectModal = ({
               >
                 <AiFillGithub /> source code
               </a>
-              <a
-                target="_blank"
-                rel="nofollow noreferrer"
-                href={projectLink}
-                className={disabledProject ? classes.disabled : ""}
-              >
-                <AiOutlineExport /> live project
-              </a>
+              {!disabledProject && (
+                <a
+                  target="_blank"
+                  rel="nofollow noreferrer"
+                  href={projectLink}
+                  className={disabledProject ? classes.disabled : ""}
+                >
+                  <AiOutlineExport /> live project
+                </a>
+              )}
             </div>
           </div>
         </div>
