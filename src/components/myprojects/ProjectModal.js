@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   AiFillGithub,
   AiOutlineExport,
-  AiOutlineInfoCircle,
+  // AiOutlineInfoCircle,
 } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 
