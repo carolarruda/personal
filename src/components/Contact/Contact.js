@@ -53,7 +53,7 @@ const Contact = () => {
           </h4>
 
           <p className={classes.contactCopy}>
-            Shoot me an email if you want to connect! You can also find me on{" "}
+           To connect with me you can shoot me an email or you can also find me on{" "}
             <a
               href="https://www.linkedin.com/in/carolinacalouroarruda"
               target="_blank"

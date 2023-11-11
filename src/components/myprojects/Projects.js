@@ -37,10 +37,14 @@ const projects = [
     modalContent: (
       <>
         <p>
-          Connected to a robust back-end, this platform offers a culinary journey
-          for its users, with a range of features to explore, create, modify,
-          and delete personal recipes. Users are able to both manage their
-          recipes and share them within the platform&apos;s community.
+          Carls is a a recipe social network that allows users to register,
+          authenticate and share their recipes.
+        </p>
+        <p>
+          Connected to a robust back-end, this platform offers a culinary
+          journey for its users, with a range of features to explore, create,
+          modify, and delete personal recipes. Users are able to both manage
+          their recipes and share them within the platform&apos;s community.
         </p>
         <p>
           The application&apos;s front-end is built with React, providing an
@@ -49,7 +53,7 @@ const projects = [
         </p>
         <p>
           In essence, Carls provides a user-friendly, aesthetically pleasing,
-          and functional design, allowing foodies to curate their recipes and
+          and functional design allowing foodies to curate their recipes and
           also share their culinary expertise.
         </p>
       </>
@@ -95,19 +99,20 @@ const projects = [
         <p>
           Uomo is a collaborative front-end project with a few colleagues from
           Boolean UK. Our main focus was to create a user-friendly e-commerce
-          website and sharpen our front-end skills.
+          website while sharpening our front-end skills.
         </p>
 
         <p>
           The website includes a chatbot for personalized guidance, multilingual
-          translations for a improved reach, an intuitively designed cart for
-          easy-to-use transactions, and caroussel of products to browse and an
-          intuitive nav bar to search products by categories.
+          translations for an improved reach, an intuitively designed cart for
+          easy and quick transactions, a caroussel of products to browse from
+          and a navigation bar to search products by categories.
         </p>
         <p>
-          In this project I have worked on the translations, the chatbot and add
-          to cart to cart. I have also colaborated in implementing functionality
-          for login and register feature using json-server-auth library.
+          In this project I have worked on the translations, the chatbot, cart
+          and dashoboard both in the design and functionality fronts. I have
+          also colaborated in implementing functionality for login and register
+          feature using json-server-auth library.
         </p>
       </>
     ),
@@ -124,13 +129,15 @@ const projects = [
     modalContent: (
       <>
         <p>
-          The Spotify Clone project is an HTML and CSS-based front-end project,
-          aiming to replicate the music streaming service.
+          The Spotify Clone was one of the first projects from my time at
+          Boolean UK. It is an HTML and CSS-based front-end project, aiming to
+          replicate the music streaming service.
         </p>
+
         <p>
           The project showcases a fully responsive design, allowing seamless
           user experiences across diverse devices and screen sizes. It seeks to
-          mirror Spotify&apos;s intuitive interface and responsivness.
+          mirror Spotify&apos;s intuitive interface and responsiveness.
         </p>
       </>
     ),

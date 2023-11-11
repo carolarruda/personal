@@ -30,7 +30,7 @@ const About = () => {
                   Hey! I&apos;m Carolina, a full-stack developer and recent
                   Software Development Academy graduate based in Gothenburg,
                   Sweden. As a full-stack developer, I am enthusiastic about
-                  continuously improving my skills, embracing new technologies,
+                  continuously improving my skills, embracing new technologies
                   and continue learning.
                 </p>
               </Reveal>
@@ -38,7 +38,7 @@ const About = () => {
                 <p className={classes.aboutText}>
                   Outside of work, you&apos;ll often find me in the kitchen,
                   either exploring new recipes or going back to my Portuguese
-                  roots. Yoga enthusiast on my spare time.
+                  roots. I also love Yoga.
                 </p>
               </Reveal>
               <Reveal>
