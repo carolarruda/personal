@@ -2,7 +2,7 @@ import { Project } from "./Project";
 import classes from "./projects.module.scss";
 import carls from "../../images/Carls/Carls.png";
 import movieDB from "../../images/MovieDB/VisualsDataBase.png";
-import spot2 from "../../images/Spotify/Spot2.png";
+import spot2 from "../../images/Spotify/Musify.png";
 import ecommerce from "../../images/ECommerce/EcommerceVisuals.png";
 import ProjectBlob from "../blobs/ProjectBlob";
 import SectionTitle from "../utils/SectionTitles/SectionTitle";
@@ -120,18 +120,17 @@ const projects = [
   {
     title: "Music Streaming Interface",
     imgSrc: spot2,
-    code: "https://github.com/carolarruda/html-spotify-challenge",
-    projectLink:
-      "https://html-spotify-challenge-gw0nn9vny-carolarruda.vercel.app/",
+    code: "https://github.com/carolarruda/html-spotify-challenge/",
+    projectLink: "https://html-spotify-challenge.vercel.app/",
     tech: ["HTML", "CSS"],
     description:
       "A music streaming front-end application, built using HTML and CSS, featuring full responsiveness across various devices.",
     modalContent: (
       <>
         <p>
-          One of the first projects from my time at
-          Boolean UK. It is an HTML and CSS-based front-end project, aiming to
-          replicate the music streaming service.
+          One of the first projects from my time at Boolean UK. It is an HTML
+          and CSS-based front-end project, aiming to replicate the music
+          streaming service.
         </p>
 
         <p>
