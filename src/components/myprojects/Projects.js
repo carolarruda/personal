@@ -64,7 +64,7 @@ const projects = [
     imgSrc: movieDB,
     code: "https://github.com/carolarruda/movieDb",
     projectLink: "",
-    tech: ["Node", "Express", "Postgres", "Authentication"],
+    tech: ["Node", "Express", "PostgreSQL", "Authentication"],
     description:
       "The Movie Database is a full-stack project designed to manage a collection of my favorite movies",
     modalContent: (
@@ -118,26 +118,25 @@ const projects = [
     ),
   },
   {
-    title: "Spotify Clone",
+    title: "Music Streaming Interface",
     imgSrc: spot2,
     code: "https://github.com/carolarruda/html-spotify-challenge",
     projectLink:
       "https://html-spotify-challenge-gw0nn9vny-carolarruda.vercel.app/",
     tech: ["HTML", "CSS"],
     description:
-      "A Spotify-inspired music streaming application replica, built using HTML and CSS, featuring full responsiveness across various devices.",
+      "A music streaming front-end application, built using HTML and CSS, featuring full responsiveness across various devices.",
     modalContent: (
       <>
         <p>
-          The Spotify Clone was one of the first projects from my time at
+          One of the first projects from my time at
           Boolean UK. It is an HTML and CSS-based front-end project, aiming to
           replicate the music streaming service.
         </p>
 
         <p>
           The project showcases a fully responsive design, allowing seamless
-          user experiences across diverse devices and screen sizes. It seeks to
-          mirror Spotify&apos;s intuitive interface and responsiveness.
+          user experiences across diverse devices and screen sizes.
         </p>
       </>
     ),
