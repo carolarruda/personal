@@ -26,6 +26,7 @@ const Stats = () => {
             <span className="chip">NodeJS</span>
             <span className="chip">Prisma</span>
             <span className="chip">SQL</span>
+            <span className="chip">MongoDB</span>
             <span className="chip">Express</span>
             <span className="chip">GitHub</span>
             <span className="chip">PostgresSQL</span>

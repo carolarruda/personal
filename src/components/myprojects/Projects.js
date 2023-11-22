@@ -7,6 +7,7 @@ import ecommerce from "../../images/ECommerce/EcommerceVisuals.png";
 import ProjectBlob from "../blobs/ProjectBlob";
 import SectionTitle from "../utils/SectionTitles/SectionTitle";
 
+
 const Projects = () => {
   return (
     <div className={classes.sec}>
@@ -87,17 +88,17 @@ const projects = [
     ),
   },
   {
-    title: "Uomo E-commerce Website",
+    title: "Uomo",
     imgSrc: ecommerce,
     code: "https://github.com/desokan/ShopFront_Frontend",
     projectLink: "https://uomo-shopfront.vercel.app/",
-    tech: ["React", "JS", "Framer Motion", "i18next"],
+    tech: ["React", "JS", "Framer Motion", "i18next", "Node"],
     description:
-      "Front-end e-commerce website with a personalized chatbot, multilingual support, and an easy-to-use cart for seamless shopping.",
+      "Full-stack e-commerce platform leveraging MERN stack. Featuring a chatbot, multilingual support, and an intuitive cart for seamless shopping experiences.",
     modalContent: (
       <>
         <p>
-          Uomo is a collaborative front-end project with a few colleagues from
+          Uomo is a collaborative full-stack project with a few colleagues from
           Boolean UK. Our main focus was to create a user-friendly e-commerce
           website while sharpening our front-end skills.
         </p>
@@ -111,8 +112,14 @@ const projects = [
         <p>
           In this project I have worked on the translations, the chatbot, cart
           and dashoboard both in the design and functionality fronts. I have
-          also colaborated in implementing functionality for login and register
-          feature using json-server-auth library.
+          also colaborated in building the back-end for the user management and
+          subscriptions.
+        </p>
+        <p>
+          <span style={{ color: "var(--brand)", fontWeight: "600" }}>
+            Test credentials for login:
+          </span>{" "}
+          Email - test@test.com and Password - 1234.
         </p>
       </>
     ),
