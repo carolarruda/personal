@@ -63,8 +63,8 @@ const projects = [
   {
     title: "Movie Database",
     imgSrc: movieDB,
-    code: "https://github.com/carolarruda/movieDb",
-    projectLink: "",
+    code: "https://github.com/carolarruda/MovieDB-FE",
+    projectLink: "https://mymoviedatabase.vercel.app/",
     tech: ["Node", "Express", "PostgreSQL", "Authentication"],
     description:
       "The Movie Database is a full-stack project designed to manage a collection of my favorite movies",
@@ -83,6 +83,12 @@ const projects = [
           will undergo development to integrate with the TMDb API, leveraging a
           vast database of movies to enrich the platform&apos;s features and
           possibilities.
+        </p>
+        <p>
+        <span style={{ color: "var(--brand)", fontWeight: "600" }}>
+            Test credentials for login:
+          </span>{" "}
+          Email - test@test.com and Password - 1234.
         </p>
       </>
     ),
