@@ -65,7 +65,7 @@ const projects = [
     imgSrc: movieDB,
     code: "https://github.com/carolarruda/MovieDB-FE",
     projectLink: "https://mymoviedatabase.vercel.app/",
-    tech: ["Node", "Express", "PostgreSQL", "Authentication"],
+    tech: ["Node", "Express", "MongoDB", "Authentication"],
     description:
       "The Movie Database is a full-stack project designed to manage a collection of my favorite movies",
     modalContent: (

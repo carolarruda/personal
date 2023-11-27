@@ -40,7 +40,7 @@ const Stats = () => {
             <span className="chip">TDD</span>
             <span className="chip">Scrum</span>
             <span className="chip">Kanban</span>
-            <span className="chip">TypeScript</span>
+
           </div>
 
       </motion.div>
