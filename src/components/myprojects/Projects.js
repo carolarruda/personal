@@ -2,10 +2,11 @@ import { Project } from "./Project";
 import classes from "./projects.module.scss";
 import carls from "../../images/Carls/Carls.png";
 import movieDB from "../../images/MovieDB/VisualsDataBase.png";
-import spot2 from "../../images/Spotify/Spot2.png";
+import spot2 from "../../images/Spotify/Musify.png";
 import ecommerce from "../../images/ECommerce/EcommerceVisuals.png";
 import ProjectBlob from "../blobs/ProjectBlob";
 import SectionTitle from "../utils/SectionTitles/SectionTitle";
+
 
 const Projects = () => {
   return (
@@ -62,9 +63,9 @@ const projects = [
   {
     title: "Movie Database",
     imgSrc: movieDB,
-    code: "https://github.com/carolarruda/movieDb",
-    projectLink: "",
-    tech: ["Node", "Express", "Postgres", "Authentication"],
+    code: "https://github.com/carolarruda/MovieDB-FE",
+    projectLink: "https://mymoviedatabase.vercel.app/",
+    tech: ["Node", "Express", "MongoDB", "Authentication"],
     description:
       "The Movie Database is a full-stack project designed to manage a collection of my favorite movies",
     modalContent: (
@@ -83,21 +84,27 @@ const projects = [
           vast database of movies to enrich the platform&apos;s features and
           possibilities.
         </p>
+        <p>
+        <span style={{ color: "var(--brand)", fontWeight: "600" }}>
+            Test credentials for login:
+          </span>{" "}
+          Email - test@test.com and Password - 1234.
+        </p>
       </>
     ),
   },
   {
-    title: "Uomo E-commerce Website",
+    title: "Uomo",
     imgSrc: ecommerce,
     code: "https://github.com/desokan/ShopFront_Frontend",
     projectLink: "https://uomo-shopfront.vercel.app/",
-    tech: ["React", "JS", "Framer Motion", "i18next"],
+    tech: ["React", "JS", "Framer Motion", "i18next", "Node"],
     description:
-      "Front-end e-commerce website with a personalized chatbot, multilingual support, and an easy-to-use cart for seamless shopping.",
+      "Full-stack e-commerce platform leveraging MERN stack. Featuring a chatbot, multilingual support, and an intuitive cart for seamless shopping experiences.",
     modalContent: (
       <>
         <p>
-          Uomo is a collaborative front-end project with a few colleagues from
+          Uomo is a collaborative full-stack project with a few colleagues from
           Boolean UK. Our main focus was to create a user-friendly e-commerce
           website while sharpening our front-end skills.
         </p>
@@ -111,33 +118,37 @@ const projects = [
         <p>
           In this project I have worked on the translations, the chatbot, cart
           and dashoboard both in the design and functionality fronts. I have
-          also colaborated in implementing functionality for login and register
-          feature using json-server-auth library.
+          also colaborated in building the back-end for the user management and
+          subscriptions.
+        </p>
+        <p>
+          <span style={{ color: "var(--brand)", fontWeight: "600" }}>
+            Test credentials for login:
+          </span>{" "}
+          Email - test@test.com and Password - 1234.
         </p>
       </>
     ),
   },
   {
-    title: "Spotify Clone",
+    title: "Music Streaming Interface",
     imgSrc: spot2,
-    code: "https://github.com/carolarruda/html-spotify-challenge",
-    projectLink:
-      "https://html-spotify-challenge-gw0nn9vny-carolarruda.vercel.app/",
+    code: "https://github.com/carolarruda/html-spotify-challenge/",
+    projectLink: "https://html-spotify-challenge.vercel.app/",
     tech: ["HTML", "CSS"],
     description:
-      "A Spotify-inspired music streaming application replica, built using HTML and CSS, featuring full responsiveness across various devices.",
+      "A music streaming front-end application, built using HTML and CSS, featuring full responsiveness across various devices.",
     modalContent: (
       <>
         <p>
-          The Spotify Clone was one of the first projects from my time at
-          Boolean UK. It is an HTML and CSS-based front-end project, aiming to
-          replicate the music streaming service.
+          One of the first projects from my time at Boolean UK. It is an HTML
+          and CSS-based front-end project, aiming to replicate the music
+          streaming service.
         </p>
 
         <p>
           The project showcases a fully responsive design, allowing seamless
-          user experiences across diverse devices and screen sizes. It seeks to
-          mirror Spotify&apos;s intuitive interface and responsiveness.
+          user experiences across diverse devices and screen sizes.
         </p>
       </>
     ),
