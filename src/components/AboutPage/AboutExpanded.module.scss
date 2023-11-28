@@ -1,94 +1,85 @@
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.4rem;
-  
-    @media (max-width: 900px) {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  .photoContainer img {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
 
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
   }
-  .photoContainer {
-    object-fit: contain;
- 
- 
-   
-  }
+}
 
+.photoContainer img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.photoContainer {
+  overflow: hidden;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  width: auto;
+}
 
-  .photo {
-    width: 100%;
-    border-radius: 20px;
+.photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
-  }
+.sec {
+  background-color: #e3d5d5;
+}
 
-  
-  
-  .sec {
-    background-color: #e3d5d5;
+.aboutText {
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+  font-size: var(--text-sm);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.linksText {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--brand);
+}
+
+.highlightFirstLetter:first-letter {
+  background: var(--brand);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: var(--background);
+  font-size: var(--text-md);
+  font-weight: bold;
+  margin-right: 0.6rem;
+  float: left;
+}
+
+.heroBackground {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.blobCont {
+  min-height: 120px;
+}
+
+.blobCont svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 125px;
+  transform: rotateY(180deg);
+  fill: var(--container-pastel3);
+  @media (max-width: 768px) {
+    height: 60px;
   }
-  
-  .aboutText {
-    margin-bottom: 2.4rem;
-    font-weight: 400;
-    font-size: var(--text-sm);
-  }
-  
-  .links {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-  }
-  
-  .linksText {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    font-size: var(--text-sm);
-    font-weight: 600;
-    color: var(--brand);
-  }
-  
-  .highlightFirstLetter:first-letter {
-    background: var(--brand);
-    padding: 1rem;
-    border-radius: 0.4rem;
-    color: var(--background);
-    font-size: var(--text-md);
-    font-weight: bold;
-    margin-right: 0.6rem;
-    float: left;
-  }
-  
-  .heroBackground {
-    position: absolute;
-    bottom: 40px;
-    right: 30px;
-    width: 100%;
-    height: 100%;
-  
-  
-  
-  }
-  
-  
-  .blobCont {
-    min-height: 120px;
-  }
-  
-  .blobCont svg {
-    position: relative;
-    display: block;
-    width: 100%;
-    min-height: 125px;
-    transform: rotateY(180deg);
-    fill: var(--container-pastel3);
-    @media (max-width: 768px) {
-      height: 60px;
-    }
-  }
-  
+}

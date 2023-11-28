@@ -2,7 +2,7 @@ import { Project } from "./Project";
 import classes from "./projects.module.scss";
 import carls from "@images/Carls/Carls.png";
 import movieDB from "@images/MovieDB/VisualsDataBase.png";
-import spot2 from "@images/Spotify/Spot2.png";
+import spot2 from "@images/Spotify/Musify.png";
 import ecommerce from "@images/ECommerce/EcommerceVisuals.png";
 import ProjectBlob from "@components/blobs/ProjectBlob";
 import SectionTitle from "@utils/SectionTitles/SectionTitle";

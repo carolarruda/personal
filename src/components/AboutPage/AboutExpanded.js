@@ -2,7 +2,7 @@
 import SectionTitle from "@utils/SectionTitles/SectionTitle";
 import { Reveal } from "@utils/Reveal/Reveal";
 import classes from "./AboutExpanded.module.scss";
-import Stats from "@components/Stats/Stats";
+
 import MyLinks from "@components/Links/MyLinks";
 import { useMediaQuery } from "react-responsive";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -21,10 +21,8 @@ const AboutExpanded = () => {
     <>
       <div className={classes.sec}>
         <section className={`section-wrapper`} id="about">
-          <h3>Hey there! </h3>
-          <h1>
-            I'm Carolina<span>.</span>
-          </h1>
+          <SectionTitle title={"A little bit of my story"} dir={"l"} />
+
           <div
             className={
               isDesktopOrLaptop
@@ -35,17 +33,19 @@ const AboutExpanded = () => {
             <div>
               <Reveal>
                 {" "}
+                <p className={classes.aboutText}>Hey there from Sweden! 🇸🇪</p>
+
                 <p className={classes.aboutText}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non mollis nibh. Nulla quis aliquet neque. Integer volutpat interdum erat, ultrices convallis lacus congue vestibulum. Quisque nulla ante, dapibus eu pharetra ut, suscipit luctus quam. Praesent id dolor at magna facilisis lobortis ac non ipsum. Curabitur aliquet magna non ultricies rutrum. Ut tincidunt at ipsum id semper. Suspendisse eget vulputate leo.
+                I grew up in the Azores, Portugal, an archipelago in the middle of the Atlantic Ocean. I lived most of my life as an islander until I decided to move to sunny Lisbon. ☀️ And over a year ago, I found myself embracing yet another city in a new country, Gothenburg, Sweden. Adapting to the cold? Well, it's still a work in progress!
+                </p>
 
+                <p className={classes.aboutText}>
 
+                For the past six years, I've thrived as an account manager, connecting with people from around the globe and relishing every moment of it. But life has a funny way of leading us down unexpected paths. My journey took a turn when I was helping companies find developers for their innovative ideas and projects: it ignited a curiosity for coding and problem-solving. So, I took the plunge and completed a boot camp to become a full-stack developer. Now, I'm excited to start this new chapter, combining my love for communication with my newfound tech skills.
                 </p>
               </Reveal>
               <Reveal>
-                <p className={classes.aboutText}>
-                Maecenas hendrerit justo sit amet urna volutpat, in scelerisque nisl semper. Proin vel magna a neque laoreet rutrum. Suspendisse tempor velit in ex aliquet tempor. Mauris vitae molestie neque. Vivamus ullamcorper vestibulum scelerisque. Pellentesque efficitur ipsum magna, eu tempus enim scelerisque non. Nulla non tristique turpis. Suspendisse efficitur ornare vulputate. Aliquam nec ex et sem blandit iaculis nec non purus. Nam feugiat venenatis dolor feugiat sollicitudin. Nullam et nisl id metus consequat ullamcorper sed iaculis lorem. Nunc pharetra dui ut iaculis sodales. In hac habitasse platea dictumst. Nulla vitae lorem in risus rhoncus pharetra et tristique orci. Sed tincidunt at ex non convallis. Sed nec nibh dignissim elit consequat sagittis. 
-
-                </p>
+                <p className={classes.aboutText}></p>
               </Reveal>
               <Reveal>
                 <div className={classes.links}>
@@ -58,7 +58,6 @@ const AboutExpanded = () => {
               </Reveal>
             </div>
             <div className={classes.photoContainer}>
-
               <img src={carolinaPhoto} className={classes.photo} />
             </div>
           </div>
