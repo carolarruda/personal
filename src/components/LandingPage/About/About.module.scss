@@ -8,18 +8,27 @@
   }
 }
 
-
-
 .sec {
   background-color: #dab7a5;
-
- 
 }
 
 .aboutText {
   margin-bottom: 2.4rem;
   font-weight: 400;
   font-size: var(--text-sm);
+  span {
+    display: inline-block;
+
+    font-size: var(--text-sm);
+    font-weight: 400;
+    color: var(--brand);
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  span:hover {
+    text-decoration: underline;
+  }
 }
 
 .links {
@@ -54,11 +63,7 @@
   right: 30px;
   width: 100%;
   height: 100%;
-
-
-
 }
-
 
 .blobCont {
   min-height: 120px;
@@ -75,6 +80,3 @@
     height: 60px;
   }
 }
-
-
-

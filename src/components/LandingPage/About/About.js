@@ -5,11 +5,19 @@ import Stats from "@components/Stats/Stats";
 import MyLinks from "@components/Links/MyLinks";
 import { Reveal } from "@utils/Reveal/Reveal";
 import { useMediaQuery } from "react-responsive";
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
+
+  const nav = useNavigate();
+  const navigateToAboutMe = () => {
+    nav('/aboutme');
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -38,9 +46,11 @@ const About = () => {
                 <p className={classes.aboutText}>
                   Outside of work, you&apos;ll often find me in the kitchen,
                   either exploring new recipes or going back to my Portuguese
-                  roots. Yoga enthusiast on my spare time.
+                  roots. Yoga enthusiast on my spare time.{" "}
+                  <span onClick={navigateToAboutMe}>Learn more {">"}</span>
                 </p>
               </Reveal>
+
               <Reveal>
                 <div className={classes.links}>
                   <div className={classes.linksText}>
