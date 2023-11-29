@@ -6,7 +6,7 @@ import { useAnimation, useInView, motion } from "framer-motion";
 
 
 
-const Contact = () => {
+const Contact = ({blobColor}) => {
 
   const controls = useAnimation();
 
@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
     <div className={classes.contactSec}>
-      <div className={classes.blobContainer}>
+  <div style ={{backgroundColor: `${blobColor}`}}className={classes.blobContainer}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

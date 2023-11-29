@@ -6,7 +6,7 @@ import classes from "./AboutExpanded.module.scss";
 import MyLinks from "@components/Links/MyLinks";
 import { useMediaQuery } from "react-responsive";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { useState } from "react";
+
 
 import carolinaPhoto from "../../images/photo3.jpg";
 
@@ -14,14 +14,13 @@ const AboutExpanded = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
-  const isPhone = useMediaQuery({ query: "(max-width: 720px)" });
-  const [hovered, setHovered] = useState(false);
+
 
   return (
     <>
       <div className={classes.sec}>
-        <section className={`section-wrapper`} id="about">
-          <SectionTitle title={"A little bit of my story"} dir={"l"} />
+        <section className={`section-wrapper`} id="">
+          <SectionTitle title={"My story"} dir={"l"} />
 
           <div
             className={
@@ -33,10 +32,10 @@ const AboutExpanded = () => {
             <div>
               <Reveal>
                 {" "}
-                <p className={classes.aboutText}>Hey there from Sweden! 🇸🇪</p>
+        
 
                 <p className={classes.aboutText}>
-                I grew up in the Azores, Portugal, an archipelago in the middle of the Atlantic Ocean. I lived most of my life as an islander until I decided to move to sunny Lisbon. ☀️ And over a year ago, I found myself embracing yet another city in a new country, Gothenburg, Sweden. Adapting to the cold? Well, it's still a work in progress!
+                I grew up in the Azores 🌴, Portugal, an archipelago in the middle of the Atlantic Ocean. I lived most of my life as an islander until I decided to move to sunny Lisbon to be with my partner. ☀️ And over a year ago, we found ourselves embracing yet another city in a new country, Gothenburg, Sweden. Adapting to the cold? Well, it's still a work in progress!
                 </p>
 
                 <p className={classes.aboutText}>

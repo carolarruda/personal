@@ -43,9 +43,7 @@ const Caroussel = ({ blogs }) => {
               }
             >
               <img className={classes.blogImg} src={blog.image} alt="" />
-              <div className={classes.cardOverlay}>
-                <h3 className="card-title">{blog.title}</h3>
-              </div>
+   
             </div>
           );
         })}

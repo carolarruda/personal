@@ -9,7 +9,7 @@ const AboutMe = () => {
       <NavBar />
       <AboutExpanded />
       <Hobbies/>
-      <Contact/>
+      <Contact blobColor={`#e2d4d4`}/>
     </div>
   );
 };

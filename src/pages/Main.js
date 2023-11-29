@@ -13,7 +13,7 @@ const Main = () => {
       <Hero />
       <About />
       <Projects />
-      <Contact />
+      <Contact blobColor={`#d7d4db`}/>
     </div>
   );
 };

@@ -5,6 +5,16 @@
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
+
+  }
+}
+
+.hobbies {
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5rem;
+
   }
 }
 
@@ -12,16 +22,22 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .photoContainer {
-  overflow: hidden;
-  border-top-left-radius: 50% 20%;
-  border-top-right-radius: 50% 20%;
+
+
   width: auto;
+}
+
+.tags {
+  color: var(--brand);
+  font-weight: 600;
 }
 
 .photo {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 25px;
+
 }
 
 .sec {
