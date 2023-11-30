@@ -5,11 +5,19 @@ import Stats from "@components/Stats/Stats";
 import MyLinks from "@components/Links/MyLinks";
 import { Reveal } from "@utils/Reveal/Reveal";
 import { useMediaQuery } from "react-responsive";
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
+
+  const nav = useNavigate();
+  const navigateToAboutMe = () => {
+    nav('/aboutme');
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -30,16 +38,19 @@ const About = () => {
                   Hey! I&apos;m Carolina, a full-stack developer and recent
                   Software Development Academy graduate based in Gothenburg,
                   Sweden. As a full-stack developer, I am enthusiastic about
-                  continuously learning and improving my skills, as well as embracing new technologies.
+                  continuously improving my skills, embracing new technologies,
+                  and continue learning.
                 </p>
               </Reveal>
               <Reveal>
                 <p className={classes.aboutText}>
                   Outside of work, you&apos;ll often find me in the kitchen,
                   either exploring new recipes or going back to my Portuguese
-                  roots. I also love Yoga.
+                  roots. Yoga enthusiast on my spare time.{" "}
+                  <span onClick={navigateToAboutMe}>Learn more {">"}</span>
                 </p>
               </Reveal>
+
               <Reveal>
                 <div className={classes.links}>
                   <div className={classes.linksText}>

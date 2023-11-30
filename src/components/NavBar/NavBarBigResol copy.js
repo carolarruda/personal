@@ -1,6 +1,6 @@
 import Button from "../buttons/Button";
 import classes from "./NavBar.module.scss";
-
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const NavBarBigResol = () => {
@@ -29,54 +29,59 @@ const NavBarBigResol = () => {
   return (
     <ul className={classes.NavOptions}>
       <li className={classes.grey}>
-        <a
+        <Link
           className={classes.aTag}
-          href="#top"
           onClick={() => {
-            setSelected("top");
-            window.scrollTo(0, 0);
+            setSelected("home");
           }}
-          id={selected === "top" ? classes.selected : ""}
+          id={selected === "home" ? classes.selected : ""}
+          to={{ pathname: "/", hash: "#top" }}
+          reloadDocument
         >
           Home
-        </a>
+        </Link>
       </li>
       <li className={classes.grey}>
-        <a
+        <Link
           className={classes.aTag}
-          href="#about"
           onClick={() => {
             setSelected("about");
           }}
           id={selected === "about" ? classes.selected : ""}
+          to={{ pathname: "/", hash: "#about" }}
+          reloadDocument
         >
           About
-        </a>
+        </Link>
       </li>
 
       <li className={classes.grey}>
-        <a
+
+        <Link
           className={classes.aTag}
-          href="#projects"
           onClick={() => {
             setSelected("projects");
           }}
           id={selected === "projects" ? classes.selected : ""}
+          to={{ pathname: "/", hash: "#projects" }}
+          reloadDocument
         >
           Projects
-        </a>
+        </Link>
       </li>
       <li className={classes.grey}>
-        <a
+
+        <Link
           className={classes.aTag}
-          href="#contact"
           onClick={() => {
             setSelected("contact");
           }}
           id={selected === "contact" ? classes.selected : ""}
+          to={{ pathname: "/", hash: "#contact" }}
+          reloadDocument
         >
           Contact
-        </a>
+        </Link>
       </li>
       <li>
         <Button text={`Resume`} />

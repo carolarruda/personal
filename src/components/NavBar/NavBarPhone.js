@@ -2,23 +2,21 @@ import classes from "./NavBarPhone.module.scss";
 import SectionTitle from "@utils/SectionTitles/SectionTitle";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
   const [height, setHeight] = useState(window.innerHeight);
 
-
-function handleWindowSizeChange() {
+  function handleWindowSizeChange() {
     setHeight(window.innerHeight);
-}
-useEffect(() => {
-    window.addEventListener('resize', handleWindowSizeChange);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
     return () => {
- 
-        window.removeEventListener('resize', handleWindowSizeChange);
-    }
-   
-}, []);
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
 
   return (
     <>
@@ -56,33 +54,31 @@ useEffect(() => {
         animate={isOpen ? { y: 0 } : { y: -height }}
         transition={{ duration: 0.6 }}
       >
-        <button
+        <Link
           onClick={() => {
-            document
-              .querySelector(`#top`)
-              .scrollIntoView({ behavior: "smooth" });
             setisOpen(false);
           }}
+          to={{ pathname: "/", hash: "#top" }}
+          reloadDocument
         >
           <SectionTitle title={"Home"} dir={"l"} noLine={true} menu={true} />
-        </button>
-        <button
+        </Link>
+        <Link
           onClick={() => {
-            document
-              .querySelector(`#about`)
-              .scrollIntoView({ behavior: "smooth" });
             setisOpen(false);
           }}
+          to={{ pathname: "/", hash: "#about" }}
+          reloadDocument
         >
+          {" "}
           <SectionTitle title={"About"} dir={"l"} noLine={true} menu={true} />
-        </button>
-        <button
+        </Link>
+        <Link
           onClick={() => {
-            document
-              .querySelector(`#projects`)
-              .scrollIntoView({ behavior: "smooth" });
             setisOpen(false);
           }}
+          to={{ pathname: "/", hash: "#projects" }}
+          reloadDocument
         >
           <SectionTitle
             title={"Projects"}
@@ -90,17 +86,16 @@ useEffect(() => {
             noLine={true}
             menu={true}
           />
-        </button>
-        <button
+        </Link>
+        <Link
+          to={{ pathname: "/", hash: "#contact" }}
+          reloadDocument
           onClick={() => {
-            document
-              .querySelector(`#contact`)
-              .scrollIntoView({ behavior: "smooth" });
             setisOpen(false);
           }}
         >
           <SectionTitle title={"Contact"} dir={"l"} noLine={true} menu={true} />
-        </button>
+        </Link>
 
         <button
           onClick={() => {

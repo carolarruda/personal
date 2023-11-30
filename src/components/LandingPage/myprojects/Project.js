@@ -5,6 +5,7 @@ import { ProjectModal } from "./ProjectModal";
 import classes from "./projects.module.scss";
 import { useMediaQuery } from "react-responsive";
 
+
 export const Project = ({
   modalContent,
   projectLink,
@@ -18,10 +19,13 @@ export const Project = ({
   const [isOpen, setIsOpen] = useState(false);
   const controls = useAnimation();
 
-  const isPhone = useMediaQuery({ query: "(max-width: 720px)" });
+  const isPhone = useMediaQuery({ query: '(max-width: 720px)' })
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
+ 
+
 
   useEffect(() => {
     if (isInView) {
@@ -53,6 +57,7 @@ export const Project = ({
             onMouseEnter={() => setHovered(true)}
             src={imgSrc}
             alt={title}
+  
             style={{ transform: hovered && !isPhone ? "scale(1.15)" : "" }}
           />
         </div>
@@ -64,11 +69,10 @@ export const Project = ({
             <a href={code} target="_blank" rel="nofollow noreferrer">
               <AiFillGithub size="2.8rem" />
             </a>
-            {projectLink && (
-              <a href={projectLink} target="_blank" rel="nofollow noreferrer">
-                <AiOutlineExport size="2.8rem" />
-              </a>
-            )}
+
+            <a href={projectLink} target="_blank" rel="nofollow noreferrer">
+              <AiOutlineExport size="2.8rem" />
+            </a>
           </div>
 
           <div className={classes.projectTech}>{tech.join(" - ")}</div>

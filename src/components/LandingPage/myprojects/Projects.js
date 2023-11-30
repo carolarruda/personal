@@ -1,12 +1,11 @@
 import { Project } from "./Project";
 import classes from "./projects.module.scss";
-import carls from "../../images/Carls/Carls.png";
-import movieDB from "../../images/MovieDB/VisualsDataBase.png";
-import spot2 from "../../images/Spotify/Musify.png";
-import ecommerce from "../../images/ECommerce/EcommerceVisuals.png";
-import ProjectBlob from "../blobs/ProjectBlob";
-import SectionTitle from "../utils/SectionTitles/SectionTitle";
-
+import carls from "@images/Carls/Carls.png";
+import movieDB from "@images/MovieDB/VisualsDataBase.png";
+import spot2 from "@images/Spotify/Musify.png";
+import ecommerce from "@images/ECommerce/EcommerceVisuals.png";
+import ProjectBlob from "@components/blobs/ProjectBlob";
+import SectionTitle from "@utils/SectionTitles/SectionTitle";
 
 const Projects = () => {
   return (
@@ -38,14 +37,10 @@ const projects = [
     modalContent: (
       <>
         <p>
-          Carls is a a recipe social network that allows users to register,
-          authenticate and share their recipes.
-        </p>
-        <p>
-          Connected to a robust back-end, this platform offers a culinary
-          journey for its users, with a range of features to explore, create,
-          modify, and delete personal recipes. Users are able to both manage
-          their recipes and share them within the platform&apos;s community.
+          Connected to a robust back-end, this platform offers a culinary journey
+          for its users, with a range of features to explore, create, modify,
+          and delete personal recipes. Users are able to both manage their
+          recipes and share them within the platform&apos;s community.
         </p>
         <p>
           The application&apos;s front-end is built with React, providing an
@@ -54,7 +49,7 @@ const projects = [
         </p>
         <p>
           In essence, Carls provides a user-friendly, aesthetically pleasing,
-          and functional design allowing foodies to curate their recipes and
+          and functional design, allowing foodies to curate their recipes and
           also share their culinary expertise.
         </p>
       </>
@@ -63,9 +58,9 @@ const projects = [
   {
     title: "Movie Database",
     imgSrc: movieDB,
-    code: "https://github.com/carolarruda/MovieDB-FE",
-    projectLink: "https://mymoviedatabase.vercel.app/",
-    tech: ["Node", "Express", "MongoDB", "Authentication"],
+    code: "https://github.com/carolarruda/movieDb",
+    projectLink: "",
+    tech: ["Node", "Express", "Postgres", "Authentication"],
     description:
       "The Movie Database is a full-stack project designed to manage a collection of my favorite movies",
     modalContent: (
@@ -84,71 +79,58 @@ const projects = [
           vast database of movies to enrich the platform&apos;s features and
           possibilities.
         </p>
-        <p>
-        <span style={{ color: "var(--brand)", fontWeight: "600" }}>
-            Test credentials for login:
-          </span>{" "}
-          Email - test@test.com and Password - 1234.
-        </p>
       </>
     ),
   },
   {
-    title: "Uomo",
+    title: "Uomo E-commerce Website",
     imgSrc: ecommerce,
     code: "https://github.com/desokan/ShopFront_Frontend",
     projectLink: "https://uomo-shopfront.vercel.app/",
-    tech: ["React", "JS", "Framer Motion", "i18next", "Node"],
+    tech: ["React", "JS", "Framer Motion", "i18next"],
     description:
-      "Full-stack e-commerce platform leveraging MERN stack. Featuring a chatbot, multilingual support, and an intuitive cart for seamless shopping experiences.",
+      "Front-end e-commerce website with a personalized chatbot, multilingual support, and an easy-to-use cart for seamless shopping.",
     modalContent: (
       <>
         <p>
-          Uomo is a collaborative full-stack project with a few colleagues from
+          Uomo is a collaborative front-end project with a few colleagues from
           Boolean UK. Our main focus was to create a user-friendly e-commerce
-          website while sharpening our front-end skills.
+          website and sharpen our front-end skills.
         </p>
 
         <p>
           The website includes a chatbot for personalized guidance, multilingual
-          translations for an improved reach, an intuitively designed cart for
-          easy and quick transactions, a caroussel of products to browse from
-          and a navigation bar to search products by categories.
+          translations for a improved reach, an intuitively designed cart for
+          easy-to-use transactions, and caroussel of products to browse and an
+          intuitive nav bar to search products by categories.
         </p>
         <p>
-          In this project I have worked on the translations, the chatbot, cart
-          and dashoboard both in the design and functionality fronts. I have
-          also colaborated in building the back-end for the user management and
-          subscriptions.
-        </p>
-        <p>
-          <span style={{ color: "var(--brand)", fontWeight: "600" }}>
-            Test credentials for login:
-          </span>{" "}
-          Email - test@test.com and Password - 1234.
+          In this project I have worked on the translations, the chatbot and add
+          to cart to cart. I have also colaborated in implementing functionality
+          for login and register feature using json-server-auth library.
         </p>
       </>
     ),
   },
   {
-    title: "Music Streaming Interface",
+    title: "Spotify Clone",
     imgSrc: spot2,
-    code: "https://github.com/carolarruda/html-spotify-challenge/",
-    projectLink: "https://html-spotify-challenge.vercel.app/",
+    code: "https://github.com/carolarruda/html-spotify-challenge",
+    projectLink:
+      "https://html-spotify-challenge-gw0nn9vny-carolarruda.vercel.app/",
     tech: ["HTML", "CSS"],
     description:
-      "A music streaming front-end application, built using HTML and CSS, featuring full responsiveness across various devices.",
+      "A Spotify-inspired music streaming application replica, built using HTML and CSS, featuring full responsiveness across various devices.",
     modalContent: (
       <>
         <p>
-          One of the first projects from my time at Boolean UK. It is an HTML
-          and CSS-based front-end project, aiming to replicate the music
-          streaming service.
+          The Spotify Clone project is an HTML and CSS-based front-end project,
+          aiming to replicate the music streaming service.
         </p>
-
         <p>
           The project showcases a fully responsive design, allowing seamless
-          user experiences across diverse devices and screen sizes.
+          user experiences across diverse devices and screen sizes. It seeks to
+          mirror Spotify&apos;s intuitive interface and responsivness.
         </p>
       </>
     ),

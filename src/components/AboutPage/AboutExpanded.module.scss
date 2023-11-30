@@ -1,0 +1,101 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+
+  }
+}
+
+.hobbies {
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5rem;
+
+  }
+}
+
+.photoContainer img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.photoContainer {
+
+
+  width: auto;
+}
+
+.tags {
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+
+}
+
+.sec {
+  background-color: #e3d5d5;
+}
+
+.aboutText {
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+  font-size: var(--text-sm);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.linksText {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--brand);
+}
+
+.highlightFirstLetter:first-letter {
+  background: var(--brand);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: var(--background);
+  font-size: var(--text-md);
+  font-weight: bold;
+  margin-right: 0.6rem;
+  float: left;
+}
+
+.heroBackground {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.blobCont {
+  min-height: 120px;
+}
+
+.blobCont svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 125px;
+  transform: rotateY(180deg);
+  fill: var(--container-pastel3);
+  @media (max-width: 768px) {
+    height: 60px;
+  }
+}
