@@ -56,6 +56,9 @@ const NavBarPhone = () => {
       >
         <Link
           onClick={() => {
+            document
+              .querySelector(`#top`)
+              .scrollIntoView({ behavior: "smooth" });
             setisOpen(false);
           }}
           to={{ pathname: "/", hash: "#top" }}
@@ -65,6 +68,9 @@ const NavBarPhone = () => {
         </Link>
         <Link
           onClick={() => {
+            document
+            .querySelector(`#about`)
+            .scrollIntoView({ behavior: "smooth" });
             setisOpen(false);
           }}
           to={{ pathname: "/", hash: "#about" }}
@@ -75,6 +81,9 @@ const NavBarPhone = () => {
         </Link>
         <Link
           onClick={() => {
+            document
+              .querySelector(`#projects`)
+              .scrollIntoView({ behavior: "smooth" });
             setisOpen(false);
           }}
           to={{ pathname: "/", hash: "#projects" }}
@@ -91,6 +100,9 @@ const NavBarPhone = () => {
           to={{ pathname: "/", hash: "#contact" }}
           reloadDocument
           onClick={() => {
+            document
+              .querySelector(`#contact`)
+              .scrollIntoView({ behavior: "smooth" });
             setisOpen(false);
           }}
         >
