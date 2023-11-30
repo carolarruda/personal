@@ -8,6 +8,7 @@ import NavBarPhone from "./NavBarPhone";
 import { useMediaQuery } from "react-responsive";
 import NavBlob from "../blobs/NavBlob";
 
+
 const NavBar = () => {
   const [selected, setSelected] = useState("");
 
@@ -37,31 +38,34 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className={`${classes.NavBar} navBar`}>
-      <motion.nav
-        className={
-          isDesktopOrLaptop
-            ? `${classes.NavContainer} ${classes.mxAuto} ${classes.navOnTop}`
-            : `${classes.NavContainer} ${classes.navOnTop} ${classes.padding}`
-        }
-        initial={{ y: -70 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <HomeLogo />
-        {isDesktopOrLaptop && <NavBarBigResol />}
-        {isTabletOrMobile && <NavBarPhone />}
-      </motion.nav>
+    <>
+      <header className={`${classes.NavBar} navBar`}>
+        <motion.nav
+          className={
+            isDesktopOrLaptop
+              ? `${classes.NavContainer} ${classes.mxAuto} ${classes.navOnTop}`
+              : `${classes.NavContainer} ${classes.navOnTop} ${classes.padding}`
+          }
+          initial={{ y: -70 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <HomeLogo />
+          {isDesktopOrLaptop && <NavBarBigResol />}
+          {isTabletOrMobile && <NavBarPhone />}
+        </motion.nav>
 
-      <motion.div
-        className={classes.blob}
-        initial={{ y: -70 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <NavBlob />
-      </motion.div>
-    </header>
+        <motion.div
+          className={classes.blob}
+          initial={{ y: -70 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <NavBlob />
+        </motion.div>
+      </header>
+
+    </>
   );
 };
 
