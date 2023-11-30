@@ -47,7 +47,7 @@ const About = () => {
                   Outside of work, you&apos;ll often find me in the kitchen,
                   either exploring new recipes or going back to my Portuguese
                   roots. Yoga enthusiast on my spare time.{" "}
-                  <span onClick={navigateToAboutMe}>Learn more {">"}</span>
+                  <span onClick={navigateToAboutMe}>Get to know me {">"}</span>
                 </p>
               </Reveal>
 

@@ -37,10 +37,10 @@ const projects = [
     modalContent: (
       <>
         <p>
-          Connected to a robust back-end, this platform offers a culinary journey
-          for its users, with a range of features to explore, create, modify,
-          and delete personal recipes. Users are able to both manage their
-          recipes and share them within the platform&apos;s community.
+          Connected to a robust back-end, this platform offers a culinary
+          journey for its users, with a range of features to explore, create,
+          modify, and delete personal recipes. Users are able to both manage
+          their recipes and share them within the platform&apos;s community.
         </p>
         <p>
           The application&apos;s front-end is built with React, providing an
@@ -58,9 +58,9 @@ const projects = [
   {
     title: "Movie Database",
     imgSrc: movieDB,
-    code: "https://github.com/carolarruda/movieDb",
-    projectLink: "",
-    tech: ["Node", "Express", "Postgres", "Authentication"],
+    code: "https://github.com/carolarruda/MovieDB-FE",
+    projectLink: "https://mymoviedatabase.vercel.app/",
+    tech: ["Node", "Express", "MongoDB", "Authentication"],
     description:
       "The Movie Database is a full-stack project designed to manage a collection of my favorite movies",
     modalContent: (
@@ -87,17 +87,16 @@ const projects = [
     imgSrc: ecommerce,
     code: "https://github.com/desokan/ShopFront_Frontend",
     projectLink: "https://uomo-shopfront.vercel.app/",
-    tech: ["React", "JS", "Framer Motion", "i18next"],
+    tech: ["React", "JS", "Framer Motion", "i18next", "Node"],
     description:
-      "Front-end e-commerce website with a personalized chatbot, multilingual support, and an easy-to-use cart for seamless shopping.",
+      "Full-stack e-commerce platform leveraging MERN stack. Featuring a chatbot, multilingual support, and an intuitive cart for seamless shopping experiences.",
     modalContent: (
       <>
         <p>
-          Uomo is a collaborative front-end project with a few colleagues from
+          Uomo is a collaborative full-stack project with a few colleagues from
           Boolean UK. Our main focus was to create a user-friendly e-commerce
           website and sharpen our front-end skills.
         </p>
-
         <p>
           The website includes a chatbot for personalized guidance, multilingual
           translations for a improved reach, an intuitively designed cart for
@@ -106,9 +105,15 @@ const projects = [
         </p>
         <p>
           In this project I have worked on the translations, the chatbot and add
-          to cart to cart. I have also colaborated in implementing functionality
-          for login and register feature using json-server-auth library.
+          to cart to cart. I have also colaborated in building the back-end for
+          the user management and subscriptions.
         </p>
+        <p>
+          <span style={{ color: "var(--brand)", fontWeight: "600" }}>
+            Test credentials for login:
+          </span>{" "}
+          Email - test@test.com and Password - 1234.
+        </p>{" "}
       </>
     ),
   },

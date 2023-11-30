@@ -100,10 +100,13 @@ const NavBarPhone = () => {
           to={{ pathname: "/", hash: "#contact" }}
           reloadDocument
           onClick={() => {
-            document
-              .querySelector(`#contact`)
-              .scrollIntoView({ behavior: "smooth" });
-            setisOpen(false);
+            const element = document.querySelector(`#contact`);
+            console.log("Element found:", element);
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+              setisOpen(false);
+            }
+         
           }}
         >
           <SectionTitle title={"Contact"} dir={"l"} noLine={true} menu={true} />

@@ -56,9 +56,7 @@ export const ProjectModal = ({
 
           <div className={classes.suppliedContent}>
             {modalContent}{" "}
-            <a target="_blank" rel="nofollow noreferrer" href={projectLink}>
-              <AiOutlineInfoCircle /> detailed overview
-            </a>
+
           </div>
 
           <div className={classes.modalFooter}>
@@ -74,14 +72,12 @@ export const ProjectModal = ({
               >
                 <AiFillGithub /> source code
               </a>
-              <a
-                target="_blank"
-                rel="nofollow noreferrer"
-                href={projectLink}
-                className={disabledProject ? classes.disabled : ""}
-              >
-                <AiOutlineExport /> live project
-              </a>
+              {projectLink && (
+                <a href={projectLink} target="_blank" rel="nofollow noreferrer">
+                  <AiOutlineExport size="2.8rem" />
+                  live project
+                </a>
+              )}
             </div>
           </div>
         </div>
