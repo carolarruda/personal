@@ -75,7 +75,7 @@ export const ProjectModal = ({
               </a>
               {projectLink && (
                 <a href={projectLink} target="_blank" rel="nofollow noreferrer">
-                  <AiOutlineExport size="2.8rem" />
+                  <AiOutlineExport />
                   live project
                 </a>
               )}
