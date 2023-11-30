@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   AiFillGithub,
   AiOutlineExport,
-  AiOutlineInfoCircle,
+  // AiOutlineInfoCircle,
 } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 
@@ -20,7 +20,7 @@ export const ProjectModal = ({
   code,
   tech,
 }) => {
-  const [disabledProject, setDisabledProject] = useState("");
+  // const [disabledProject, setDisabledProject] = useState("");
   const [disabledCode, setDisabledCode] = useState("");
 
   useEffect(() => {
