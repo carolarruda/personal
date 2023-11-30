@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import classes from "./projectmodal.module.scss";
 import { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
@@ -20,7 +21,7 @@ export const ProjectModal = ({
   code,
   tech,
 }) => {
-  // const [disabledProject, setDisabledProject] = useState("");
+  const [disabledProject, setDisabledProject] = useState("");
   const [disabledCode, setDisabledCode] = useState("");
 
   useEffect(() => {
