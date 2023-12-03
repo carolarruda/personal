@@ -67,9 +67,7 @@ export const Project = ({
 
             {projectLink && (
               <a href={projectLink} target="_blank" rel="nofollow noreferrer">
-                <a href={projectLink} target="_blank" rel="nofollow noreferrer">
-                  <AiOutlineExport size="2.8rem" />
-                </a>
+                <AiOutlineExport size="2.8rem" />
               </a>
             )}
           </div>
