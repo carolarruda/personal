@@ -2,7 +2,7 @@ import classes from "./NavBarPhone.module.scss";
 import SectionTitle from "@utils/SectionTitles/SectionTitle";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavBarPhone = () => {
   let [isOpen, setisOpen] = useState(false);
@@ -17,6 +17,8 @@ const NavBarPhone = () => {
       window.removeEventListener("resize", handleWindowSizeChange);
     };
   }, []);
+
+  const nav = useNavigate()
 
   return (
     <>
@@ -45,6 +47,7 @@ const NavBarPhone = () => {
         transition={{ duration: 0.6 }}
         onClick={() => {
           setisOpen(false);
+          nav('/')
         }}
       ></motion.div>
 
@@ -57,6 +60,7 @@ const NavBarPhone = () => {
         <Link
           onClick={() => {
             setisOpen(false);
+            nav('/')
           }}
           to={{ pathname: "/", hash: "#top" }}
           reloadDocument
@@ -66,6 +70,7 @@ const NavBarPhone = () => {
         <Link
           onClick={() => {
             setisOpen(false);
+            nav('/')
           }}
           to={{ pathname: "/", hash: "#about" }}
           reloadDocument
@@ -76,8 +81,11 @@ const NavBarPhone = () => {
         <Link
           onClick={() => {
             setisOpen(false);
+            nav('/')
+            
           }}
           to={{ pathname: "/", hash: "#projects" }}
+
           reloadDocument
         >
           <SectionTitle
@@ -92,6 +100,7 @@ const NavBarPhone = () => {
           reloadDocument
           onClick={() => {
             setisOpen(false);
+            nav('/')
           }}
         >
           <SectionTitle title={"Contact"} dir={"l"} noLine={true} menu={true} />
