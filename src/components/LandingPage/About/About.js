@@ -5,23 +5,23 @@ import Stats from "@components/Stats/Stats";
 import MyLinks from "@components/Links/MyLinks";
 import { Reveal } from "@utils/Reveal/Reveal";
 import { useMediaQuery } from "react-responsive";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
-
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
 
   const nav = useNavigate();
   const navigateToAboutMe = () => {
-    nav('/aboutme');
+    nav("/aboutme");
     window.scrollTo(0, 0);
   };
 
   return (
     <>
       <div className={classes.sec}>
+
         <section className={`section-wrapper`} id="about">
           <SectionTitle title={"About"} dir={"l"} />
           <div

@@ -6,7 +6,9 @@ import Hobbies from '@components/AboutPage/Hobbies'
 const AboutMe = () => {
   return (
     <div className="main-grid">
+
       <NavBar />
+  
       <AboutExpanded />
       <Hobbies/>
       <Contact blobColor={`#e2d4d4`}/>
