@@ -18,7 +18,7 @@ const NavBarPhone = () => {
     };
   }, []);
 
-  const nav = useNavigate()
+  const nav = useNavigate();
 
   return (
     <>
@@ -47,7 +47,7 @@ const NavBarPhone = () => {
         transition={{ duration: 0.6 }}
         onClick={() => {
           setisOpen(false);
-          nav('/')
+          nav("/");
         }}
       ></motion.div>
 
@@ -57,54 +57,68 @@ const NavBarPhone = () => {
         animate={isOpen ? { y: 0 } : { y: -height }}
         transition={{ duration: 0.6 }}
       >
-        <Link
-          onClick={() => {
-            setisOpen(false);
-            nav('/')
-          }}
-          to={{ pathname: "/", hash: "#top" }}
-          reloadDocument
-        >
-          <SectionTitle title={"Home"} dir={"l"} noLine={true} menu={true} />
-        </Link>
-        <Link
-          onClick={() => {
-            setisOpen(false);
-            nav('/')
-          }}
-          to={{ pathname: "/", hash: "#about" }}
-          reloadDocument
-        >
+        <button>
+          <Link
+            onClick={() => {
+              setisOpen(false);
+              nav("/");
+            }}
+            to={{ pathname: "/", hash: "#top" }}
+            reloadDocument
+          >
+            <SectionTitle title={"Home"} dir={"l"} noLine={true} menu={true} />
+          </Link>
+        </button>
+        <button>
           {" "}
-          <SectionTitle title={"About"} dir={"l"} noLine={true} menu={true} />
-        </Link>
-        <Link
-          onClick={() => {
-            setisOpen(false);
-            nav('/')
-            
-          }}
-          to={{ pathname: "/", hash: "#projects" }}
-
-          reloadDocument
-        >
-          <SectionTitle
-            title={"Projects"}
-            dir={"l"}
-            noLine={true}
-            menu={true}
-          />
-        </Link>
-        <Link
-          to={{ pathname: "/", hash: "#contact" }}
-          reloadDocument
-          onClick={() => {
-            setisOpen(false);
-            nav('/')
-          }}
-        >
-          <SectionTitle title={"Contact"} dir={"l"} noLine={true} menu={true} />
-        </Link>
+          <Link
+            onClick={() => {
+              setisOpen(false);
+              nav("/");
+            }}
+            to={{ pathname: "/", hash: "#about" }}
+            reloadDocument
+          >
+            {" "}
+            <SectionTitle title={"About"} dir={"l"} noLine={true} menu={true} />
+          </Link>
+        </button>
+        <button>
+          {" "}
+          <Link
+            onClick={() => {
+              setisOpen(false);
+              nav("/");
+            }}
+            to={{ pathname: "/", hash: "#projects" }}
+            reloadDocument
+          >
+            <SectionTitle
+              title={"Projects"}
+              dir={"l"}
+              noLine={true}
+              menu={true}
+            />
+          </Link>
+        </button>
+        <button>
+          {" "}
+          <Link
+            to={{ pathname: "/", hash: "#contact" }}
+            reloadDocument
+            onClick={() => {
+              setisOpen(false);
+              nav("/");
+            }}
+          >
+            <SectionTitle
+              title={"Contact"}
+              dir={"l"}
+              noLine={true}
+              menu={true}
+            />
+          </Link>
+        </button>
 
         <button
           onClick={() => {
