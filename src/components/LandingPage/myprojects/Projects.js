@@ -52,6 +52,12 @@ const projects = [
           and functional design, allowing foodies to curate their recipes and
           also share their culinary expertise.
         </p>
+        <p>
+          <span style={{ color: "var(--brand)", fontWeight: "600" }}>
+            Test credentials for login:
+          </span>{" "}
+          Email - test@test.com and Password - Test1234?.
+        </p>{" "}
       </>
     ),
   },
@@ -79,6 +85,12 @@ const projects = [
           vast database of movies to enrich the platform&apos;s features and
           possibilities.
         </p>
+        <p>
+          <span style={{ color: "var(--brand)", fontWeight: "600" }}>
+            Test credentials for login:
+          </span>{" "}
+          Email - test@test.com and Password - 1234.
+        </p>{" "}
       </>
     ),
   },
