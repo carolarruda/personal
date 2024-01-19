@@ -30,7 +30,7 @@ const projects = [
     title: "Carls",
     imgSrc: carls,
     code: "https://github.com/carolarruda/carls",
-    projectLink: "",
+    projectLink: "https://carls.vercel.app/",
     tech: ["React", "MUI", "JS", "Express", "Node"],
     description:
       "Carls is a a recipe social network that allows users to register, authenticate and share their recipes.",
@@ -39,8 +39,8 @@ const projects = [
         <p>
           Connected to a robust back-end, this platform offers a culinary
           journey for its users, with a range of features to explore, create,
-          modify, and delete personal recipes. Users are able to both manage
-          their recipes and share them within the platform&apos;s community.
+          modify, and delete personal recipes. Users are able to both manage and
+          share their recipes.
         </p>
         <p>
           The application&apos;s front-end is built with React, providing an
@@ -93,20 +93,19 @@ const projects = [
     modalContent: (
       <>
         <p>
-          Uomo is a collaborative full-stack project with a few colleagues from
-          Boolean UK. Our main focus was to create a user-friendly e-commerce
-          website and sharpen our front-end skills.
+          Uomo is a full-stack project focused on creating a user-friendly and
+          responsive e-commerce website.
         </p>
         <p>
           The website includes a chatbot for personalized guidance, multilingual
-          translations for a improved reach, an intuitively designed cart for
-          easy-to-use transactions, and caroussel of products to browse and an
-          intuitive nav bar to search products by categories.
+          translations for an improved reach, an intuitively designed cart, a
+          caroussel of products to browse from and an intuitive nav bar to
+          search products by categories.
         </p>
         <p>
-          In this project I have worked on the translations, the chatbot and add
-          to cart to cart. I have also colaborated in building the back-end for
-          the user management and subscriptions.
+          I have worked on the translations, the chatbot and add to cart to
+          cart and also built the back-end for the user
+          management and subscriptions.
         </p>
         <p>
           <span style={{ color: "var(--brand)", fontWeight: "600" }}>
