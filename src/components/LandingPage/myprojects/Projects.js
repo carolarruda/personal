@@ -115,7 +115,7 @@ const projects = [
           search products by categories.
         </p>
         <p>
-          I have worked on the translations, the chatbot and add to cart to
+          I have worked on the translations, the chatbot and add to
           cart and also built the back-end for the user
           management and subscriptions.
         </p>
